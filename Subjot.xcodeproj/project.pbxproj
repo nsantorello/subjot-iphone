@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
+		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
+		D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */; };
+		D2F56F41140EBBFC00F72DF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2F56F3F140EBBFC00F72DF0 /* InfoPlist.strings */; };
+		D2F56F44140EBBFC00F72DF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F56F43140EBBFC00F72DF0 /* main.m */; };
+		D2F56F47140EBBFC00F72DF0 /* SubjotAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F56F46140EBBFC00F72DF0 /* SubjotAppDelegate.m */; };
+		D2F56F4B140EBBFC00F72DF0 /* SubjotAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F56F4A140EBBFC00F72DF0 /* SubjotAppDelegate_iPhone.m */; };
+		D2F56F4E140EBBFC00F72DF0 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F56F4C140EBBFC00F72DF0 /* MainWindow_iPhone.xib */; };
+		D2F56F52140EBBFC00F72DF0 /* SubjotAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F56F51140EBBFC00F72DF0 /* SubjotAppDelegate_iPad.m */; };
+		D2F56F55140EBBFC00F72DF0 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F56F53140EBBFC00F72DF0 /* MainWindow_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F56F36140EBBFC00F72DF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D2F56F38140EBBFC00F72DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D2F56F3E140EBBFC00F72DF0 /* Subjot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Subjot-Info.plist"; sourceTree = "<group>"; };
+		D2F56F40140EBBFC00F72DF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2F56F42140EBBFC00F72DF0 /* Subjot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Subjot-Prefix.pch"; sourceTree = "<group>"; };
+		D2F56F43140EBBFC00F72DF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2F56F45140EBBFC00F72DF0 /* SubjotAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubjotAppDelegate.h; sourceTree = "<group>"; };
+		D2F56F46140EBBFC00F72DF0 /* SubjotAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubjotAppDelegate.m; sourceTree = "<group>"; };
+		D2F56F49140EBBFC00F72DF0 /* SubjotAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SubjotAppDelegate_iPhone.h; path = iPhone/SubjotAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		D2F56F4A140EBBFC00F72DF0 /* SubjotAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SubjotAppDelegate_iPhone.m; path = iPhone/SubjotAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		D2F56F4D140EBBFC00F72DF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		D2F56F50140EBBFC00F72DF0 /* SubjotAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SubjotAppDelegate_iPad.h; path = iPad/SubjotAppDelegate_iPad.h; sourceTree = "<group>"; };
+		D2F56F51140EBBFC00F72DF0 /* SubjotAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SubjotAppDelegate_iPad.m; path = iPad/SubjotAppDelegate_iPad.m; sourceTree = "<group>"; };
+		D2F56F54140EBBFC00F72DF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2F56F2F140EBBFC00F72DF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */,
+				D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */,
+				D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2F56F27140EBBFC00F72DF0 = {
+			isa = PBXGroup;
+			children = (
+				D2F56F3C140EBBFC00F72DF0 /* Subjot */,
+				D2F56F35140EBBFC00F72DF0 /* Frameworks */,
+				D2F56F33140EBBFC00F72DF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2F56F33140EBBFC00F72DF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2F56F32140EBBFC00F72DF0 /* Subjot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2F56F35140EBBFC00F72DF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2F56F36140EBBFC00F72DF0 /* UIKit.framework */,
+				D2F56F38140EBBFC00F72DF0 /* Foundation.framework */,
+				D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2F56F3C140EBBFC00F72DF0 /* Subjot */ = {
+			isa = PBXGroup;
+			children = (
+				D2F56F45140EBBFC00F72DF0 /* SubjotAppDelegate.h */,
+				D2F56F46140EBBFC00F72DF0 /* SubjotAppDelegate.m */,
+				D2F56F48140EBBFC00F72DF0 /* iPhone */,
+				D2F56F4F140EBBFC00F72DF0 /* iPad */,
+				D2F56F3D140EBBFC00F72DF0 /* Supporting Files */,
+			);
+			path = Subjot;
+			sourceTree = "<group>";
+		};
+		D2F56F3D140EBBFC00F72DF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2F56F3E140EBBFC00F72DF0 /* Subjot-Info.plist */,
+				D2F56F3F140EBBFC00F72DF0 /* InfoPlist.strings */,
+				D2F56F42140EBBFC00F72DF0 /* Subjot-Prefix.pch */,
+				D2F56F43140EBBFC00F72DF0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2F56F48140EBBFC00F72DF0 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				D2F56F49140EBBFC00F72DF0 /* SubjotAppDelegate_iPhone.h */,
+				D2F56F4A140EBBFC00F72DF0 /* SubjotAppDelegate_iPhone.m */,
+				D2F56F4C140EBBFC00F72DF0 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		D2F56F4F140EBBFC00F72DF0 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				D2F56F50140EBBFC00F72DF0 /* SubjotAppDelegate_iPad.h */,
+				D2F56F51140EBBFC00F72DF0 /* SubjotAppDelegate_iPad.m */,
+				D2F56F53140EBBFC00F72DF0 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2F56F31140EBBFC00F72DF0 /* Subjot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F56F58140EBBFC00F72DF0 /* Build configuration list for PBXNativeTarget "Subjot" */;
+			buildPhases = (
+				D2F56F2E140EBBFC00F72DF0 /* Sources */,
+				D2F56F2F140EBBFC00F72DF0 /* Frameworks */,
+				D2F56F30140EBBFC00F72DF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Subjot;
+			productName = Subjot;
+			productReference = D2F56F32140EBBFC00F72DF0 /* Subjot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2F56F29140EBBFC00F72DF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Noah Santorello";
+			};
+			buildConfigurationList = D2F56F2C140EBBFC00F72DF0 /* Build configuration list for PBXProject "Subjot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D2F56F27140EBBFC00F72DF0;
+			productRefGroup = D2F56F33140EBBFC00F72DF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2F56F31140EBBFC00F72DF0 /* Subjot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2F56F30140EBBFC00F72DF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F56F41140EBBFC00F72DF0 /* InfoPlist.strings in Resources */,
+				D2F56F4E140EBBFC00F72DF0 /* MainWindow_iPhone.xib in Resources */,
+				D2F56F55140EBBFC00F72DF0 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2F56F2E140EBBFC00F72DF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F56F44140EBBFC00F72DF0 /* main.m in Sources */,
+				D2F56F47140EBBFC00F72DF0 /* SubjotAppDelegate.m in Sources */,
+				D2F56F4B140EBBFC00F72DF0 /* SubjotAppDelegate_iPhone.m in Sources */,
+				D2F56F52140EBBFC00F72DF0 /* SubjotAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2F56F3F140EBBFC00F72DF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F56F40140EBBFC00F72DF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D2F56F4C140EBBFC00F72DF0 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F56F4D140EBBFC00F72DF0 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		D2F56F53140EBBFC00F72DF0 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F56F54140EBBFC00F72DF0 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2F56F56140EBBFC00F72DF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2F56F57140EBBFC00F72DF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D2F56F59140EBBFC00F72DF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Subjot/Subjot-Prefix.pch";
+				INFOPLIST_FILE = "Subjot/Subjot-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D2F56F5A140EBBFC00F72DF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Subjot/Subjot-Prefix.pch";
+				INFOPLIST_FILE = "Subjot/Subjot-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2F56F2C140EBBFC00F72DF0 /* Build configuration list for PBXProject "Subjot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F56F56140EBBFC00F72DF0 /* Debug */,
+				D2F56F57140EBBFC00F72DF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F56F58140EBBFC00F72DF0 /* Build configuration list for PBXNativeTarget "Subjot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F56F59140EBBFC00F72DF0 /* Debug */,
+				D2F56F5A140EBBFC00F72DF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2F56F29140EBBFC00F72DF0 /* Project object */;
+}
