@@ -17,6 +17,7 @@
     static CachedUsers *instance;
     dispatch_once(&once, ^{
         instance = [[CachedUsers alloc] init];
+        instance->userCache = [[NSMutableDictionary alloc] init];
     });
     
     return instance;

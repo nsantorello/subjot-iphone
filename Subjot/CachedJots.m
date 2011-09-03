@@ -17,6 +17,7 @@
     static CachedJots *instance;
     dispatch_once(&once, ^{
         instance = [[CachedJots alloc] init];
+        instance->jotCache = [[NSMutableDictionary alloc] init];
     });
     
     return instance;
@@ -46,6 +47,12 @@
 {
     CachedJots* jots = [CachedJots sharedInstance];
     return [jots->jotCache objectForKey:[jotId stringValue]];
+}
+
+- (void)dealloc
+{
+    [jotCache release];
+    [super dealloc];
 }
 
 @end

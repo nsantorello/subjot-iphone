@@ -46,6 +46,10 @@
 		D23F93EA1412D0FB0032E317 /* stream@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F93E81412D0FB0032E317 /* stream@2x.png */; };
 		D23F93ED1412D31C0032E317 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F93EB1412D31C0032E317 /* settings.png */; };
 		D23F93EE1412D31C0032E317 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F93EC1412D31C0032E317 /* settings@2x.png */; };
+		D23F93F41412D3F20032E317 /* StreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93F21412D3F20032E317 /* StreamViewController.m */; };
+		D23F93F51412D3F20032E317 /* StreamView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F93F31412D3F20032E317 /* StreamView.xib */; };
+		D23F94021412D5FE0032E317 /* HomeStreamController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F94001412D5FE0032E317 /* HomeStreamController.m */; };
+		D23F94031412D5FE0032E317 /* HomeStream.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F94011412D5FE0032E317 /* HomeStream.xib */; };
 		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
 		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
 		D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */; };
@@ -127,6 +131,12 @@
 		D23F93E81412D0FB0032E317 /* stream@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stream@2x.png"; path = "Subjot/images/stream@2x.png"; sourceTree = "<group>"; };
 		D23F93EB1412D31C0032E317 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Subjot/images/settings.png; sourceTree = "<group>"; };
 		D23F93EC1412D31C0032E317 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@2x.png"; path = "Subjot/images/settings@2x.png"; sourceTree = "<group>"; };
+		D23F93F11412D3F20032E317 /* StreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = StreamViewController.h; sourceTree = "<group>"; };
+		D23F93F21412D3F20032E317 /* StreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamViewController.m; sourceTree = "<group>"; };
+		D23F93F31412D3F20032E317 /* StreamView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StreamView.xib; sourceTree = "<group>"; };
+		D23F93FF1412D5FE0032E317 /* HomeStreamController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeStreamController.h; sourceTree = "<group>"; };
+		D23F94001412D5FE0032E317 /* HomeStreamController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeStreamController.m; sourceTree = "<group>"; };
+		D23F94011412D5FE0032E317 /* HomeStream.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeStream.xib; sourceTree = "<group>"; };
 		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F56F36140EBBFC00F72DF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F56F38140EBBFC00F72DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -325,6 +335,26 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		D23F93F01412D3AE0032E317 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				D23F93F11412D3F20032E317 /* StreamViewController.h */,
+				D23F93F21412D3F20032E317 /* StreamViewController.m */,
+				D23F93F31412D3F20032E317 /* StreamView.xib */,
+			);
+			name = Stream;
+			sourceTree = "<group>";
+		};
+		D23F93FE1412D5E60032E317 /* Home Stream */ = {
+			isa = PBXGroup;
+			children = (
+				D23F93FF1412D5FE0032E317 /* HomeStreamController.h */,
+				D23F94001412D5FE0032E317 /* HomeStreamController.m */,
+				D23F94011412D5FE0032E317 /* HomeStream.xib */,
+			);
+			name = "Home Stream";
+			sourceTree = "<group>";
+		};
 		D2F56F27140EBBFC00F72DF0 = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +415,8 @@
 		D2F56F48140EBBFC00F72DF0 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				D23F93FE1412D5E60032E317 /* Home Stream */,
+				D23F93F01412D3AE0032E317 /* Stream */,
 				D2F56F49140EBBFC00F72DF0 /* SubjotAppDelegate_iPhone.h */,
 				D2F56F4A140EBBFC00F72DF0 /* SubjotAppDelegate_iPhone.m */,
 				D2F56F4C140EBBFC00F72DF0 /* MainWindow_iPhone.xib */,
@@ -465,6 +497,8 @@
 				D23F93EA1412D0FB0032E317 /* stream@2x.png in Resources */,
 				D23F93ED1412D31C0032E317 /* settings.png in Resources */,
 				D23F93EE1412D31C0032E317 /* settings@2x.png in Resources */,
+				D23F93F51412D3F20032E317 /* StreamView.xib in Resources */,
+				D23F94031412D5FE0032E317 /* HomeStream.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +541,8 @@
 				D23F93CA1412AA640032E317 /* SBJsonUTF8Stream.m in Sources */,
 				D23F93CB1412AA640032E317 /* SBJsonWriter.m in Sources */,
 				D23F93D21412B0810032E317 /* NSString+ParsedBool.m in Sources */,
+				D23F93F41412D3F20032E317 /* StreamViewController.m in Sources */,
+				D23F94021412D5FE0032E317 /* HomeStreamController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

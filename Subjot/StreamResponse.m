@@ -9,6 +9,7 @@
 #import "StreamResponse.h"
 #import "NSArray+Extensions.h"
 #import "Jot.h"
+#import "CachedJots.h"
 
 @implementation StreamResponse
 
@@ -21,7 +22,7 @@
     // Deserialize jot data from API result into jot objects.
     NSArray* jotData = [response valueForKey:@"jots"];
     jots = [jotData map:^id(id obj) {
-        return [[Jot fromDictionary:obj] retain];
+        return [CachedJots getJotFromDict:obj];
     }];
 }
 

@@ -16,11 +16,11 @@
 + (Jot*)fromDictionary:(NSDictionary*)dict
 {
     Jot* jot = [[[Jot alloc] init] autorelease];
-    jot.jotId = [NSNumber numberWithInt:[[dict valueForKey:@"id"] intValue]];
+    jot.jotId = [dict valueForKey:@"id"];
     jot.author = [CachedUsers getUserFromDict:[dict valueForKey:@"author"]];
     jot.text = [dict valueForKey:@"text"];
     jot.published = [dict valueForKey:@"published"];
-    jot.numComments = [NSNumber numberWithInt:[[dict valueForKey:@"numComments"] intValue]];
+    jot.numComments = [dict valueForKey:@"num_comments"];
     jot.subject = [dict valueForKey:@"subject"];
     return jot;
 }
@@ -32,6 +32,11 @@
     text = subject = nil;
     published = nil;
     [super dealloc];
+}
+
+- (NSString*)description
+{
+    return [NSString stringWithFormat:@"ID: %@. Author Name: %@. Text: %@. Published: %@. Num Comments: %@. Subject: %@.", jotId, author.name, text, published, numComments, subject];
 }
 
 @end
