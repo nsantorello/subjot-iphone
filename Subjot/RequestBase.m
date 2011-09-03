@@ -57,7 +57,7 @@
 	{
         SBJsonParser* parser = [[[SBJsonParser alloc] init] autorelease];
         NSDictionary* result = [parser objectWithData:retrievedData];
-		if (result) 
+		if (!result) 
 		{
 			// Invalidly-formatted plist returned.
 			[self requestFailed:@"Invalid JSON returned from API."];
@@ -95,7 +95,14 @@
 	
 	[fetcher beginFetchWithDelegate:self didFinishSelector:@selector(fetcher:finishedWithData:error:)];
 #else
-    NSData* fileContents = [NSData dataWithContentsOfURL:url];
+    NSError* error = nil;
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"failed" ofType:@""];
+    NSData* fileContents = [NSData dataWithContentsOfFile:path options:NSDataReadingUncached error:&error];
+    if (error)
+    {
+        [self requestFailed:[error localizedDescription]];
+        return;
+    }
     [self fetcher:nil finishedWithData:fileContents error:nil];
 #endif
 }
