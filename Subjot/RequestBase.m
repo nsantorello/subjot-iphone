@@ -96,7 +96,7 @@
 	[fetcher beginFetchWithDelegate:self didFinishSelector:@selector(fetcher:finishedWithData:error:)];
 #else
     NSError* error = nil;
-    NSString* path = [[NSBundle mainBundle] pathForResource:@"failed" ofType:@""];
+    NSString* path = [[NSBundle mainBundle] pathForResource:[url lastPathComponent] ofType:@""];
     NSData* fileContents = [NSData dataWithContentsOfFile:path options:NSDataReadingUncached error:&error];
     if (error)
     {

@@ -1,5 +1,5 @@
 {
-    "succeeded" : false,
+    "success" : false,
     "version" : 1.0,
     "error_string" : "There was a problem!  Duh!"
 }

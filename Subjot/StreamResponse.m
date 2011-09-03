@@ -21,7 +21,7 @@
     // Deserialize jot data from API result into jot objects.
     NSArray* jotData = [response valueForKey:@"jots"];
     jots = [jotData map:^id(id obj) {
-        return [[Jot fromDictionary:obj] autorelease];
+        return [[Jot fromDictionary:obj] retain];
     }];
 }
 

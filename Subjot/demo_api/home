@@ -1,5 +1,5 @@
 {
-    "succeeded" : true,
+    "success" : true,
     "version" : 1.0,
     "jots" : 
         [
@@ -10,11 +10,11 @@
                     "id" : 1,
                     "name" : "Noah Santorello",
                     "username" : "Noah",
-                    "profile_pic_url" : "http://some pic",
-                }
+                    "profile_pic_url" : "http://some pic"
+                },
                 "text" : "Hi there!",
                 "published" : "Jan 1, 1970",
-                "num_comments" : 7
+                "num_comments" : 7,
                 "subject" : "awesomeness"
             }
         ]
