@@ -22,4 +22,30 @@
     return instance;
 }
 
+- (Jot*)createJotFromDict:(NSDictionary*)dict
+{
+    Jot* jot = [Jot fromDictionary:dict];
+    [jotCache setValue:jot forKey:[jot.jotId stringValue]];
+    return jot;
+}
+
+
++ (Jot*)getJotFromDict:(NSDictionary*)dict
+{
+    CachedJots* jots = [CachedJots sharedInstance];
+    Jot* jot = [jots->jotCache objectForKey:[dict valueForKey:@"id"]];
+    if (!jot)
+    {
+        jot = [jots createJotFromDict:dict];
+    }
+    
+    return jot;
+}
+
++ (Jot*)getJotById:(NSNumber*)jotId
+{
+    CachedJots* jots = [CachedJots sharedInstance];
+    return [jots->jotCache objectForKey:[jotId stringValue]];
+}
+
 @end

@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Jot.h"
 
 @interface CachedJots : NSObject {
-    
+    NSMutableDictionary* jotCache;
 }
 
 + (CachedJots*)sharedInstance;
+
++ (Jot*)getJotFromDict:(NSDictionary*)dict;
++ (Jot*)getJotById:(NSNumber*)jotId;
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "StreamRequest.h"
-#import "StreamResponse.h"
 
 @implementation StreamRequest
 
@@ -15,7 +14,7 @@
 {
 	self = [self init];
 	self.delegate = del;
-    responseClass = NSStringFromClass([[[StreamResponse alloc] init] autorelease]);
+    responseClass = NSStringFromClass([[[[StreamResponse alloc] init] autorelease] class]);
 	return self;
 }
 

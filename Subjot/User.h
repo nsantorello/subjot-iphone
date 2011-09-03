@@ -18,4 +18,6 @@
 @property (copy) NSString* username;
 @property (copy) NSString* profilePicUrl;
 
++ (User*)fromDictionary:(NSDictionary*)dict;
+
 @end

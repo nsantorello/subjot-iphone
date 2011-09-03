@@ -24,11 +24,7 @@
 
 - (User*)createUserFromDict:(NSDictionary*)dict
 {
-    User* user = [[[User alloc] init] autorelease];
-    user.name = [dict valueForKey:@"name"];
-    user.profilePicUrl = [dict valueForKey:@"profile_pic_url"];
-    user.userId = [NSNumber numberWithInt:[[dict valueForKey:@"id"] intValue]];
-    user.username = [dict valueForKey:@"username"];
+    User* user = [User fromDictionary:dict];
     [userCache setValue:user forKey:[user.userId stringValue]];
     return user;
 }

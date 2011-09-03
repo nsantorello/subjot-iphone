@@ -21,6 +21,37 @@
 	return self;
 }
 
+- (void)requestFinished:(ResponseBase*)response
+{
+	if ([delegate respondsToSelector:@selector(requestFinishedBase:)])
+	{
+		[delegate performSelector:@selector(requestFinishedBase:) withObject:response];
+	}
+}
+
+- (void)requestFailed:(NSString*)errorString
+{
+	if ([delegate respondsToSelector:@selector(requestFailed:)])
+	{
+		[delegate performSelector:@selector(requestFailed:)];
+	}
+}
+
+
+
+- (void)requestFinishedBase:(NSData*)dledData
+{
+	// Convert to NSDictionary.
+	
+	// Check to see if there was an API error.
+	
+	// Notify subclasses of success.
+	if ([delegate respondsToSelector:@selector(requestFinished:)])
+	{
+		[delegate performSelector:@selector(requestFinished:) withObject:dledData];
+	}
+}
+
 - (void)fetcher:(GTMHTTPFetcher *)fetcher finishedWithData:(NSData *) retrievedData error:(NSError *)error {
 	if (!error) 
 	{
@@ -72,37 +103,6 @@
 - (void)beginRequestWithURL:(NSURL*)url andDelegate:(id)del
 {
 	[self beginRequestWithURL:url andDelegate:del andPostData:nil];
-}
-
-- (void)requestFinished:(ResponseBase*)response
-{
-	if ([delegate respondsToSelector:@selector(requestFinishedBase:)])
-	{
-		[delegate performSelector:@selector(requestFinishedBase:) withObject:response];
-	}
-}
-
-- (void)requestFailed:(NSString*)errorString
-{
-	if ([delegate respondsToSelector:@selector(requestFailed:)])
-	{
-		[delegate performSelector:@selector(requestFailed:)];
-	}
-}
-
-
-
-- (void)requestFinishedBase:(NSData*)dledData
-{
-	// Convert to NSDictionary.
-	
-	// Check to see if there was an API error.
-	
-	// Notify subclasses of success.
-	if ([delegate respondsToSelector:@selector(requestFinished:)])
-	{
-		[delegate performSelector:@selector(requestFinished:) withObject:dledData];
-	}
 }
 
 @end

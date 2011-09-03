@@ -37,7 +37,7 @@
 		D23F93CB1412AA640032E317 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93BF1412AA640032E317 /* SBJsonWriter.m */; };
 		D23F93CD1412AF9C0032E317 /* failed in Resources */ = {isa = PBXBuildFile; fileRef = D23F93CC1412AF9C0032E317 /* failed */; };
 		D23F93D21412B0810032E317 /* NSString+ParsedBool.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93D11412B0810032E317 /* NSString+ParsedBool.m */; };
-		D23F93D51412B70C0032E317 /* home in Resources */ = {isa = PBXBuildFile; fileRef = D23F93D41412B70C0032E317 /* home */; };
+		D23F93D71412BB430032E317 /* home in Resources */ = {isa = PBXBuildFile; fileRef = D23F93D61412BB430032E317 /* home */; };
 		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
 		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
 		D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */; };
@@ -110,7 +110,7 @@
 		D23F93CC1412AF9C0032E317 /* failed */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = failed; sourceTree = "<group>"; };
 		D23F93D01412B0810032E317 /* NSString+ParsedBool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ParsedBool.h"; sourceTree = "<group>"; };
 		D23F93D11412B0810032E317 /* NSString+ParsedBool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ParsedBool.m"; sourceTree = "<group>"; };
-		D23F93D41412B70C0032E317 /* home */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = home; path = demo_api/home; sourceTree = "<group>"; };
+		D23F93D61412BB430032E317 /* home */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = home; path = demo_api/streams/home; sourceTree = "<group>"; };
 		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F56F36140EBBFC00F72DF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F56F38140EBBFC00F72DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -297,7 +297,7 @@
 		D23F93D31412B6060032E317 /* streams */ = {
 			isa = PBXGroup;
 			children = (
-				D23F93D41412B70C0032E317 /* home */,
+				D23F93D61412BB430032E317 /* home */,
 			);
 			name = streams;
 			sourceTree = "<group>";
@@ -432,7 +432,7 @@
 				D2F56F4E140EBBFC00F72DF0 /* MainWindow_iPhone.xib in Resources */,
 				D2F56F55140EBBFC00F72DF0 /* MainWindow_iPad.xib in Resources */,
 				D23F93CD1412AF9C0032E317 /* failed in Resources */,
-				D23F93D51412B70C0032E317 /* home in Resources */,
+				D23F93D71412BB430032E317 /* home in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

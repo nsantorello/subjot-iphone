@@ -7,6 +7,7 @@
 //
 
 #import "SubjotAppDelegate.h"
+#import "StreamRequest.h"
 
 @implementation SubjotAppDelegate
 
@@ -17,6 +18,7 @@
 {
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
+    [StreamRequest homeRequestWithDelegate:nil];
     return YES;
 }
 
