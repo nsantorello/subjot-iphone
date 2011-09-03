@@ -7,15 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HTTPFetcher.h"
 
 @interface RequestBase : NSObject 
 {
-	id delegate;
+    NSString* responseClass;
 }
 
 @property (nonatomic, assign) id delegate;
 
 - (id)initWithDelegate:(id)del;
+- (void)beginRequestWithURL:(NSURL*)url andDelegate:(id)del;
+- (void)beginRequestWithURL:(NSURL*)url andDelegate:(id)del andPostData:(NSString*)postData;
 
 @end

@@ -7,10 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "User.h"
 
 @interface Jot : NSObject {
     
 }
+
+@property (copy) NSNumber* jotId;
+@property (retain) User* author;
+@property (copy) NSString* text;
+@property (copy) NSDate* published;
+@property (copy) NSNumber* numComments;
+@property (copy) NSString* subject;
 
 @end

@@ -7,14 +7,22 @@
 //
 
 #import "StreamRequest.h"
+#import "StreamResponse.h"
 
 @implementation StreamRequest
+
+- (id)initWithDelegate:(id)del
+{
+	self = [self init];
+	self.delegate = del;
+    responseClass = NSStringFromClass([[[StreamResponse alloc] init] autorelease]);
+	return self;
+}
 
 + (void)requestWithDelegate:(id)del andUrl:(NSString*)url
 {
 	StreamRequest* req = [[StreamRequest alloc] initWithDelegate:del];	
-	
-	[HTTPFetcher beginRequestWithURL:[NSURL URLWithString:url] andDelegate:req];
+	[req beginRequestWithURL:[NSURL URLWithString:url] andDelegate:req];
 	[req release];
 }
 

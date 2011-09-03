@@ -10,11 +10,12 @@
 
 
 @interface ResponseBase : NSObject {
-	BOOL succeeded;
-	NSString* errorString;
+    NSDictionary* responseData;
 }
 
 @property (assign) BOOL succeeded;
 @property (copy) NSString* errorString;
+
+- (void)setData:(NSDictionary*)responseData;
 
 @end

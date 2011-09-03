@@ -13,9 +13,15 @@
 
 @synthesize succeeded, errorString;
 
+- (void)setData:(NSDictionary*)responseData
+{
+    responseData = [responseData retain];
+}
+
 - (void)dealloc
 {
-	[errorString release];
+	errorString = nil;
+    [responseData release];
 	[super dealloc];
 }
 
