@@ -38,6 +38,14 @@
 		D23F93D21412B0810032E317 /* NSString+ParsedBool.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93D11412B0810032E317 /* NSString+ParsedBool.m */; };
 		D23F93DB1412C1960032E317 /* home in Resources */ = {isa = PBXBuildFile; fileRef = D23F93DA1412C1960032E317 /* home */; };
 		D23F93DD1412C1A30032E317 /* failed in Resources */ = {isa = PBXBuildFile; fileRef = D23F93DC1412C1A30032E317 /* failed */; };
+		D23F93E11412CC410032E317 /* explore.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F93DF1412CC410032E317 /* explore.png */; };
+		D23F93E21412CC410032E317 /* explore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F93E01412CC410032E317 /* explore@2x.png */; };
+		D23F93E51412CD910032E317 /* notifications.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F93E31412CD910032E317 /* notifications.png */; };
+		D23F93E61412CD910032E317 /* notifications@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F93E41412CD910032E317 /* notifications@2x.png */; };
+		D23F93E91412D0FB0032E317 /* stream.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F93E71412D0FB0032E317 /* stream.png */; };
+		D23F93EA1412D0FB0032E317 /* stream@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F93E81412D0FB0032E317 /* stream@2x.png */; };
+		D23F93ED1412D31C0032E317 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F93EB1412D31C0032E317 /* settings.png */; };
+		D23F93EE1412D31C0032E317 /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D23F93EC1412D31C0032E317 /* settings@2x.png */; };
 		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
 		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
 		D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */; };
@@ -111,6 +119,14 @@
 		D23F93D11412B0810032E317 /* NSString+ParsedBool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ParsedBool.m"; sourceTree = "<group>"; };
 		D23F93DA1412C1960032E317 /* home */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = home; path = demo_api/home; sourceTree = "<group>"; };
 		D23F93DC1412C1A30032E317 /* failed */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = failed; path = demo_api/failed; sourceTree = "<group>"; };
+		D23F93DF1412CC410032E317 /* explore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = explore.png; path = Subjot/images/explore.png; sourceTree = "<group>"; };
+		D23F93E01412CC410032E317 /* explore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "explore@2x.png"; path = "Subjot/images/explore@2x.png"; sourceTree = "<group>"; };
+		D23F93E31412CD910032E317 /* notifications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notifications.png; path = Subjot/images/notifications.png; sourceTree = "<group>"; };
+		D23F93E41412CD910032E317 /* notifications@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "notifications@2x.png"; path = "Subjot/images/notifications@2x.png"; sourceTree = "<group>"; };
+		D23F93E71412D0FB0032E317 /* stream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stream.png; path = Subjot/images/stream.png; sourceTree = "<group>"; };
+		D23F93E81412D0FB0032E317 /* stream@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stream@2x.png"; path = "Subjot/images/stream@2x.png"; sourceTree = "<group>"; };
+		D23F93EB1412D31C0032E317 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Subjot/images/settings.png; sourceTree = "<group>"; };
+		D23F93EC1412D31C0032E317 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings@2x.png"; path = "Subjot/images/settings@2x.png"; sourceTree = "<group>"; };
 		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F56F36140EBBFC00F72DF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F56F38140EBBFC00F72DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -294,9 +310,25 @@
 			name = Networking;
 			sourceTree = "<group>";
 		};
+		D23F93DE1412CC320032E317 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D23F93EB1412D31C0032E317 /* settings.png */,
+				D23F93EC1412D31C0032E317 /* settings@2x.png */,
+				D23F93E71412D0FB0032E317 /* stream.png */,
+				D23F93E81412D0FB0032E317 /* stream@2x.png */,
+				D23F93E31412CD910032E317 /* notifications.png */,
+				D23F93E41412CD910032E317 /* notifications@2x.png */,
+				D23F93DF1412CC410032E317 /* explore.png */,
+				D23F93E01412CC410032E317 /* explore@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		D2F56F27140EBBFC00F72DF0 = {
 			isa = PBXGroup;
 			children = (
+				D23F93DE1412CC320032E317 /* Images */,
 				D2F56F3C140EBBFC00F72DF0 /* Subjot */,
 				D2F56F35140EBBFC00F72DF0 /* Frameworks */,
 				D2F56F33140EBBFC00F72DF0 /* Products */,
@@ -425,6 +457,14 @@
 				D2F56F55140EBBFC00F72DF0 /* MainWindow_iPad.xib in Resources */,
 				D23F93DB1412C1960032E317 /* home in Resources */,
 				D23F93DD1412C1A30032E317 /* failed in Resources */,
+				D23F93E11412CC410032E317 /* explore.png in Resources */,
+				D23F93E21412CC410032E317 /* explore@2x.png in Resources */,
+				D23F93E51412CD910032E317 /* notifications.png in Resources */,
+				D23F93E61412CD910032E317 /* notifications@2x.png in Resources */,
+				D23F93E91412D0FB0032E317 /* stream.png in Resources */,
+				D23F93EA1412D0FB0032E317 /* stream@2x.png in Resources */,
+				D23F93ED1412D31C0032E317 /* settings.png in Resources */,
+				D23F93EE1412D31C0032E317 /* settings@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
