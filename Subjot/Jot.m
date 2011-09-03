@@ -7,7 +7,7 @@
 //
 
 #import "Jot.h"
-
+#import "CachedUsers.h"
 
 @implementation Jot
 
@@ -16,11 +16,11 @@
 + (Jot*)fromDictionary:(NSDictionary*)dict
 {
     Jot* jot = [[[Jot alloc] init] autorelease];
-    jot.jotId = [dict valueForKey:@"id"];
-    //jot.author = [dict valueForKey:@"id"];
+    jot.jotId = [NSNumber numberWithInt:[[dict valueForKey:@"id"] intValue]];
+    jot.author = [CachedUsers getUserFromDict:[dict valueForKey:@"author"]];
     jot.text = [dict valueForKey:@"text"];
     jot.published = [dict valueForKey:@"published"];
-    jot.numComments = [dict valueForKey:@"numComments"];
+    jot.numComments = [NSNumber numberWithInt:[[dict valueForKey:@"numComments"] intValue]];
     jot.subject = [dict valueForKey:@"subject"];
     return jot;
 }

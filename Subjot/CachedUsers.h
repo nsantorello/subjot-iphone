@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "User.h"
 
 @interface CachedUsers : NSObject {
-    
+    NSMutableDictionary* userCache;
 }
 
 + (CachedUsers*)sharedInstance;
+
++ (User*)getUserFromDict:(NSDictionary*)dict;
++ (User*)getUserById:(NSNumber*)userId;
 
 @end

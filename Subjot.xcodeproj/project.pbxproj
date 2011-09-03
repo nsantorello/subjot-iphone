@@ -36,6 +36,8 @@
 		D23F93C91412AA640032E317 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93BB1412AA640032E317 /* SBJsonTokeniser.m */; };
 		D23F93CA1412AA640032E317 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93BD1412AA640032E317 /* SBJsonUTF8Stream.m */; };
 		D23F93CB1412AA640032E317 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93BF1412AA640032E317 /* SBJsonWriter.m */; };
+		D23F93CD1412AF9C0032E317 /* FailedRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = D23F93CC1412AF9C0032E317 /* FailedRequest.json */; };
+		D23F93D21412B0810032E317 /* NSString+ParsedBool.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93D11412B0810032E317 /* NSString+ParsedBool.m */; };
 		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
 		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
 		D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */; };
@@ -106,6 +108,9 @@
 		D23F93BD1412AA640032E317 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = JSON/SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		D23F93BE1412AA640032E317 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = JSON/SBJsonWriter.h; sourceTree = "<group>"; };
 		D23F93BF1412AA640032E317 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = JSON/SBJsonWriter.m; sourceTree = "<group>"; };
+		D23F93CC1412AF9C0032E317 /* FailedRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FailedRequest.json; sourceTree = "<group>"; };
+		D23F93D01412B0810032E317 /* NSString+ParsedBool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ParsedBool.h"; sourceTree = "<group>"; };
+		D23F93D11412B0810032E317 /* NSString+ParsedBool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ParsedBool.m"; sourceTree = "<group>"; };
 		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F56F36140EBBFC00F72DF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F56F38140EBBFC00F72DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -195,13 +200,9 @@
 		D23F93721412844D0032E317 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D23F93CF1412B0610032E317 /* Networking */,
+				D23F93CE1412B0530032E317 /* Custom Categories */,
 				D23F93A61412A9F80032E317 /* JSON */,
-				D23F93A31412A25E0032E317 /* NSArray+Extensions.h */,
-				D23F93A41412A25E0032E317 /* NSArray+Extensions.m */,
-				D23F93731412845A0032E317 /* GTMHTTPFetcher.h */,
-				D23F93741412845A0032E317 /* GTMHTTPFetcher.m */,
-				D23F93751412845A0032E317 /* GTMHTTPUploadFetcher.h */,
-				D23F93761412845A0032E317 /* GTMHTTPUploadFetcher.m */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -223,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				D23F9394141299880032E317 /* HomeStream.json */,
+				D23F93CC1412AF9C0032E317 /* FailedRequest.json */,
 			);
 			name = "Demo API";
 			sourceTree = "<group>";
@@ -268,6 +270,28 @@
 				D23F93BF1412AA640032E317 /* SBJsonWriter.m */,
 			);
 			name = JSON;
+			sourceTree = "<group>";
+		};
+		D23F93CE1412B0530032E317 /* Custom Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D23F93A31412A25E0032E317 /* NSArray+Extensions.h */,
+				D23F93A41412A25E0032E317 /* NSArray+Extensions.m */,
+				D23F93D01412B0810032E317 /* NSString+ParsedBool.h */,
+				D23F93D11412B0810032E317 /* NSString+ParsedBool.m */,
+			);
+			name = "Custom Categories";
+			sourceTree = "<group>";
+		};
+		D23F93CF1412B0610032E317 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D23F93731412845A0032E317 /* GTMHTTPFetcher.h */,
+				D23F93741412845A0032E317 /* GTMHTTPFetcher.m */,
+				D23F93751412845A0032E317 /* GTMHTTPUploadFetcher.h */,
+				D23F93761412845A0032E317 /* GTMHTTPUploadFetcher.m */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		D2F56F27140EBBFC00F72DF0 = {
@@ -400,6 +424,7 @@
 				D2F56F4E140EBBFC00F72DF0 /* MainWindow_iPhone.xib in Resources */,
 				D2F56F55140EBBFC00F72DF0 /* MainWindow_iPad.xib in Resources */,
 				D23F9395141299880032E317 /* HomeStream.json in Resources */,
+				D23F93CD1412AF9C0032E317 /* FailedRequest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +466,7 @@
 				D23F93C91412AA640032E317 /* SBJsonTokeniser.m in Sources */,
 				D23F93CA1412AA640032E317 /* SBJsonUTF8Stream.m in Sources */,
 				D23F93CB1412AA640032E317 /* SBJsonWriter.m in Sources */,
+				D23F93D21412B0810032E317 /* NSString+ParsedBool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

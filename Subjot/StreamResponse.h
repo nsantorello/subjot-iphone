@@ -13,5 +13,8 @@
     
 }
 
+@property (retain) NSArray* jots;
+
+- (void)setData:(NSDictionary*)response;
 
 @end

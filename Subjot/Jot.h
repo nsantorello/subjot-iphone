@@ -20,4 +20,6 @@
 @property (copy) NSNumber* numComments;
 @property (copy) NSString* subject;
 
++ (Jot*)fromDictionary:(NSDictionary*)dict;
+
 @end

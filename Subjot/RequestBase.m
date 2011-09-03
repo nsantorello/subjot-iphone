@@ -38,16 +38,6 @@
 	[self beginRequestWithURL:url andDelegate:del andPostData:nil];
 }
 
-- (NSDictionary *)dictionaryFromData:(NSData *)data errorString:(NSString**)errorString
-{
-	NSDictionary *result = [NSDictionary dictionaryWithDictionary:[NSPropertyListSerialization propertyListFromData:data 
-																								   mutabilityOption:NSPropertyListImmutable 
-																											 format:nil 
-																								   errorDescription:errorString]];
-	return result;
-}
-
-
 - (void)requestFinished:(ResponseBase*)response
 {
 	if ([delegate respondsToSelector:@selector(requestFinishedBase:)])
@@ -67,12 +57,12 @@
 - (void)fetcher:(GTMHTTPFetcher *)fetcher finishedWithData:(NSData *) retrievedData error:(NSError *)error {
 	if (!error) 
 	{
-		NSString *errorString = nil;
-		NSDictionary *result = [self dictionaryFromData:retrievedData errorString:&errorString];
-		if (errorString) 
+        SBJsonParser* parser = [[[SBJsonParser alloc] init] autorelease];
+        NSDictionary* result = [parser objectWithData:retrievedData];
+		if (result) 
 		{
 			// Invalidly-formatted plist returned.
-			[self requestFailed:@"Invalidly formatted API result."];
+			[self requestFailed:@"Invalid JSON returned from API."];
 			return;
 		}
         

@@ -14,8 +14,9 @@
 }
 
 @property (assign) BOOL succeeded;
+@property (copy) NSString* apiVersion;
 @property (copy) NSString* errorString;
 
-- (void)setData:(NSDictionary*)responseData;
+- (void)setData:(NSDictionary*)response;
 
 @end

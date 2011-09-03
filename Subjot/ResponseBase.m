@@ -7,20 +7,23 @@
 //
 
 #import "ResponseBase.h"
-
+#import "NSString+ParsedBool.h"
 
 @implementation ResponseBase
 
-@synthesize succeeded, errorString;
+@synthesize succeeded, errorString, apiVersion;
 
-- (void)setData:(NSDictionary*)responseData
+- (void)setData:(NSDictionary*)response
 {
-    responseData = [responseData retain];
+    responseData = [response retain];
+    succeeded = [[response valueForKey:@"success"] parsedBool];
+    apiVersion = [response valueForKey:@"version"];
+    errorString = [response valueForKey:@"error_string"];
 }
 
 - (void)dealloc
 {
-	errorString = nil;
+	errorString = apiVersion = nil;
     [responseData release];
 	[super dealloc];
 }
