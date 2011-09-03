@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D23F935514114E0B0032E317 /* Jot.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F935414114E0B0032E317 /* Jot.m */; };
+		D23F936E141284410032E317 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F936D141284410032E317 /* Reachability.m */; };
+		D23F9371141284490032E317 /* RequestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F9370141284490032E317 /* RequestBase.m */; };
+		D23F93771412845A0032E317 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93741412845A0032E317 /* GTMHTTPFetcher.m */; };
+		D23F93781412845A0032E317 /* GTMHTTPUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93761412845A0032E317 /* GTMHTTPUploadFetcher.m */; };
+		D23F937B1412847D0032E317 /* HTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F937A1412847D0032E317 /* HTTPFetcher.m */; };
+		D23F937D1412855E0032E317 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23F937C1412855E0032E317 /* SystemConfiguration.framework */; };
+		D23F9380141288E10032E317 /* ResponseBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F937F141288E10032E317 /* ResponseBase.m */; };
+		D23F938314128A780032E317 /* StreamRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F938214128A780032E317 /* StreamRequest.m */; };
+		D23F938714128AD90032E317 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F938614128AD90032E317 /* Constants.m */; };
+		D23F938A14128AE10032E317 /* C.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F938914128AE10032E317 /* C.m */; };
+		D23F938D14128B5B0032E317 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F938C14128B5B0032E317 /* Settings.m */; };
 		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
 		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
 		D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */; };
@@ -20,6 +32,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D23F935314114E0B0032E317 /* Jot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jot.h; sourceTree = "<group>"; };
+		D23F935414114E0B0032E317 /* Jot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jot.m; sourceTree = "<group>"; };
+		D23F936C141284410032E317 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		D23F936D141284410032E317 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D23F936F141284490032E317 /* RequestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestBase.h; sourceTree = "<group>"; };
+		D23F9370141284490032E317 /* RequestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestBase.m; sourceTree = "<group>"; };
+		D23F93731412845A0032E317 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		D23F93741412845A0032E317 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		D23F93751412845A0032E317 /* GTMHTTPUploadFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPUploadFetcher.h; sourceTree = "<group>"; };
+		D23F93761412845A0032E317 /* GTMHTTPUploadFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPUploadFetcher.m; sourceTree = "<group>"; };
+		D23F93791412847D0032E317 /* HTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPFetcher.h; sourceTree = "<group>"; };
+		D23F937A1412847D0032E317 /* HTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPFetcher.m; sourceTree = "<group>"; };
+		D23F937C1412855E0032E317 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D23F937E141288E10032E317 /* ResponseBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseBase.h; sourceTree = "<group>"; };
+		D23F937F141288E10032E317 /* ResponseBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseBase.m; sourceTree = "<group>"; };
+		D23F938114128A780032E317 /* StreamRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamRequest.h; sourceTree = "<group>"; };
+		D23F938214128A780032E317 /* StreamRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamRequest.m; sourceTree = "<group>"; };
+		D23F938514128AD90032E317 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D23F938614128AD90032E317 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		D23F938814128AE10032E317 /* C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C.h; sourceTree = "<group>"; };
+		D23F938914128AE10032E317 /* C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C.m; sourceTree = "<group>"; };
+		D23F938B14128B5B0032E317 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		D23F938C14128B5B0032E317 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F56F36140EBBFC00F72DF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F56F38140EBBFC00F72DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23F937D1412855E0032E317 /* SystemConfiguration.framework in Frameworks */,
 				D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */,
 				D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */,
 				D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */,
@@ -52,9 +88,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D23F934F14114CBF0032E317 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		D23F935114114CCE0032E317 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D23F935314114E0B0032E317 /* Jot.h */,
+				D23F935414114E0B0032E317 /* Jot.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		D23F935214114CED0032E317 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D23F93791412847D0032E317 /* HTTPFetcher.h */,
+				D23F937A1412847D0032E317 /* HTTPFetcher.m */,
+				D23F936C141284410032E317 /* Reachability.h */,
+				D23F936D141284410032E317 /* Reachability.m */,
+				D23F935714114E2A0032E317 /* Responses */,
+				D23F935614114E250032E317 /* Requests */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		D23F935614114E250032E317 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				D23F936F141284490032E317 /* RequestBase.h */,
+				D23F9370141284490032E317 /* RequestBase.m */,
+				D23F938114128A780032E317 /* StreamRequest.h */,
+				D23F938214128A780032E317 /* StreamRequest.m */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		D23F935714114E2A0032E317 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				D23F937E141288E10032E317 /* ResponseBase.h */,
+				D23F937F141288E10032E317 /* ResponseBase.m */,
+			);
+			name = Responses;
+			sourceTree = "<group>";
+		};
+		D23F93721412844D0032E317 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D23F93731412845A0032E317 /* GTMHTTPFetcher.h */,
+				D23F93741412845A0032E317 /* GTMHTTPFetcher.m */,
+				D23F93751412845A0032E317 /* GTMHTTPUploadFetcher.h */,
+				D23F93761412845A0032E317 /* GTMHTTPUploadFetcher.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		D23F938414128ACB0032E317 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D23F938514128AD90032E317 /* Constants.h */,
+				D23F938614128AD90032E317 /* Constants.m */,
+				D23F938814128AE10032E317 /* C.h */,
+				D23F938914128AE10032E317 /* C.m */,
+				D23F938B14128B5B0032E317 /* Settings.h */,
+				D23F938C14128B5B0032E317 /* Settings.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		D2F56F27140EBBFC00F72DF0 = {
 			isa = PBXGroup;
 			children = (
+				D23F937C1412855E0032E317 /* SystemConfiguration.framework */,
 				D2F56F3C140EBBFC00F72DF0 /* Subjot */,
 				D2F56F35140EBBFC00F72DF0 /* Frameworks */,
 				D2F56F33140EBBFC00F72DF0 /* Products */,
@@ -82,6 +192,11 @@
 		D2F56F3C140EBBFC00F72DF0 /* Subjot */ = {
 			isa = PBXGroup;
 			children = (
+				D23F938414128ACB0032E317 /* Settings */,
+				D23F93721412844D0032E317 /* Libraries */,
+				D23F935214114CED0032E317 /* API */,
+				D23F935114114CCE0032E317 /* Data */,
+				D23F934F14114CBF0032E317 /* Login */,
 				D2F56F45140EBBFC00F72DF0 /* SubjotAppDelegate.h */,
 				D2F56F46140EBBFC00F72DF0 /* SubjotAppDelegate.m */,
 				D2F56F48140EBBFC00F72DF0 /* iPhone */,
@@ -189,6 +304,17 @@
 				D2F56F47140EBBFC00F72DF0 /* SubjotAppDelegate.m in Sources */,
 				D2F56F4B140EBBFC00F72DF0 /* SubjotAppDelegate_iPhone.m in Sources */,
 				D2F56F52140EBBFC00F72DF0 /* SubjotAppDelegate_iPad.m in Sources */,
+				D23F935514114E0B0032E317 /* Jot.m in Sources */,
+				D23F936E141284410032E317 /* Reachability.m in Sources */,
+				D23F9371141284490032E317 /* RequestBase.m in Sources */,
+				D23F93771412845A0032E317 /* GTMHTTPFetcher.m in Sources */,
+				D23F93781412845A0032E317 /* GTMHTTPUploadFetcher.m in Sources */,
+				D23F937B1412847D0032E317 /* HTTPFetcher.m in Sources */,
+				D23F9380141288E10032E317 /* ResponseBase.m in Sources */,
+				D23F938314128A780032E317 /* StreamRequest.m in Sources */,
+				D23F938714128AD90032E317 /* Constants.m in Sources */,
+				D23F938A14128AE10032E317 /* C.m in Sources */,
+				D23F938D14128B5B0032E317 /* Settings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +429,7 @@
 				D2F56F5A140EBBFC00F72DF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
