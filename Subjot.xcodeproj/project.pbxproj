@@ -19,7 +19,6 @@
 		D23F938A14128AE10032E317 /* C.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F938914128AE10032E317 /* C.m */; };
 		D23F938D14128B5B0032E317 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F938C14128B5B0032E317 /* Settings.m */; };
 		D23F93901412970C0032E317 /* StreamResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F938F1412970C0032E317 /* StreamResponse.m */; };
-		D23F9395141299880032E317 /* HomeStream.json in Resources */ = {isa = PBXBuildFile; fileRef = D23F9394141299880032E317 /* HomeStream.json */; };
 		D23F939814129F3C0032E317 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F939714129F3C0032E317 /* User.m */; };
 		D23F939F1412A1D00032E317 /* CachedUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F939E1412A1D00032E317 /* CachedUsers.m */; };
 		D23F93A21412A1E90032E317 /* CachedJots.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93A11412A1E90032E317 /* CachedJots.m */; };
@@ -36,8 +35,9 @@
 		D23F93C91412AA640032E317 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93BB1412AA640032E317 /* SBJsonTokeniser.m */; };
 		D23F93CA1412AA640032E317 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93BD1412AA640032E317 /* SBJsonUTF8Stream.m */; };
 		D23F93CB1412AA640032E317 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93BF1412AA640032E317 /* SBJsonWriter.m */; };
-		D23F93CD1412AF9C0032E317 /* FailedRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = D23F93CC1412AF9C0032E317 /* FailedRequest.json */; };
+		D23F93CD1412AF9C0032E317 /* failed in Resources */ = {isa = PBXBuildFile; fileRef = D23F93CC1412AF9C0032E317 /* failed */; };
 		D23F93D21412B0810032E317 /* NSString+ParsedBool.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93D11412B0810032E317 /* NSString+ParsedBool.m */; };
+		D23F93D51412B70C0032E317 /* home in Resources */ = {isa = PBXBuildFile; fileRef = D23F93D41412B70C0032E317 /* home */; };
 		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
 		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
 		D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */; };
@@ -74,7 +74,6 @@
 		D23F938C14128B5B0032E317 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		D23F938E1412970C0032E317 /* StreamResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamResponse.h; sourceTree = "<group>"; };
 		D23F938F1412970C0032E317 /* StreamResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamResponse.m; sourceTree = "<group>"; };
-		D23F9394141299880032E317 /* HomeStream.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HomeStream.json; sourceTree = "<group>"; };
 		D23F939614129F3C0032E317 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		D23F939714129F3C0032E317 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		D23F939D1412A1D00032E317 /* CachedUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedUsers.h; sourceTree = "<group>"; };
@@ -108,9 +107,10 @@
 		D23F93BD1412AA640032E317 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = JSON/SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		D23F93BE1412AA640032E317 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = JSON/SBJsonWriter.h; sourceTree = "<group>"; };
 		D23F93BF1412AA640032E317 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = JSON/SBJsonWriter.m; sourceTree = "<group>"; };
-		D23F93CC1412AF9C0032E317 /* FailedRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FailedRequest.json; sourceTree = "<group>"; };
+		D23F93CC1412AF9C0032E317 /* failed */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = failed; sourceTree = "<group>"; };
 		D23F93D01412B0810032E317 /* NSString+ParsedBool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ParsedBool.h"; sourceTree = "<group>"; };
 		D23F93D11412B0810032E317 /* NSString+ParsedBool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ParsedBool.m"; sourceTree = "<group>"; };
+		D23F93D41412B70C0032E317 /* home */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = home; path = demo_api/home; sourceTree = "<group>"; };
 		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F56F36140EBBFC00F72DF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F56F38140EBBFC00F72DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -223,8 +223,8 @@
 		D23F9391141299580032E317 /* Demo API */ = {
 			isa = PBXGroup;
 			children = (
-				D23F9394141299880032E317 /* HomeStream.json */,
-				D23F93CC1412AF9C0032E317 /* FailedRequest.json */,
+				D23F93D31412B6060032E317 /* streams */,
+				D23F93CC1412AF9C0032E317 /* failed */,
 			);
 			name = "Demo API";
 			sourceTree = "<group>";
@@ -292,6 +292,14 @@
 				D23F93761412845A0032E317 /* GTMHTTPUploadFetcher.m */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		D23F93D31412B6060032E317 /* streams */ = {
+			isa = PBXGroup;
+			children = (
+				D23F93D41412B70C0032E317 /* home */,
+			);
+			name = streams;
 			sourceTree = "<group>";
 		};
 		D2F56F27140EBBFC00F72DF0 = {
@@ -423,8 +431,8 @@
 				D2F56F41140EBBFC00F72DF0 /* InfoPlist.strings in Resources */,
 				D2F56F4E140EBBFC00F72DF0 /* MainWindow_iPhone.xib in Resources */,
 				D2F56F55140EBBFC00F72DF0 /* MainWindow_iPad.xib in Resources */,
-				D23F9395141299880032E317 /* HomeStream.json in Resources */,
-				D23F93CD1412AF9C0032E317 /* FailedRequest.json in Resources */,
+				D23F93CD1412AF9C0032E317 /* failed in Resources */,
+				D23F93D51412B70C0032E317 /* home in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

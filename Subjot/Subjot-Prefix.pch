@@ -8,9 +8,12 @@
 #warning "This project uses features only available in iPhone SDK 3.0 and later."
 #endif
 
+//#define LIVE_API 1
+
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "C.h"
     #import "SBJson.h"
 #endif
+

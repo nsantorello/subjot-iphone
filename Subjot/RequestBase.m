@@ -21,39 +21,6 @@
 	return self;
 }
 
-- (void)beginRequestWithURL:(NSURL*)url andDelegate:(id)del andPostData:(NSString*)postData
-{
-	NSURLRequest *request = [NSURLRequest requestWithURL:url];
-	GTMHTTPFetcher *fetcher = [GTMHTTPFetcher fetcherWithRequest:request];
-	if (postData)
-	{
-		[fetcher setPostData:[postData dataUsingEncoding:NSUTF8StringEncoding]];
-	}
-	
-	[fetcher beginFetchWithDelegate:self didFinishSelector:@selector(fetcher:finishedWithData:error:)];
-}
-
-- (void)beginRequestWithURL:(NSURL*)url andDelegate:(id)del
-{
-	[self beginRequestWithURL:url andDelegate:del andPostData:nil];
-}
-
-- (void)requestFinished:(ResponseBase*)response
-{
-	if ([delegate respondsToSelector:@selector(requestFinishedBase:)])
-	{
-		[delegate performSelector:@selector(requestFinishedBase:) withObject:response];
-	}
-}
-
-- (void)requestFailed:(NSString*)errorString
-{
-	if ([delegate respondsToSelector:@selector(requestFailed:)])
-	{
-		[delegate performSelector:@selector(requestFailed:)];
-	}
-}
-
 - (void)fetcher:(GTMHTTPFetcher *)fetcher finishedWithData:(NSData *) retrievedData error:(NSError *)error {
 	if (!error) 
 	{
@@ -84,6 +51,46 @@
 		[self requestFailed:[error localizedDescription]];
 	}
 }
+
+- (void)beginRequestWithURL:(NSURL*)url andDelegate:(id)del andPostData:(NSString*)postData
+{
+#ifdef LIVE_API
+	NSURLRequest *request = [NSURLRequest requestWithURL:url];
+	GTMHTTPFetcher *fetcher = [GTMHTTPFetcher fetcherWithRequest:request];
+	if (postData)
+	{
+		[fetcher setPostData:[postData dataUsingEncoding:NSUTF8StringEncoding]];
+	}
+	
+	[fetcher beginFetchWithDelegate:self didFinishSelector:@selector(fetcher:finishedWithData:error:)];
+#else
+    NSData* fileContents = [NSData dataWithContentsOfURL:url];
+    [self fetcher:nil finishedWithData:fileContents error:nil];
+#endif
+}
+
+- (void)beginRequestWithURL:(NSURL*)url andDelegate:(id)del
+{
+	[self beginRequestWithURL:url andDelegate:del andPostData:nil];
+}
+
+- (void)requestFinished:(ResponseBase*)response
+{
+	if ([delegate respondsToSelector:@selector(requestFinishedBase:)])
+	{
+		[delegate performSelector:@selector(requestFinishedBase:) withObject:response];
+	}
+}
+
+- (void)requestFailed:(NSString*)errorString
+{
+	if ([delegate respondsToSelector:@selector(requestFailed:)])
+	{
+		[delegate performSelector:@selector(requestFailed:)];
+	}
+}
+
+
 
 - (void)requestFinishedBase:(NSData*)dledData
 {

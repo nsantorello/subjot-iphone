@@ -6,7 +6,11 @@
 //  Copyright 2011 Noah Santorello. All rights reserved.
 //
 
+#ifdef LIVE_API
 NSString* const SubjotAPIUrl = @"https://api.subjot.com/";
+#else
+NSString* const SubjotAPIUrl = @"demo_api/";
+#endif
 
 NSString* const APIUrl_Streams_Home = @"streams/home";
 NSString* const APIUrl_Streams_Subjects = @"streams/subjects/";
