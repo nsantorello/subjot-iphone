@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Jot.h"
 
-@interface CachedJots : NSObject {
+@interface JotCache : NSObject {
     NSMutableDictionary* jotCache;
 }
 
-+ (CachedJots*)sharedInstance;
++ (JotCache*)sharedInstance;
 
 + (Jot*)getJotFromDict:(NSDictionary*)dict;
 + (Jot*)getJotById:(NSNumber*)jotId;

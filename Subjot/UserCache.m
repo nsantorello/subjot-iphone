@@ -6,17 +6,17 @@
 //  Copyright 2011 Noah Santorello. All rights reserved.
 //
 
-#import "CachedUsers.h"
+#import "UserCache.h"
 
 
-@implementation CachedUsers
+@implementation UserCache
 
-+ (CachedUsers*)sharedInstance
++ (UserCache*)sharedInstance
 {
     static dispatch_once_t once;
-    static CachedUsers *instance;
+    static UserCache *instance;
     dispatch_once(&once, ^{
-        instance = [[CachedUsers alloc] init];
+        instance = [[UserCache alloc] init];
         instance->userCache = [[NSMutableDictionary alloc] init];
     });
     
@@ -32,7 +32,7 @@
 
 + (User*)getUserFromDict:(NSDictionary*)dict
 {
-    CachedUsers* users = [CachedUsers sharedInstance];
+    UserCache* users = [UserCache sharedInstance];
     User* user = [users->userCache objectForKey:[dict valueForKey:@"id"]];
     if (!user)
     {
@@ -44,7 +44,7 @@
 
 + (User*)getUserById:(NSNumber*)userId
 {
-    CachedUsers* users = [CachedUsers sharedInstance];
+    UserCache* users = [UserCache sharedInstance];
     return [users->userCache objectForKey:[userId stringValue]];
 }
 

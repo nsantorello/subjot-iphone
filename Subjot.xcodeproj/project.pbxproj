@@ -20,8 +20,8 @@
 		D23F938D14128B5B0032E317 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F938C14128B5B0032E317 /* Settings.m */; };
 		D23F93901412970C0032E317 /* StreamResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F938F1412970C0032E317 /* StreamResponse.m */; };
 		D23F939814129F3C0032E317 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F939714129F3C0032E317 /* User.m */; };
-		D23F939F1412A1D00032E317 /* CachedUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F939E1412A1D00032E317 /* CachedUsers.m */; };
-		D23F93A21412A1E90032E317 /* CachedJots.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93A11412A1E90032E317 /* CachedJots.m */; };
+		D23F939F1412A1D00032E317 /* UserCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F939E1412A1D00032E317 /* UserCache.m */; };
+		D23F93A21412A1E90032E317 /* JotCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93A11412A1E90032E317 /* JotCache.m */; };
 		D23F93A51412A25E0032E317 /* NSArray+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93A41412A25E0032E317 /* NSArray+Extensions.m */; };
 		D23F93C01412AA640032E317 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93A81412AA640032E317 /* NSObject+SBJson.m */; };
 		D23F93C11412AA640032E317 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F93AB1412AA640032E317 /* SBJsonParser.m */; };
@@ -92,10 +92,10 @@
 		D23F938F1412970C0032E317 /* StreamResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamResponse.m; sourceTree = "<group>"; };
 		D23F939614129F3C0032E317 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		D23F939714129F3C0032E317 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		D23F939D1412A1D00032E317 /* CachedUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedUsers.h; sourceTree = "<group>"; };
-		D23F939E1412A1D00032E317 /* CachedUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedUsers.m; sourceTree = "<group>"; };
-		D23F93A01412A1E90032E317 /* CachedJots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedJots.h; sourceTree = "<group>"; };
-		D23F93A11412A1E90032E317 /* CachedJots.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedJots.m; sourceTree = "<group>"; };
+		D23F939D1412A1D00032E317 /* UserCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCache.h; sourceTree = "<group>"; };
+		D23F939E1412A1D00032E317 /* UserCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCache.m; sourceTree = "<group>"; };
+		D23F93A01412A1E90032E317 /* JotCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotCache.h; sourceTree = "<group>"; };
+		D23F93A11412A1E90032E317 /* JotCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotCache.m; sourceTree = "<group>"; };
 		D23F93A31412A25E0032E317 /* NSArray+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extensions.h"; sourceTree = "<group>"; };
 		D23F93A41412A25E0032E317 /* NSArray+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extensions.m"; sourceTree = "<group>"; };
 		D23F93A71412AA640032E317 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJson.h"; path = "JSON/NSObject+SBJson.h"; sourceTree = "<group>"; };
@@ -268,10 +268,10 @@
 		D23F939C1412A1C80032E317 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				D23F939D1412A1D00032E317 /* CachedUsers.h */,
-				D23F939E1412A1D00032E317 /* CachedUsers.m */,
-				D23F93A01412A1E90032E317 /* CachedJots.h */,
-				D23F93A11412A1E90032E317 /* CachedJots.m */,
+				D23F939D1412A1D00032E317 /* UserCache.h */,
+				D23F939E1412A1D00032E317 /* UserCache.m */,
+				D23F93A01412A1E90032E317 /* JotCache.h */,
+				D23F93A11412A1E90032E317 /* JotCache.m */,
 				D23F94931413023A0032E317 /* ImageCache.h */,
 				D23F94941413023A0032E317 /* ImageCache.m */,
 			);
@@ -559,8 +559,8 @@
 				D23F938D14128B5B0032E317 /* Settings.m in Sources */,
 				D23F93901412970C0032E317 /* StreamResponse.m in Sources */,
 				D23F939814129F3C0032E317 /* User.m in Sources */,
-				D23F939F1412A1D00032E317 /* CachedUsers.m in Sources */,
-				D23F93A21412A1E90032E317 /* CachedJots.m in Sources */,
+				D23F939F1412A1D00032E317 /* UserCache.m in Sources */,
+				D23F93A21412A1E90032E317 /* JotCache.m in Sources */,
 				D23F93A51412A25E0032E317 /* NSArray+Extensions.m in Sources */,
 				D23F93C01412AA640032E317 /* NSObject+SBJson.m in Sources */,
 				D23F93C11412AA640032E317 /* SBJsonParser.m in Sources */,

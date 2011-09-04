@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "User.h"
 
-@interface CachedUsers : NSObject {
+@interface UserCache : NSObject {
     NSMutableDictionary* userCache;
 }
 
-+ (CachedUsers*)sharedInstance;
++ (UserCache*)sharedInstance;
 
 + (User*)getUserFromDict:(NSDictionary*)dict;
 + (User*)getUserById:(NSNumber*)userId;

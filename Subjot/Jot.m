@@ -7,7 +7,7 @@
 //
 
 #import "Jot.h"
-#import "CachedUsers.h"
+#import "UserCache.h"
 
 @implementation Jot
 
@@ -17,7 +17,7 @@
 {
     Jot* jot = [[[Jot alloc] init] autorelease];
     jot.jotId = [dict valueForKey:@"id"];
-    jot.author = [CachedUsers getUserFromDict:[dict valueForKey:@"author"]];
+    jot.author = [UserCache getUserFromDict:[dict valueForKey:@"author"]];
     jot.text = [dict valueForKey:@"text"];
     jot.published = [dict valueForKey:@"published"];
     jot.numComments = [dict valueForKey:@"num_comments"];

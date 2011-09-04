@@ -6,17 +6,17 @@
 //  Copyright 2011 Noah Santorello. All rights reserved.
 //
 
-#import "CachedJots.h"
+#import "JotCache.h"
 
 
-@implementation CachedJots
+@implementation JotCache
 
-+ (CachedJots*)sharedInstance
++ (JotCache*)sharedInstance
 {
     static dispatch_once_t once;
-    static CachedJots *instance;
+    static JotCache *instance;
     dispatch_once(&once, ^{
-        instance = [[CachedJots alloc] init];
+        instance = [[JotCache alloc] init];
         instance->jotCache = [[NSMutableDictionary alloc] init];
     });
     
@@ -33,7 +33,7 @@
 
 + (Jot*)getJotFromDict:(NSDictionary*)dict
 {
-    CachedJots* jots = [CachedJots sharedInstance];
+    JotCache* jots = [JotCache sharedInstance];
     Jot* jot = [jots->jotCache objectForKey:[dict valueForKey:@"id"]];
     if (!jot)
     {
@@ -45,7 +45,7 @@
 
 + (Jot*)getJotById:(NSNumber*)jotId
 {
-    CachedJots* jots = [CachedJots sharedInstance];
+    JotCache* jots = [JotCache sharedInstance];
     return [jots->jotCache objectForKey:[jotId stringValue]];
 }
 
