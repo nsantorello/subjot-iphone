@@ -27,7 +27,10 @@
 {
     NSData* imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
     UIImage* img = [UIImage imageWithData:imageData];
-    [imageCache setObject:img forKey:url];
+    if (img)
+    {
+        [imageCache setObject:img forKey:url];
+    }
     [imageData release];
     return img;
 }
