@@ -43,9 +43,8 @@
 
     
     [StreamRequest homeRequestWithDelegate:nil];
-    Jot* j = [JotCache getJotById:[NSNumber numberWithInt:1]];
     streamViewController.jots = [NSArray arrayWithObjects:[JotCache getJotById:[NSNumber numberWithInt:1]], [JotCache getJotById:[NSNumber numberWithInt:2]], [JotCache getJotById:[NSNumber numberWithInt:3]], [JotCache getJotById:[NSNumber numberWithInt:4]], nil];
-    
+    self.title = @"Home";
 }
 
 - (void)viewDidUnload
