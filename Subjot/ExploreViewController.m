@@ -45,6 +45,7 @@
 
     subjects = [[NSArray arrayWithObjects:@"Art & Design", @"Books", @"Entertainment", @"Funny", @"Lifestyle", @"Music", @"News & Politics", @"Sports", @"Subjot", @"Tech", nil] retain];
     featured = [[NSArray arrayWithObjects:@"Favorites", @"Featured", @"Everything", nil] retain];
+    self.title = @"Explore";
 }
 
 - (void)viewDidUnload
