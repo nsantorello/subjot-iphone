@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Jot.h"
+#import "JotTableCell.h"
 
 @interface StreamViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource> {
     
 }
 
 @property (retain) NSArray* jots;
+@property (nonatomic, retain) IBOutlet JotTableCell* jotTableCell;
 
 @end

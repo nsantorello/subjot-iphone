@@ -7,11 +7,11 @@
 //
 
 #import "StreamViewController.h"
-
+#import "JotTableCell.h"
 
 @implementation StreamViewController
 
-@synthesize jots;
+@synthesize jots, jotTableCell;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -58,17 +58,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"JotCell";
+    static NSString *cellIdentifier = @"CellIdentifier";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    JotTableCell* cell = (JotTableCell*)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        [[NSBundle mainBundle] loadNibNamed: @"JotTableCell" owner: self options: nil];
+        cell = jotTableCell;
+		jotTableCell = nil;
     }
     
     // Set name and contact info.
     Jot* jot = [jots objectAtIndex:indexPath.row];
-    cell.textLabel.text = jot.text;
-    cell.detailTextLabel.text = jot.author.name;
+    [cell setJot:jot];
     
     return cell;
 }
@@ -86,6 +87,11 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     return nil;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

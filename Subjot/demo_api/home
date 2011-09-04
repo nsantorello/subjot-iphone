@@ -16,6 +16,48 @@
                 "published" : "Jan 1, 1970",
                 "num_comments" : 7,
                 "subject" : "awesomeness"
+            }, 
+            {
+                "id" : 2,
+                "author" : 
+                {
+                    "id" : 1,
+                    "name" : "Noah Santorello",
+                    "username" : "Noah",
+                    "profile_pic_url" : "http://some pic"
+                },
+                "text" : "Hi there!",
+                "published" : "Jan 1, 1970",
+                "num_comments" : 7,
+                "subject" : "awesomeness"
+            }, 
+            {
+                "id" : 3,
+                "author" : 
+                {
+                    "id" : 1,
+                    "name" : "Noah Santorello",
+                    "username" : "Noah",
+                    "profile_pic_url" : "http://some pic"
+                },
+                "text" : "Hi there!",
+                "published" : "Jan 1, 1970",
+                "num_comments" : 7,
+                "subject" : "awesomeness"
+            }, 
+            {
+                "id" : 4,
+                "author" : 
+                {
+                    "id" : 1,
+                    "name" : "Noah Santorello",
+                    "username" : "Noah",
+                    "profile_pic_url" : "http://some pic"
+                },
+                "text" : "Hi there!",
+                "published" : "Jan 1, 1970",
+                "num_comments" : 7,
+                "subject" : "awesomeness"
             }
         ]
 }

@@ -44,7 +44,7 @@
     
     [StreamRequest homeRequestWithDelegate:nil];
     Jot* j = [CachedJots getJotById:[NSNumber numberWithInt:1]];
-    streamViewController.jots = [NSArray arrayWithObject:j];
+    streamViewController.jots = [NSArray arrayWithObjects:[CachedJots getJotById:[NSNumber numberWithInt:1]], [CachedJots getJotById:[NSNumber numberWithInt:2]], [CachedJots getJotById:[NSNumber numberWithInt:3]], [CachedJots getJotById:[NSNumber numberWithInt:4]], nil];
     
 }
 
