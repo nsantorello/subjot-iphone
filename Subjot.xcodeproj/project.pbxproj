@@ -54,6 +54,10 @@
 		D23F947A1412FB2C0032E317 /* JotTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F94791412FB2C0032E317 /* JotTableCell.xib */; };
 		D23F9492141301E40032E317 /* nsantorello.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D23F9491141301E40032E317 /* nsantorello.jpg */; };
 		D23F94951413023B0032E317 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F94941413023A0032E317 /* ImageCache.m */; };
+		D23F949A141308C50032E317 /* JotDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F9498141308C50032E317 /* JotDetailController.m */; };
+		D23F949B141308C50032E317 /* JotDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F9499141308C50032E317 /* JotDetailController.xib */; };
+		D23F94A014130A1E0032E317 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F949E14130A1E0032E317 /* ExploreViewController.m */; };
+		D23F94A114130A1E0032E317 /* ExploreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F949F14130A1E0032E317 /* ExploreView.xib */; };
 		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
 		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
 		D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */; };
@@ -147,6 +151,12 @@
 		D23F9491141301E40032E317 /* nsantorello.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nsantorello.jpg; path = Subjot/images/demo/nsantorello.jpg; sourceTree = "<group>"; };
 		D23F94931413023A0032E317 /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
 		D23F94941413023A0032E317 /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
+		D23F9497141308C50032E317 /* JotDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotDetailController.h; sourceTree = "<group>"; };
+		D23F9498141308C50032E317 /* JotDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotDetailController.m; sourceTree = "<group>"; };
+		D23F9499141308C50032E317 /* JotDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JotDetailController.xib; sourceTree = "<group>"; };
+		D23F949D14130A1E0032E317 /* ExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
+		D23F949E14130A1E0032E317 /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
+		D23F949F14130A1E0032E317 /* ExploreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreView.xib; sourceTree = "<group>"; };
 		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F56F36140EBBFC00F72DF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F56F38140EBBFC00F72DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -341,7 +351,7 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
-		D23F93F01412D3AE0032E317 /* Stream */ = {
+		D23F93F01412D3AE0032E317 /* Jot Stream */ = {
 			isa = PBXGroup;
 			children = (
 				D23F93F11412D3F20032E317 /* StreamViewController.h */,
@@ -351,17 +361,17 @@
 				D23F94771412FB180032E317 /* JotTableCell.m */,
 				D23F94791412FB2C0032E317 /* JotTableCell.xib */,
 			);
-			name = Stream;
+			name = "Jot Stream";
 			sourceTree = "<group>";
 		};
-		D23F93FE1412D5E60032E317 /* Home Stream */ = {
+		D23F93FE1412D5E60032E317 /* Stream Tab */ = {
 			isa = PBXGroup;
 			children = (
 				D23F93FF1412D5FE0032E317 /* HomeStreamController.h */,
 				D23F94001412D5FE0032E317 /* HomeStreamController.m */,
 				D23F94011412D5FE0032E317 /* HomeStream.xib */,
 			);
-			name = "Home Stream";
+			name = "Stream Tab";
 			sourceTree = "<group>";
 		};
 		D23F948F141301CE0032E317 /* Tab Bar Icons */ = {
@@ -385,6 +395,26 @@
 				D23F9491141301E40032E317 /* nsantorello.jpg */,
 			);
 			name = "Demo API";
+			sourceTree = "<group>";
+		};
+		D23F9496141308960032E317 /* Jot Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D23F9497141308C50032E317 /* JotDetailController.h */,
+				D23F9498141308C50032E317 /* JotDetailController.m */,
+				D23F9499141308C50032E317 /* JotDetailController.xib */,
+			);
+			name = "Jot Detail";
+			sourceTree = "<group>";
+		};
+		D23F949C141309E80032E317 /* Explore Tab */ = {
+			isa = PBXGroup;
+			children = (
+				D23F949D14130A1E0032E317 /* ExploreViewController.h */,
+				D23F949E14130A1E0032E317 /* ExploreViewController.m */,
+				D23F949F14130A1E0032E317 /* ExploreView.xib */,
+			);
+			name = "Explore Tab";
 			sourceTree = "<group>";
 		};
 		D2F56F27140EBBFC00F72DF0 = {
@@ -447,8 +477,10 @@
 		D2F56F48140EBBFC00F72DF0 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				D23F93FE1412D5E60032E317 /* Home Stream */,
-				D23F93F01412D3AE0032E317 /* Stream */,
+				D23F949C141309E80032E317 /* Explore Tab */,
+				D23F9496141308960032E317 /* Jot Detail */,
+				D23F93FE1412D5E60032E317 /* Stream Tab */,
+				D23F93F01412D3AE0032E317 /* Jot Stream */,
 				D2F56F49140EBBFC00F72DF0 /* SubjotAppDelegate_iPhone.h */,
 				D2F56F4A140EBBFC00F72DF0 /* SubjotAppDelegate_iPhone.m */,
 				D2F56F4C140EBBFC00F72DF0 /* MainWindow_iPhone.xib */,
@@ -533,6 +565,8 @@
 				D23F94031412D5FE0032E317 /* HomeStream.xib in Resources */,
 				D23F947A1412FB2C0032E317 /* JotTableCell.xib in Resources */,
 				D23F9492141301E40032E317 /* nsantorello.jpg in Resources */,
+				D23F949B141308C50032E317 /* JotDetailController.xib in Resources */,
+				D23F94A114130A1E0032E317 /* ExploreView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +613,8 @@
 				D23F94021412D5FE0032E317 /* HomeStreamController.m in Sources */,
 				D23F94781412FB190032E317 /* JotTableCell.m in Sources */,
 				D23F94951413023B0032E317 /* ImageCache.m in Sources */,
+				D23F949A141308C50032E317 /* JotDetailController.m in Sources */,
+				D23F94A014130A1E0032E317 /* ExploreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,11 +7,11 @@
 //
 
 #import "JotTableCell.h"
-
+#import "ImageCache.h"
 
 @implementation JotTableCell
 
-@synthesize pic, username, jotText, comments, published, jot;
+@synthesize pic, username, jotText, comments, published, jot, subject;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -31,10 +31,11 @@
 
 - (void)setJot:(Jot *)j
 {
-    //pic = jot.author.profilePicUrl;
+    pic.image = [ImageCache getImageByUrl:j.author.profilePicUrl];
     username.text = j.author.username;
     jotText.text = j.text;
     comments.text = [NSString stringWithFormat:@"%@ comments", j.numComments];
+    subject.text = j.subject;
     //published.text = j.published;
 }
 

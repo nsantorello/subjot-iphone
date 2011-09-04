@@ -30,4 +30,9 @@
     [super dealloc];
 }
 
+- (NSString*)description
+{
+    return [NSString stringWithFormat:@"ID: %@. Name: %@. Username: %@. Profile Pic Url: %@.", userId, name, username, profilePicUrl];
+}
+
 @end

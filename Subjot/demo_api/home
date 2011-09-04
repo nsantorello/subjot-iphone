@@ -10,26 +10,26 @@
                     "id" : 1,
                     "name" : "Noah Santorello",
                     "username" : "Noah",
-                    "profile_pic_url" : "http://some pic"
+                    "profile_pic_url" : "https://si0.twimg.com/profile_images/1140014149/41766_423118_4294_n_bigger.jpg"
                 },
-                "text" : "Hi there!",
+                "text" : "Hi there!  I think the iOS app is SOOOO awesome! ",
                 "published" : "Jan 1, 1970",
                 "num_comments" : 7,
-                "subject" : "awesomeness"
+                "subject" : "subjot feedback"
             }, 
             {
                 "id" : 2,
                 "author" : 
                 {
-                    "id" : 1,
-                    "name" : "Noah Santorello",
-                    "username" : "Noah",
-                    "profile_pic_url" : "http://some pic"
+                    "id" : 2,
+                    "name" : "Andrew Gross",
+                    "username" : "andrew",
+                    "profile_pic_url" : "https://si0.twimg.com/profile_images/1376251886/netcat_bigger.jpg"
                 },
-                "text" : "Hi there!",
+                "text" : "I am building the Android app for tablets and Android phones as you read this!",
                 "published" : "Jan 1, 1970",
                 "num_comments" : 7,
-                "subject" : "awesomeness"
+                "subject" : "android"
             }, 
             {
                 "id" : 3,
@@ -38,9 +38,9 @@
                     "id" : 1,
                     "name" : "Noah Santorello",
                     "username" : "Noah",
-                    "profile_pic_url" : "http://some pic"
+                    "profile_pic_url" : "https://si0.twimg.com/profile_images/1140014149/41766_423118_4294_n_bigger.jpg"
                 },
-                "text" : "Hi there!",
+                "text" : "This is yet another jot by @Noah!",
                 "published" : "Jan 1, 1970",
                 "num_comments" : 7,
                 "subject" : "awesomeness"
@@ -52,12 +52,12 @@
                     "id" : 1,
                     "name" : "Noah Santorello",
                     "username" : "Noah",
-                    "profile_pic_url" : "http://some pic"
+                    "profile_pic_url" : "https://si0.twimg.com/profile_images/1140014149/41766_423118_4294_n_bigger.jpg"
                 },
-                "text" : "Hi there!",
+                "text" : "I am super cool because I do super cool stuff.",
                 "published" : "Jan 1, 1970",
                 "num_comments" : 7,
-                "subject" : "awesomeness"
+                "subject" : "my life is cool"
             }
         ]
 }

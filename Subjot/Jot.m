@@ -36,7 +36,7 @@
 
 - (NSString*)description
 {
-    return [NSString stringWithFormat:@"ID: %@. Author Name: %@. Text: %@. Published: %@. Num Comments: %@. Subject: %@.", jotId, author.name, text, published, numComments, subject];
+    return [NSString stringWithFormat:@"ID: %@. Author Info: (%@). Text: %@. Published: %@. Num Comments: %@. Subject: %@.", jotId, author, text, published, numComments, subject];
 }
 
 @end

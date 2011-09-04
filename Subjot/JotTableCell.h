@@ -19,6 +19,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *jotText;
 @property (nonatomic, retain) IBOutlet UILabel *published;
 @property (nonatomic, retain) IBOutlet UILabel *comments;
+@property (nonatomic, retain) IBOutlet UILabel *subject;
 
 - (void)setJot:(Jot*)jot;
 

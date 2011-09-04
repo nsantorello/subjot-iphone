@@ -23,4 +23,25 @@
     return instance;
 }
 
+- (UIImage*)downloadImage:(NSString*)url
+{
+    NSData* imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
+    UIImage* img = [UIImage imageWithData:imageData];
+    [imageCache setObject:img forKey:url];
+    [imageData release];
+    return img;
+}
+
++ (UIImage*)getImageByUrl:(NSString*)url
+{
+    ImageCache* images = [ImageCache sharedInstance];
+    UIImage* img = [images->imageCache objectForKey:url];
+    if (!img)
+    {
+        img = [images downloadImage:url];
+    }
+    
+    return img;
+}
+
 @end
