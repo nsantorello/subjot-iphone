@@ -1,17 +1,15 @@
 //
-//  JotDetailController.m
+//  NotificationsController.m
 //  Subjot
 //
-//  Created by Noah Santorello on 9/3/11.
+//  Created by Noah Santorello on 9/4/11.
 //  Copyright 2011 Noah Santorello. All rights reserved.
 //
 
-#import "JotDetailController.h"
-#import "ImageCache.h"
+#import "NotificationsController.h"
 
-@implementation JotDetailController
 
-@synthesize jot, name, username, subject, pic, writingAbout;
+@implementation NotificationsController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,18 +39,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    if (jot)
-    {
-        name.text = jot.author.name;
-        subject.text = jot.subject;
-        pic.image = [ImageCache getImageByUrl:jot.author.profilePicUrl];
-        CGFloat nameWidth = [jot.author.name sizeWithFont:[UIFont fontWithName:@"Helvetica-Bold" size:14.0] 
-                                        constrainedToSize:CGSizeMake(250, 500) lineBreakMode:UILineBreakModeWordWrap].width;
-        CGRect newFrame = writingAbout.frame;
-        newFrame.origin.x += nameWidth;
-        writingAbout.frame = newFrame;
-    }
+    self.title = @"Notifications";
 }
 
 - (void)viewDidUnload

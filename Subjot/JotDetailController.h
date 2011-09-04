@@ -17,6 +17,7 @@
 @property (nonatomic, retain) IBOutlet UILabel* username;
 @property (nonatomic, retain) IBOutlet UILabel* name;
 @property (nonatomic, retain) IBOutlet UILabel* subject;
+@property (nonatomic, retain) IBOutlet UILabel* writingAbout;
 @property (nonatomic, retain) IBOutlet UIImageView* pic;
 
 @end

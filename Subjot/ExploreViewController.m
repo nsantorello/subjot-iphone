@@ -191,6 +191,7 @@
     [selected setSelected:NO animated:YES];
     
     ExploreViewController* exploreViewController = [[ExploreViewController alloc] init];
+    exploreViewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:exploreViewController animated:YES];
     [exploreViewController release];
 }

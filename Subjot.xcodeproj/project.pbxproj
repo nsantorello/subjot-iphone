@@ -58,8 +58,20 @@
 		D23F949B141308C50032E317 /* JotDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F9499141308C50032E317 /* JotDetailController.xib */; };
 		D23F94A014130A1E0032E317 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F949E14130A1E0032E317 /* ExploreViewController.m */; };
 		D23F94A114130A1E0032E317 /* ExploreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F949F14130A1E0032E317 /* ExploreView.xib */; };
-		D291E7391413B48800CB08A8 /* UILabel+Sizing.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E7381413B48800CB08A8 /* UILabel+Sizing.m */; };
-		D291E7411413B6A600CB08A8 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E7401413B6A600CB08A8 /* NSString+Util.m */; };
+		D291E75B1413C1CB00CB08A8 /* JotDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E7591413C1CB00CB08A8 /* JotDetailTableCell.m */; };
+		D291E75C1413C1CB00CB08A8 /* JotDetailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D291E75A1413C1CB00CB08A8 /* JotDetailTableCell.xib */; };
+		D291E7601413C1D600CB08A8 /* CommentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E75E1413C1D600CB08A8 /* CommentTableCell.m */; };
+		D291E7611413C1D600CB08A8 /* CommentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D291E75F1413C1D600CB08A8 /* CommentTableCell.xib */; };
+		D291E7671413C87700CB08A8 /* NotificationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E7651413C87700CB08A8 /* NotificationsController.m */; };
+		D291E7681413C87700CB08A8 /* Notifications.xib in Resources */ = {isa = PBXBuildFile; fileRef = D291E7661413C87700CB08A8 /* Notifications.xib */; };
+		D291E76C1413C8CE00CB08A8 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E76A1413C8CE00CB08A8 /* SettingsController.m */; };
+		D291E76D1413C8CE00CB08A8 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = D291E76B1413C8CE00CB08A8 /* Settings.xib */; };
+		D291E7711413CB0A00CB08A8 /* KeyValueTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E76F1413CB0A00CB08A8 /* KeyValueTableCell.m */; };
+		D291E7721413CB0A00CB08A8 /* KeyValueTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D291E7701413CB0A00CB08A8 /* KeyValueTableCell.xib */; };
+		D291E77B1413CF4A00CB08A8 /* ButtonTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E7791413CF4900CB08A8 /* ButtonTableCell.m */; };
+		D291E77C1413CF4A00CB08A8 /* ButtonTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D291E77A1413CF4900CB08A8 /* ButtonTableCell.xib */; };
+		D291E7801413D5C400CB08A8 /* no-notifications.png in Resources */ = {isa = PBXBuildFile; fileRef = D291E77E1413D5C400CB08A8 /* no-notifications.png */; };
+		D291E7811413D5C400CB08A8 /* no-notifications@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D291E77F1413D5C400CB08A8 /* no-notifications@2x.png */; };
 		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
 		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
 		D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */; };
@@ -159,10 +171,26 @@
 		D23F949D14130A1E0032E317 /* ExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
 		D23F949E14130A1E0032E317 /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
 		D23F949F14130A1E0032E317 /* ExploreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreView.xib; sourceTree = "<group>"; };
-		D291E7371413B48800CB08A8 /* UILabel+Sizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Sizing.h"; sourceTree = "<group>"; };
-		D291E7381413B48800CB08A8 /* UILabel+Sizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Sizing.m"; sourceTree = "<group>"; };
-		D291E73F1413B6A600CB08A8 /* NSString+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Util.h"; sourceTree = "<group>"; };
-		D291E7401413B6A600CB08A8 /* NSString+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
+		D291E7581413C1CB00CB08A8 /* JotDetailTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotDetailTableCell.h; sourceTree = "<group>"; };
+		D291E7591413C1CB00CB08A8 /* JotDetailTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotDetailTableCell.m; sourceTree = "<group>"; };
+		D291E75A1413C1CB00CB08A8 /* JotDetailTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JotDetailTableCell.xib; sourceTree = "<group>"; };
+		D291E75D1413C1D600CB08A8 /* CommentTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableCell.h; sourceTree = "<group>"; };
+		D291E75E1413C1D600CB08A8 /* CommentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableCell.m; sourceTree = "<group>"; };
+		D291E75F1413C1D600CB08A8 /* CommentTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableCell.xib; sourceTree = "<group>"; };
+		D291E7641413C87700CB08A8 /* NotificationsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsController.h; sourceTree = "<group>"; };
+		D291E7651413C87700CB08A8 /* NotificationsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsController.m; sourceTree = "<group>"; };
+		D291E7661413C87700CB08A8 /* Notifications.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Notifications.xib; sourceTree = "<group>"; };
+		D291E7691413C8CE00CB08A8 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		D291E76A1413C8CE00CB08A8 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		D291E76B1413C8CE00CB08A8 /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
+		D291E76E1413CB0A00CB08A8 /* KeyValueTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueTableCell.h; sourceTree = "<group>"; };
+		D291E76F1413CB0A00CB08A8 /* KeyValueTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueTableCell.m; sourceTree = "<group>"; };
+		D291E7701413CB0A00CB08A8 /* KeyValueTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyValueTableCell.xib; sourceTree = "<group>"; };
+		D291E7781413CF4900CB08A8 /* ButtonTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonTableCell.h; sourceTree = "<group>"; };
+		D291E7791413CF4900CB08A8 /* ButtonTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonTableCell.m; sourceTree = "<group>"; };
+		D291E77A1413CF4900CB08A8 /* ButtonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableCell.xib; sourceTree = "<group>"; };
+		D291E77E1413D5C400CB08A8 /* no-notifications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no-notifications.png"; path = "Subjot/images/no-notifications.png"; sourceTree = "<group>"; };
+		D291E77F1413D5C400CB08A8 /* no-notifications@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no-notifications@2x.png"; path = "Subjot/images/no-notifications@2x.png"; sourceTree = "<group>"; };
 		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F56F36140EBBFC00F72DF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F56F38140EBBFC00F72DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -333,10 +361,6 @@
 				D23F93A41412A25E0032E317 /* NSArray+Extensions.m */,
 				D23F93D01412B0810032E317 /* NSString+ParsedBool.h */,
 				D23F93D11412B0810032E317 /* NSString+ParsedBool.m */,
-				D291E7371413B48800CB08A8 /* UILabel+Sizing.h */,
-				D291E7381413B48800CB08A8 /* UILabel+Sizing.m */,
-				D291E73F1413B6A600CB08A8 /* NSString+Util.h */,
-				D291E7401413B6A600CB08A8 /* NSString+Util.m */,
 			);
 			name = "Custom Categories";
 			sourceTree = "<group>";
@@ -355,6 +379,7 @@
 		D23F93DE1412CC320032E317 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D291E77D1413D5B900CB08A8 /* Notifications */,
 				D23F9490141301D80032E317 /* Demo API */,
 				D23F948F141301CE0032E317 /* Tab Bar Icons */,
 			);
@@ -413,6 +438,12 @@
 				D23F9497141308C50032E317 /* JotDetailController.h */,
 				D23F9498141308C50032E317 /* JotDetailController.m */,
 				D23F9499141308C50032E317 /* JotDetailController.xib */,
+				D291E7581413C1CB00CB08A8 /* JotDetailTableCell.h */,
+				D291E7591413C1CB00CB08A8 /* JotDetailTableCell.m */,
+				D291E75A1413C1CB00CB08A8 /* JotDetailTableCell.xib */,
+				D291E75D1413C1D600CB08A8 /* CommentTableCell.h */,
+				D291E75E1413C1D600CB08A8 /* CommentTableCell.m */,
+				D291E75F1413C1D600CB08A8 /* CommentTableCell.xib */,
 			);
 			name = "Jot Detail";
 			sourceTree = "<group>";
@@ -425,6 +456,41 @@
 				D23F949F14130A1E0032E317 /* ExploreView.xib */,
 			);
 			name = "Explore Tab";
+			sourceTree = "<group>";
+		};
+		D291E7621413C7FD00CB08A8 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				D291E7641413C87700CB08A8 /* NotificationsController.h */,
+				D291E7651413C87700CB08A8 /* NotificationsController.m */,
+				D291E7661413C87700CB08A8 /* Notifications.xib */,
+			);
+			name = Notifications;
+			sourceTree = "<group>";
+		};
+		D291E7631413C80900CB08A8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D291E7691413C8CE00CB08A8 /* SettingsController.h */,
+				D291E76A1413C8CE00CB08A8 /* SettingsController.m */,
+				D291E76B1413C8CE00CB08A8 /* Settings.xib */,
+				D291E76E1413CB0A00CB08A8 /* KeyValueTableCell.h */,
+				D291E76F1413CB0A00CB08A8 /* KeyValueTableCell.m */,
+				D291E7701413CB0A00CB08A8 /* KeyValueTableCell.xib */,
+				D291E7781413CF4900CB08A8 /* ButtonTableCell.h */,
+				D291E7791413CF4900CB08A8 /* ButtonTableCell.m */,
+				D291E77A1413CF4900CB08A8 /* ButtonTableCell.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		D291E77D1413D5B900CB08A8 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				D291E77E1413D5C400CB08A8 /* no-notifications.png */,
+				D291E77F1413D5C400CB08A8 /* no-notifications@2x.png */,
+			);
+			name = Notifications;
 			sourceTree = "<group>";
 		};
 		D2F56F27140EBBFC00F72DF0 = {
@@ -487,6 +553,8 @@
 		D2F56F48140EBBFC00F72DF0 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				D291E7631413C80900CB08A8 /* Settings */,
+				D291E7621413C7FD00CB08A8 /* Notifications */,
 				D23F949C141309E80032E317 /* Explore Tab */,
 				D23F9496141308960032E317 /* Jot Detail */,
 				D23F93FE1412D5E60032E317 /* Stream Tab */,
@@ -577,6 +645,14 @@
 				D23F9492141301E40032E317 /* nsantorello.jpg in Resources */,
 				D23F949B141308C50032E317 /* JotDetailController.xib in Resources */,
 				D23F94A114130A1E0032E317 /* ExploreView.xib in Resources */,
+				D291E75C1413C1CB00CB08A8 /* JotDetailTableCell.xib in Resources */,
+				D291E7611413C1D600CB08A8 /* CommentTableCell.xib in Resources */,
+				D291E7681413C87700CB08A8 /* Notifications.xib in Resources */,
+				D291E76D1413C8CE00CB08A8 /* Settings.xib in Resources */,
+				D291E7721413CB0A00CB08A8 /* KeyValueTableCell.xib in Resources */,
+				D291E77C1413CF4A00CB08A8 /* ButtonTableCell.xib in Resources */,
+				D291E7801413D5C400CB08A8 /* no-notifications.png in Resources */,
+				D291E7811413D5C400CB08A8 /* no-notifications@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,8 +701,12 @@
 				D23F94951413023B0032E317 /* ImageCache.m in Sources */,
 				D23F949A141308C50032E317 /* JotDetailController.m in Sources */,
 				D23F94A014130A1E0032E317 /* ExploreViewController.m in Sources */,
-				D291E7391413B48800CB08A8 /* UILabel+Sizing.m in Sources */,
-				D291E7411413B6A600CB08A8 /* NSString+Util.m in Sources */,
+				D291E75B1413C1CB00CB08A8 /* JotDetailTableCell.m in Sources */,
+				D291E7601413C1D600CB08A8 /* CommentTableCell.m in Sources */,
+				D291E7671413C87700CB08A8 /* NotificationsController.m in Sources */,
+				D291E76C1413C8CE00CB08A8 /* SettingsController.m in Sources */,
+				D291E7711413CB0A00CB08A8 /* KeyValueTableCell.m in Sources */,
+				D291E77B1413CF4A00CB08A8 /* ButtonTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

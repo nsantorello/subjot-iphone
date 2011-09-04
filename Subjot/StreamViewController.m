@@ -9,8 +9,6 @@
 #import "StreamViewController.h"
 #import "JotTableCell.h"
 #import "JotDetailController.h"
-#import "NSString+Util.h"
-#import "UILabel+Sizing.h"
 
 @implementation StreamViewController
 

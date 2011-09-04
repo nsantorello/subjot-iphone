@@ -6,6 +6,8 @@
 //  Copyright 2011 Noah Santorello. All rights reserved.
 //
 
+NSString* const AppVersion = @"0.16";
+
 #ifdef LIVE_API
 
 NSString* const SubjotAPIUrl = @"https://api.subjot.com/";
