@@ -20,6 +20,6 @@
 @property (copy) NSDate* published;
 
 + (Comment*)fromDictionary:(NSDictionary*)dict forJot:(Jot*)j;
-+ (NSArray*)commentArrayFromDictionary:(NSDictionary*)dict forJot:(Jot*)j;
++ (NSArray*)commentArrayFromDictionary:(NSArray*)commentData forJot:(Jot*)j;
 
 @end

@@ -34,7 +34,7 @@
     pic.image = [ImageCache getImageByUrl:j.author.profilePicUrl];
     username.text = j.author.username;
     jotText.text = j.text;
-    comments.text = [NSString stringWithFormat:@"%@ comments", [j.comments count]];
+    comments.text = [NSString stringWithFormat:@"%i comments", [j.comments count]];
     subject.text = j.subject;
     published.text = [j.published description];
     

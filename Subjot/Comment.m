@@ -26,9 +26,11 @@
 
 + (NSArray*)commentArrayFromDictionary:(NSArray*)commentData forJot:(Jot*)j
 {
-    return [[commentData map:^id(id obj) {
-        return [Comment fromDictionary:obj forJot:j];
-    }] retain];
+    NSArray* comments = [[commentData map:^id(id obj) {
+        return [[Comment fromDictionary:obj forJot:j] retain];
+    }] autorelease];
+    
+    return comments;
 }
 
 - (void)dealloc

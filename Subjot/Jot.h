@@ -17,7 +17,7 @@
 @property (retain) User* author;
 @property (copy) NSString* text;
 @property (copy) NSDate* published;
-@property (copy) NSArray* comments;
+@property (retain) NSArray* comments;
 @property (copy) NSString* subject;
 
 + (Jot*)fromDictionary:(NSDictionary*)dict;
