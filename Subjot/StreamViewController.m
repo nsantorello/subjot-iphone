@@ -9,6 +9,8 @@
 #import "StreamViewController.h"
 #import "JotTableCell.h"
 #import "JotDetailController.h"
+#import "NSString+Util.h"
+#import "UILabel+Sizing.h"
 
 @implementation StreamViewController
 
@@ -25,6 +27,7 @@
 
 - (void)dealloc
 {
+    jots = nil;
     [super dealloc];
 }
 
@@ -71,6 +74,7 @@
     // Set name and contact info.
     Jot* jot = [jots objectAtIndex:indexPath.row];
     [cell setJot:jot];
+    [cell.jotText sizeToFit];
     
     return cell;
 }
@@ -92,7 +96,8 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 70;
+    Jot* j = [jots objectAtIndex:indexPath.row];
+    return 40 + [j textHeight];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

@@ -34,6 +34,11 @@
     [super dealloc];
 }
 
+- (CGFloat)textHeight
+{
+    return [text sizeWithFont:[UIFont fontWithName:@"Helvetica" size:12.0] constrainedToSize:CGSizeMake(250, 500) lineBreakMode:UILineBreakModeWordWrap].height;
+}
+
 - (NSString*)description
 {
     return [NSString stringWithFormat:@"ID: %@. Author Info: (%@). Text: %@. Published: %@. Num Comments: %@. Subject: %@.", jotId, author, text, published, numComments, subject];

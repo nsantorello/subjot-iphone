@@ -21,5 +21,6 @@
 @property (copy) NSString* subject;
 
 + (Jot*)fromDictionary:(NSDictionary*)dict;
+- (CGFloat)textHeight;
 
 @end
