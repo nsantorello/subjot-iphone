@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "User.h"
+#import "UserCache.h"
 
 @interface Jot : NSObject {
     
@@ -17,7 +17,7 @@
 @property (retain) User* author;
 @property (copy) NSString* text;
 @property (copy) NSDate* published;
-@property (copy) NSNumber* numComments;
+@property (copy) NSArray* comments;
 @property (copy) NSString* subject;
 
 + (Jot*)fromDictionary:(NSDictionary*)dict;

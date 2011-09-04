@@ -14,6 +14,7 @@
 }
 
 @property (retain) NSArray* jots;
+@property (retain) NSArray* users;
 
 - (void)setData:(NSDictionary*)response;
 

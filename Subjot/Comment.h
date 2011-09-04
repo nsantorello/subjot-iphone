@@ -7,9 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "User.h"
 #import "Jot.h"
-#import "UserCache.h"
 
 @interface Comment : NSObject {
     
@@ -22,5 +20,6 @@
 @property (copy) NSDate* published;
 
 + (Comment*)fromDictionary:(NSDictionary*)dict forJot:(Jot*)j;
++ (NSArray*)commentArrayFromDictionary:(NSDictionary*)dict forJot:(Jot*)j;
 
 @end

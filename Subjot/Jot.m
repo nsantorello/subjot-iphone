@@ -7,27 +7,28 @@
 //
 
 #import "Jot.h"
-#import "UserCache.h"
+#import "Comment.h"
 
 @implementation Jot
 
-@synthesize jotId, author, text, published, numComments, subject;
+@synthesize jotId, author, text, published, comments, subject;
 
 + (Jot*)fromDictionary:(NSDictionary*)dict
 {
     Jot* jot = [[[Jot alloc] init] autorelease];
     jot.jotId = [dict valueForKey:@"id"];
-    jot.author = [UserCache getUserFromDict:[dict valueForKey:@"author"]];
+    jot.author = [UserCache getUserById:[dict valueForKey:@"author_id"]];
     jot.text = [dict valueForKey:@"text"];
     jot.published = [dict valueForKey:@"published"];
-    jot.numComments = [dict valueForKey:@"num_comments"];
+    jot.comments = [[Comment commentArrayFromDictionary:[dict valueForKey:@"comments"] forJot:jot] retain];
     jot.subject = [dict valueForKey:@"subject"];
     return jot;
 }
 
 - (void)dealloc
 {
-    jotId = numComments = nil;
+    jotId = nil;
+    comments = nil;
     author = nil;
     text = subject = nil;
     published = nil;
@@ -47,7 +48,7 @@
 
 - (NSString*)description
 {
-    return [NSString stringWithFormat:@"ID: %@. Author Info: (%@). Text: %@. Published: %@. Num Comments: %@. Subject: %@.", jotId, author, text, published, numComments, subject];
+    return [NSString stringWithFormat:@"ID: %@. Author Info: (%@). Text: %@. Published: %@. Num Comments: %i. Subject: %@.", jotId, author, text, published, [comments count], subject];
 }
 
 @end
