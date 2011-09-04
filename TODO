@@ -1,4 +1,13 @@
+iPhone:
+* Signing in
+* Jot detail view that shows comments and lets you comment and iPhone home screen grouping action to reveal actions to see that user's profile, all their jots on X subject, all jots on X subject
+* Explore API calls
+* User detail view
+* In stream view, a side swipe that lets you unfollow a user completely and unfollow them on a subject
+* Ability to write a jot, tag it in a subject, and then post it
+* 
+--------------
 iPhone/iPad universal client
-
+--------------
 Add JSON library attribution in documentation:
 https://github.com/stig/json-framework/
