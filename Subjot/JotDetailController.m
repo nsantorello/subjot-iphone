@@ -11,7 +11,7 @@
 
 @implementation JotDetailController
 
-@synthesize jot, name, username, subject, pic, writingAbout;
+@synthesize jot, name, username, subject, pic, writingAbout, jotDetailTableCell;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -66,6 +66,49 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"JotDetailTableCell";
+    
+    JotDetailTableCell* cell = (JotDetailTableCell*)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        [[NSBundle mainBundle] loadNibNamed: @"JotDetailTableCell" owner: self options: nil];
+        cell = jotDetailTableCell;
+		jotDetailTableCell = nil;
+    }
+    
+    // Set name and contact info.
+    [cell setJot:jot];
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return nil;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 24 + [jot detailTextHeight];
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell* selected = [tableView cellForRowAtIndexPath:indexPath];
+    [selected setSelected:NO animated:YES];
 }
 
 @end

@@ -36,9 +36,9 @@
     jotText.text = j.text;
     comments.text = [NSString stringWithFormat:@"%@ comments", j.numComments];
     subject.text = j.subject;
-    //published.text = j.published;
+    published.text = [j.published description];
     
-    CGFloat jotTextHeight = [j textHeight];
+    CGFloat jotTextHeight = [j streamTextHeight];
     CGRect newFrame = comments.frame;
     newFrame.origin.y += jotTextHeight;
     comments.frame = newFrame;

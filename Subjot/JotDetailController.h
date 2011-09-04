@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Jot.h"
+#import "JotDetailTableCell.h"
 
-@interface JotDetailController : UIViewController {
+@interface JotDetailController : UIViewController<UITableViewDelegate, UITableViewDataSource> {
     
 }
 
@@ -19,5 +20,6 @@
 @property (nonatomic, retain) IBOutlet UILabel* subject;
 @property (nonatomic, retain) IBOutlet UILabel* writingAbout;
 @property (nonatomic, retain) IBOutlet UIImageView* pic;
+@property (nonatomic, retain) IBOutlet JotDetailTableCell* jotDetailTableCell;
 
 @end

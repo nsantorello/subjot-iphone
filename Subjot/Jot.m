@@ -34,10 +34,16 @@
     [super dealloc];
 }
 
-- (CGFloat)textHeight
+- (CGFloat)streamTextHeight
 {
     return [text sizeWithFont:[UIFont fontWithName:@"Helvetica" size:12.0] constrainedToSize:CGSizeMake(250, 500) lineBreakMode:UILineBreakModeWordWrap].height;
 }
+
+- (CGFloat)detailTextHeight
+{
+    return [text sizeWithFont:[UIFont fontWithName:@"Helvetica" size:15.0] constrainedToSize:CGSizeMake(302, 500) lineBreakMode:UILineBreakModeWordWrap].height;
+}
+
 
 - (NSString*)description
 {
