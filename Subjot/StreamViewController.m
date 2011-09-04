@@ -8,10 +8,11 @@
 
 #import "StreamViewController.h"
 #import "JotTableCell.h"
+#import "JotDetailController.h"
 
 @implementation StreamViewController
 
-@synthesize jots, jotTableCell;
+@synthesize jots, jotTableCell, hostingController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -98,6 +99,11 @@
 {
     UITableViewCell* selected = [tableView cellForRowAtIndexPath:indexPath];
     [selected setSelected:NO animated:YES];
+    
+    JotDetailController* jotDetailController = [[JotDetailController alloc] init];
+    jotDetailController.jot = [jots objectAtIndex:indexPath.row];
+    [hostingController.navigationController pushViewController:jotDetailController animated:YES];
+    [jotDetailController release];
 }
 
 

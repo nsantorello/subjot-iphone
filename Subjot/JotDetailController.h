@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Jot.h"
 
 @interface JotDetailController : UIViewController {
     
 }
+
+@property (retain) Jot* jot;
+@property (nonatomic, retain) IBOutlet UILabel* username;
+@property (nonatomic, retain) IBOutlet UILabel* name;
+@property (nonatomic, retain) IBOutlet UILabel* subject;
+@property (nonatomic, retain) IBOutlet UIImageView* pic;
 
 @end

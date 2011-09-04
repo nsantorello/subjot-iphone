@@ -15,5 +15,6 @@
 
 @property (retain) NSArray* jots;
 @property (nonatomic, retain) IBOutlet JotTableCell* jotTableCell;
+@property (nonatomic, retain) IBOutlet UIViewController* hostingController;
 
 @end

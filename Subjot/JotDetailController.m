@@ -7,9 +7,11 @@
 //
 
 #import "JotDetailController.h"
-
+#import "ImageCache.h"
 
 @implementation JotDetailController
+
+@synthesize jot, name, username, subject, pic;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,6 +41,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    if (jot)
+    {
+        name.text = jot.author.name;
+        subject.text = jot.subject;
+        pic.image = [ImageCache getImageByUrl:jot.author.profilePicUrl];
+    }
 }
 
 - (void)viewDidUnload
