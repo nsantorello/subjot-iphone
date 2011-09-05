@@ -52,6 +52,21 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void)requestFinished:(ResponseBase*)response
+{
+    // Auth request succeeded
+    [self.navigationController pushViewController:authedContentController animated:YES];
+    usernameField.text = passwordField.text = @"";
+}
+
+- (void)requestFailed:(NSString*)error
+{
+    // Auth request failed
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Login Error" message:@"The credentials you entered are incorrect.  Please try again." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    [alert show];
+    [alert release];
+}
+
 - (IBAction)loginClicked
 {
     [usernameField endEditing:YES];
@@ -59,18 +74,7 @@
     
     authedContentController.selectedIndex = 0;
     
-    User* user = [Credentials authenticateUser:usernameField.text andPassword:passwordField.text];
-    if (user)
-    {
-        [self.navigationController pushViewController:authedContentController animated:YES];
-        usernameField.text = passwordField.text = @"";
-    }
-    else
-    {
-        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Login Error" message:@"The credentials you entered are incorrect.  Please try again." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
-        [alert show];
-        [alert release];
-    }
+    [AuthUserRequest authUserRequestWithDelegate:self andUsername:usernameField.text andPassword:passwordField.text];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

@@ -62,8 +62,9 @@
 		D27B19501415412E00E7D70B /* Credentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B194F1415412E00E7D70B /* Credentials.m */; };
 		D27B1955141543A500E7D70B /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B1953141543A500E7D70B /* LoginController.m */; };
 		D27B1956141543A500E7D70B /* FrontLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = D27B1954141543A500E7D70B /* FrontLogin.xib */; };
-		D27B19591415440D00E7D70B /* DetailedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B19581415440D00E7D70B /* DetailedUser.m */; };
 		D27B19CD14154D4D00E7D70B /* auth_user in Resources */ = {isa = PBXBuildFile; fileRef = D27B19CC14154D4D00E7D70B /* auth_user */; };
+		D27B19D01415520F00E7D70B /* AuthUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B19CF1415520F00E7D70B /* AuthUserRequest.m */; };
+		D27B19D31415526400E7D70B /* AuthUserResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B19D21415526400E7D70B /* AuthUserResponse.m */; };
 		D291E75B1413C1CB00CB08A8 /* JotDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E7591413C1CB00CB08A8 /* JotDetailTableCell.m */; };
 		D291E75C1413C1CB00CB08A8 /* JotDetailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D291E75A1413C1CB00CB08A8 /* JotDetailTableCell.xib */; };
 		D291E7601413C1D600CB08A8 /* CommentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E75E1413C1D600CB08A8 /* CommentTableCell.m */; };
@@ -189,9 +190,11 @@
 		D27B1952141543A500E7D70B /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		D27B1953141543A500E7D70B /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		D27B1954141543A500E7D70B /* FrontLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FrontLogin.xib; sourceTree = "<group>"; };
-		D27B19571415440D00E7D70B /* DetailedUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedUser.h; sourceTree = "<group>"; };
-		D27B19581415440D00E7D70B /* DetailedUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedUser.m; sourceTree = "<group>"; };
 		D27B19CC14154D4D00E7D70B /* auth_user */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = auth_user; path = demo_api/auth_user; sourceTree = "<group>"; };
+		D27B19CE1415520F00E7D70B /* AuthUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthUserRequest.h; sourceTree = "<group>"; };
+		D27B19CF1415520F00E7D70B /* AuthUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthUserRequest.m; sourceTree = "<group>"; };
+		D27B19D11415526400E7D70B /* AuthUserResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthUserResponse.h; sourceTree = "<group>"; };
+		D27B19D21415526400E7D70B /* AuthUserResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthUserResponse.m; sourceTree = "<group>"; };
 		D291E7581413C1CB00CB08A8 /* JotDetailTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotDetailTableCell.h; sourceTree = "<group>"; };
 		D291E7591413C1CB00CB08A8 /* JotDetailTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotDetailTableCell.m; sourceTree = "<group>"; };
 		D291E75A1413C1CB00CB08A8 /* JotDetailTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JotDetailTableCell.xib; sourceTree = "<group>"; };
@@ -290,6 +293,8 @@
 				D23F9370141284490032E317 /* RequestBase.m */,
 				D23F938114128A780032E317 /* StreamRequest.h */,
 				D23F938214128A780032E317 /* StreamRequest.m */,
+				D27B19CE1415520F00E7D70B /* AuthUserRequest.h */,
+				D27B19CF1415520F00E7D70B /* AuthUserRequest.m */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -301,6 +306,8 @@
 				D23F937F141288E10032E317 /* ResponseBase.m */,
 				D23F938E1412970C0032E317 /* StreamResponse.h */,
 				D23F938F1412970C0032E317 /* StreamResponse.m */,
+				D27B19D11415526400E7D70B /* AuthUserResponse.h */,
+				D27B19D21415526400E7D70B /* AuthUserResponse.m */,
 			);
 			name = Responses;
 			sourceTree = "<group>";
@@ -553,8 +560,6 @@
 				D23F939714129F3C0032E317 /* User.m */,
 				D291E78D1413F6ED00CB08A8 /* Comment.h */,
 				D291E78E1413F6ED00CB08A8 /* Comment.m */,
-				D27B19571415440D00E7D70B /* DetailedUser.h */,
-				D27B19581415440D00E7D70B /* DetailedUser.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -786,7 +791,8 @@
 				D291E78F1413F6ED00CB08A8 /* Comment.m in Sources */,
 				D27B19501415412E00E7D70B /* Credentials.m in Sources */,
 				D27B1955141543A500E7D70B /* LoginController.m in Sources */,
-				D27B19591415440D00E7D70B /* DetailedUser.m in Sources */,
+				D27B19D01415520F00E7D70B /* AuthUserRequest.m in Sources */,
+				D27B19D31415526400E7D70B /* AuthUserResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

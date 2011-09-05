@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AuthUserRequest.h"
 
-
-@interface LoginController : UIViewController<UITextFieldDelegate> {
+@interface LoginController : UIViewController<UITextFieldDelegate, SubjotResponseDelegate> {
     
 }
 

@@ -29,11 +29,10 @@
     return [[Credentials sharedInstance] authedUser];
 }
 
-+ (User*)authenticateUser:(NSString*)username andPassword:(NSString*)password
++ (void)loginAs:(User*)user
 {
     Credentials* cred = [Credentials sharedInstance];
-    cred.authedUser = [[[User alloc] init] autorelease]; // Perform logic to auth username/pw and create user
-    return cred.authedUser;
+    cred.authedUser = user;
 }
 
 + (void)logout

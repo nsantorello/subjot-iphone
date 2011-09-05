@@ -25,6 +25,12 @@
     return [C appendTo:[C subjotAPIUrl] theString:appendedUrl];
 }
 
++ (NSString*)authUserUrl:(NSString*)username password:(NSString*)password
+{
+    // TODO: (ns): eventually add username/password to URL.  Make URL string in Constants.m a formatted string with %@'s that you can insert into NSString stringWithFormat
+    return [C apiCallUrl:APIUrl_Auth];
+}
+
 + (NSString*)homeStreamUrl
 {
     return [C apiCallUrl:APIUrl_Streams_Home];

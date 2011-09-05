@@ -20,3 +20,10 @@
 - (void)setData:(NSDictionary*)response;
 
 @end
+
+@protocol SubjotResponseDelegate <NSObject>
+
+- (void)requestFinished:(ResponseBase*)response;
+- (void)requestFailed:(NSString*)error;
+
+@end

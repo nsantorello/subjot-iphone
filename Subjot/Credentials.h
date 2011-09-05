@@ -18,7 +18,7 @@
 + (Credentials*)sharedInstance;
 
 + (User*)authedUser;
-+ (User*)authenticateUser:(NSString*)username andPassword:(NSString*)password;
++ (void)loginAs:(User*)user;
 + (void)logout;
 
 @end

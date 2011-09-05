@@ -23,9 +23,9 @@
 
 - (void)requestFinished:(ResponseBase*)response
 {
-	if ([delegate respondsToSelector:@selector(requestFinishedBase:)])
+	if ([delegate respondsToSelector:@selector(requestFinished:)])
 	{
-		[delegate performSelector:@selector(requestFinishedBase:) withObject:response];
+		[delegate performSelector:@selector(requestFinished:) withObject:response];
 	}
 }
 
@@ -34,21 +34,6 @@
 	if ([delegate respondsToSelector:@selector(requestFailed:)])
 	{
 		[delegate performSelector:@selector(requestFailed:)];
-	}
-}
-
-
-
-- (void)requestFinishedBase:(NSData*)dledData
-{
-	// Convert to NSDictionary.
-	
-	// Check to see if there was an API error.
-	
-	// Notify subclasses of success.
-	if ([delegate respondsToSelector:@selector(requestFinished:)])
-	{
-		[delegate performSelector:@selector(requestFinished:) withObject:dledData];
 	}
 }
 

@@ -10,6 +10,8 @@
 
 NSString* const SubjotAPIUrl = @"https://api.subjot.com/";
 
+NSString* const APIUrl_Auth = @"auth";
+
 NSString* const APIUrl_Streams_Home = @"streams/home";
 NSString* const APIUrl_Streams_Subjects = @"streams/subjects/";
 NSString* const APIUrl_Streams_Explore = @"streams/explore/";
@@ -19,9 +21,11 @@ NSString* const APIUrl_Streams_All = @"streams/all";
 
 NSString* const SubjotAPIUrl = @"";
 
+NSString* const APIUrl_Auth = @"auth_user";
+
 NSString* const APIUrl_Streams_Home = @"home";
 NSString* const APIUrl_Streams_Subjects = @"subjects";
-NSString* const APIUrl_Streams_Explore = @"explore/";
+NSString* const APIUrl_Streams_Explore = @"explore";
 NSString* const APIUrl_Streams_All = @"all";
 
 #endif
