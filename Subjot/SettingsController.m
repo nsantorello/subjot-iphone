@@ -7,6 +7,7 @@
 //
 
 #import "SettingsController.h"
+#import "Credentials.h"
 
 @implementation SettingsController
 
@@ -184,7 +185,15 @@
     
     switch (indexPath.section) {
         case 1:
+            // Send feedback to Subjot
             [self sendMail];
+            break;
+        case 2:
+            // Logout
+        {
+            [Credentials logout];
+            [self.navigationController.parentViewController.navigationController popToRootViewControllerAnimated:YES];
+        }
             break;
         default:
             break;

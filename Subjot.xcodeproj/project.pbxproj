@@ -59,6 +59,11 @@
 		D23F94A014130A1E0032E317 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F949E14130A1E0032E317 /* ExploreViewController.m */; };
 		D23F94A114130A1E0032E317 /* ExploreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F949F14130A1E0032E317 /* ExploreView.xib */; };
 		D27B194C1415150800E7D70B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27B194B1415150800E7D70B /* MessageUI.framework */; };
+		D27B19501415412E00E7D70B /* Credentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B194F1415412E00E7D70B /* Credentials.m */; };
+		D27B1955141543A500E7D70B /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B1953141543A500E7D70B /* LoginController.m */; };
+		D27B1956141543A500E7D70B /* FrontLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = D27B1954141543A500E7D70B /* FrontLogin.xib */; };
+		D27B19591415440D00E7D70B /* DetailedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B19581415440D00E7D70B /* DetailedUser.m */; };
+		D27B19CD14154D4D00E7D70B /* auth_user in Resources */ = {isa = PBXBuildFile; fileRef = D27B19CC14154D4D00E7D70B /* auth_user */; };
 		D291E75B1413C1CB00CB08A8 /* JotDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E7591413C1CB00CB08A8 /* JotDetailTableCell.m */; };
 		D291E75C1413C1CB00CB08A8 /* JotDetailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D291E75A1413C1CB00CB08A8 /* JotDetailTableCell.xib */; };
 		D291E7601413C1D600CB08A8 /* CommentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E75E1413C1D600CB08A8 /* CommentTableCell.m */; };
@@ -179,6 +184,14 @@
 		D23F949E14130A1E0032E317 /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
 		D23F949F14130A1E0032E317 /* ExploreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreView.xib; sourceTree = "<group>"; };
 		D27B194B1415150800E7D70B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D27B194E1415412E00E7D70B /* Credentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
+		D27B194F1415412E00E7D70B /* Credentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Credentials.m; sourceTree = "<group>"; };
+		D27B1952141543A500E7D70B /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		D27B1953141543A500E7D70B /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		D27B1954141543A500E7D70B /* FrontLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FrontLogin.xib; sourceTree = "<group>"; };
+		D27B19571415440D00E7D70B /* DetailedUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedUser.h; sourceTree = "<group>"; };
+		D27B19581415440D00E7D70B /* DetailedUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedUser.m; sourceTree = "<group>"; };
+		D27B19CC14154D4D00E7D70B /* auth_user */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = auth_user; path = demo_api/auth_user; sourceTree = "<group>"; };
 		D291E7581413C1CB00CB08A8 /* JotDetailTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotDetailTableCell.h; sourceTree = "<group>"; };
 		D291E7591413C1CB00CB08A8 /* JotDetailTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotDetailTableCell.m; sourceTree = "<group>"; };
 		D291E75A1413C1CB00CB08A8 /* JotDetailTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JotDetailTableCell.xib; sourceTree = "<group>"; };
@@ -243,6 +256,8 @@
 		D23F934F14114CBF0032E317 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				D27B194E1415412E00E7D70B /* Credentials.h */,
+				D27B194F1415412E00E7D70B /* Credentials.m */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -316,6 +331,7 @@
 		D23F9391141299580032E317 /* Demo API */ = {
 			isa = PBXGroup;
 			children = (
+				D27B19CC14154D4D00E7D70B /* auth_user */,
 				D291E7821413E31300CB08A8 /* explore */,
 				D291E7831413E31300CB08A8 /* notifications */,
 				D291E7841413E31300CB08A8 /* post_comment */,
@@ -483,6 +499,16 @@
 			name = "Compose Jot";
 			sourceTree = "<group>";
 		};
+		D27B19511415438800E7D70B /* Front Login */ = {
+			isa = PBXGroup;
+			children = (
+				D27B1952141543A500E7D70B /* LoginController.h */,
+				D27B1953141543A500E7D70B /* LoginController.m */,
+				D27B1954141543A500E7D70B /* FrontLogin.xib */,
+			);
+			name = "Front Login";
+			sourceTree = "<group>";
+		};
 		D291E7621413C7FD00CB08A8 /* Notifications Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -527,6 +553,8 @@
 				D23F939714129F3C0032E317 /* User.m */,
 				D291E78D1413F6ED00CB08A8 /* Comment.h */,
 				D291E78E1413F6ED00CB08A8 /* Comment.m */,
+				D27B19571415440D00E7D70B /* DetailedUser.h */,
+				D27B19581415440D00E7D70B /* DetailedUser.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -592,6 +620,7 @@
 		D2F56F48140EBBFC00F72DF0 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				D27B19511415438800E7D70B /* Front Login */,
 				D27B192E1414648A00E7D70B /* Compose Jot */,
 				D291E7631413C80900CB08A8 /* Settings Tab */,
 				D291E7621413C7FD00CB08A8 /* Notifications Tab */,
@@ -698,6 +727,8 @@
 				D291E7891413E31300CB08A8 /* post_comment in Resources */,
 				D291E78A1413E31300CB08A8 /* post_jot in Resources */,
 				D291E78B1413E31300CB08A8 /* user in Resources */,
+				D27B1956141543A500E7D70B /* FrontLogin.xib in Resources */,
+				D27B19CD14154D4D00E7D70B /* auth_user in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +784,9 @@
 				D291E7711413CB0A00CB08A8 /* KeyValueTableCell.m in Sources */,
 				D291E77B1413CF4A00CB08A8 /* ButtonTableCell.m in Sources */,
 				D291E78F1413F6ED00CB08A8 /* Comment.m in Sources */,
+				D27B19501415412E00E7D70B /* Credentials.m in Sources */,
+				D27B1955141543A500E7D70B /* LoginController.m in Sources */,
+				D27B19591415440D00E7D70B /* DetailedUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

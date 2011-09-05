@@ -2,7 +2,8 @@ iPhone Roadmap:
 
 * Signing in
 * Settings button that lets you log out and populates appropriate username
-* User/credential storage
+* User/credential storage and saving session between app quit
+* Need to recreate tab bar controller when logging in so that all state gets cleared after logging out
 => 0.2
 
 * User detail API call
