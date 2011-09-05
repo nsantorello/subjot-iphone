@@ -81,7 +81,7 @@
             "id" : 3,
             "name" : "Chris Carella",
             "username" : "ccarella",
-            "profile_pic_url" : "https://si0.twimg.com/profile_images/1140014149/41766_423118_4294_n_bigger.jpg"
+            "profile_pic_url" : "http://s3.amazonaws.com/subjot-profile-images-production/medium/2/icon.jpg"
         }
     ]
 }

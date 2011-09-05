@@ -473,6 +473,13 @@
 			name = "Explore Tab";
 			sourceTree = "<group>";
 		};
+		D27B192E1414648A00E7D70B /* Compose Jot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Compose Jot";
+			sourceTree = "<group>";
+		};
 		D291E7621413C7FD00CB08A8 /* Notifications Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -581,6 +588,7 @@
 		D2F56F48140EBBFC00F72DF0 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				D27B192E1414648A00E7D70B /* Compose Jot */,
 				D291E7631413C80900CB08A8 /* Settings Tab */,
 				D291E7621413C7FD00CB08A8 /* Notifications Tab */,
 				D23F949C141309E80032E317 /* Explore Tab */,

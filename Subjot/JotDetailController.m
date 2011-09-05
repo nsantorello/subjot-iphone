@@ -81,6 +81,7 @@
     static NSString *ctCellIdentifier = @"CommentTableCell";
     static NSString *addCellIdentifier = @"AddCellIdentifier";
     
+    // All this crap just creates the right type of table cell
     NSString* identifier = indexPath.section == 0 ? jdtCellIdentifier : ctCellIdentifier;
     identifier = (indexPath.section != 0 && indexPath.row >= [jot.comments count]) ? addCellIdentifier : identifier;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
@@ -166,6 +167,7 @@
         {
             if (indexPath.row < [jot.comments count])
             {
+                // Resize comment table cell to comment size text height
                 Comment* com = [jot.comments objectAtIndex:indexPath.row];
                 CGFloat textHeight = [com.text sizeWithFont:[UIFont fontWithName:@"Helvetica" size:12.0] 
                                                 constrainedToSize:CGSizeMake(250, 500) lineBreakMode:UILineBreakModeWordWrap].height;
@@ -173,6 +175,7 @@
             }
             else
             {
+                // Static size for Add a Comment button
                 return 35;
             }
         }
