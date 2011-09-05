@@ -43,7 +43,7 @@
     // Do any additional setup after loading the view from its nib.
     
     keys = [[NSArray arrayWithObjects:@"Username", @"App Version", nil] retain];
-    values = [[NSArray arrayWithObjects:@"nsantorello", AppVersion, nil] retain];
+    values = [[NSArray arrayWithObjects:@"nsantorello", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"], nil] retain];
     self.title = @"Settings";
 }
 

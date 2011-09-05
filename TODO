@@ -1,11 +1,53 @@
-iPhone:
+iPhone Roadmap:
+
 * Signing in
-* Jot detail view lets you comment and iPhone home screen grouping action to reveal actions to see that user's profile, all their jots on X subject, all jots on X subject
+* Settings button that lets you log out and populates appropriate username
+=> 0.2
+
+* User detail API call
+* User detail view linkable from jot detail view and selecting comments
+* Jot detail view lets you comment
+* Some way to delete your own comments?
+* Lets you jot from the top right nav bar button with your subjects
+=> 0.3
+
 * Explore API calls
-* User detail view
-* In stream view, a side swipe that lets you unfollow a user completely and unfollow them on a subject
-* Ability to write a jot, tag it in a subject, and then post it
+* Explore page has a search box (or search table entries) at the top to search for a specific subject, user, or word... or maybe a search tab?
+=> 0.4
+
+* iPhone home screen grouping action to reveal actions to see that user's profile, all their jots on X subject, all jots on X subject
+* In stream view, a side swipe that lets you unfollow a user completely and unfollow them on a subject; also delete a jot if it's your jot
+=> 0.5
+
+* Notifications that take you to appropriate jot/comment
+=> 0.6
+
+* Able to edit your own profile
+=> 0.7
+
+* Caching and cache scheduling in settings--options for how long to cache jots/home many jots/how far back and to cache images, jots, comments, and user info (option for only if on WiFi for images) -- now we can read in the subway!  :)
+* Twitter-like visual notification to let you know that you have new notifications
+=> 0.8
+
+* Sharing jots to Twitter and FB (FML)
+=> 0.9
+
+???
+=> 1.0
+
+Tentative:
 * Include tracking so that we can look at usage statistics in the app; e.g. how many people click on notifications in the notifications tab, track redundant tasks, etc 
+
+--------------
+iPad:
+
+* Design app :)
+=> 0.0
+
+...
+
+=> 1.0!
+
 --------------
 iPhone/iPad universal client
 --------------

@@ -6,8 +6,6 @@
 //  Copyright 2011 Noah Santorello. All rights reserved.
 //
 
-extern NSString* const AppVersion;
-
 extern NSString* const SubjotAPIUrl;
 
 extern NSString* const APIUrl_Streams_Home;
