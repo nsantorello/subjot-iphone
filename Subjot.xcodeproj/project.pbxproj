@@ -58,6 +58,7 @@
 		D23F949B141308C50032E317 /* JotDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F9499141308C50032E317 /* JotDetailController.xib */; };
 		D23F94A014130A1E0032E317 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F949E14130A1E0032E317 /* ExploreViewController.m */; };
 		D23F94A114130A1E0032E317 /* ExploreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F949F14130A1E0032E317 /* ExploreView.xib */; };
+		D27B194C1415150800E7D70B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27B194B1415150800E7D70B /* MessageUI.framework */; };
 		D291E75B1413C1CB00CB08A8 /* JotDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E7591413C1CB00CB08A8 /* JotDetailTableCell.m */; };
 		D291E75C1413C1CB00CB08A8 /* JotDetailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D291E75A1413C1CB00CB08A8 /* JotDetailTableCell.xib */; };
 		D291E7601413C1D600CB08A8 /* CommentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E75E1413C1D600CB08A8 /* CommentTableCell.m */; };
@@ -177,6 +178,7 @@
 		D23F949D14130A1E0032E317 /* ExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
 		D23F949E14130A1E0032E317 /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
 		D23F949F14130A1E0032E317 /* ExploreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreView.xib; sourceTree = "<group>"; };
+		D27B194B1415150800E7D70B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D291E7581413C1CB00CB08A8 /* JotDetailTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JotDetailTableCell.h; sourceTree = "<group>"; };
 		D291E7591413C1CB00CB08A8 /* JotDetailTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JotDetailTableCell.m; sourceTree = "<group>"; };
 		D291E75A1413C1CB00CB08A8 /* JotDetailTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JotDetailTableCell.xib; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27B194C1415150800E7D70B /* MessageUI.framework in Frameworks */,
 				D23F937D1412855E0032E317 /* SystemConfiguration.framework in Frameworks */,
 				D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */,
 				D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */,
@@ -549,6 +552,7 @@
 		D2F56F35140EBBFC00F72DF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D27B194B1415150800E7D70B /* MessageUI.framework */,
 				D23F937C1412855E0032E317 /* SystemConfiguration.framework */,
 				D2F56F36140EBBFC00F72DF0 /* UIKit.framework */,
 				D2F56F38140EBBFC00F72DF0 /* Foundation.framework */,
@@ -820,12 +824,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Subjot/Subjot-Prefix.pch";
 				INFOPLIST_FILE = "Subjot/Subjot-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -834,11 +840,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Subjot/Subjot-Prefix.pch";
 				INFOPLIST_FILE = "Subjot/Subjot-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

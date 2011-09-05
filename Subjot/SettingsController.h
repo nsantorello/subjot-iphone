@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "KeyValueTableCell.h"
 #import "ButtonTableCell.h"
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface SettingsController : UITableViewController<UITableViewDataSource, UITableViewDelegate> {
+@interface SettingsController : UITableViewController<UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate> {
     
 }
 

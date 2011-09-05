@@ -139,12 +139,56 @@
     return cell;
 }
 
+-(void)sendMail
+{
+	if ([MFMailComposeViewController canSendMail]) 
+	{
+		MFMailComposeViewController *mailViewController = [[MFMailComposeViewController alloc] init];
+        mailViewController.mailComposeDelegate = self;
+		NSArray *toRecipients = [[NSArray alloc] initWithObjects:@"feedback@subjot.com", nil];
+		[mailViewController setToRecipients:toRecipients];
+		[mailViewController setSubject:@"Subjot iOS App"];
+		[mailViewController setMessageBody:@"" isHTML:NO];
+		
+		[self presentModalViewController:mailViewController animated:YES];
+		[toRecipients release];
+		[mailViewController release];
+	}
+	else 
+	{
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Feedback" message:@"Email not configured on this device.  Please email feedback@subjot.com to provide feedback." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        [alert show];
+        [alert release];
+	}
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller  
+          didFinishWithResult:(MFMailComposeResult)result 
+                        error:(NSError*)error
+{
+	[self dismissModalViewControllerAnimated:YES];
+    if (result == MFMailComposeResultSent)
+    {
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Feedback" message:@"Thank you for providing feedback!  It is very valuable to us.  :)" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"You're welcome!", nil];
+        [alert show];
+        [alert release];
+    }
+}
+
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell* selected = [tableView cellForRowAtIndexPath:indexPath];
     [selected setSelected:NO animated:YES];
+    
+    switch (indexPath.section) {
+        case 1:
+            [self sendMail];
+            break;
+        default:
+            break;
+    }
 }
 
 @end
