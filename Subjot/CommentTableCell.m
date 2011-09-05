@@ -7,14 +7,26 @@
 //
 
 #import "CommentTableCell.h"
-
+#import "ImageCache.h"
 
 @implementation CommentTableCell
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+@synthesize commentTextLabel, commentAuthorImage, publishedLabel, usernameLabel;
+
+- (void)setComment:(Comment*)comment
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    commentTextLabel.text = comment.text;
+    publishedLabel.text = [comment.published description];
+    usernameLabel.text = comment.author.username;
+    commentAuthorImage.image = [ImageCache getImageByUrl:comment.author.profilePicUrl];
+    [commentTextLabel sizeToFit];
+}
+
+- (void)dealloc
+{
+    commentTextLabel = publishedLabel = usernameLabel = nil;
+    commentAuthorImage = nil;
+    [super dealloc];
 }
 
 @end

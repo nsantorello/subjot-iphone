@@ -473,17 +473,17 @@
 			name = "Explore Tab";
 			sourceTree = "<group>";
 		};
-		D291E7621413C7FD00CB08A8 /* Notifications */ = {
+		D291E7621413C7FD00CB08A8 /* Notifications Tab */ = {
 			isa = PBXGroup;
 			children = (
 				D291E7641413C87700CB08A8 /* NotificationsController.h */,
 				D291E7651413C87700CB08A8 /* NotificationsController.m */,
 				D291E7661413C87700CB08A8 /* Notifications.xib */,
 			);
-			name = Notifications;
+			name = "Notifications Tab";
 			sourceTree = "<group>";
 		};
-		D291E7631413C80900CB08A8 /* Settings */ = {
+		D291E7631413C80900CB08A8 /* Settings Tab */ = {
 			isa = PBXGroup;
 			children = (
 				D291E7691413C8CE00CB08A8 /* SettingsController.h */,
@@ -496,7 +496,7 @@
 				D291E7791413CF4900CB08A8 /* ButtonTableCell.m */,
 				D291E77A1413CF4900CB08A8 /* ButtonTableCell.xib */,
 			);
-			name = Settings;
+			name = "Settings Tab";
 			sourceTree = "<group>";
 		};
 		D291E77D1413D5B900CB08A8 /* Notifications */ = {
@@ -581,8 +581,8 @@
 		D2F56F48140EBBFC00F72DF0 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				D291E7631413C80900CB08A8 /* Settings */,
-				D291E7621413C7FD00CB08A8 /* Notifications */,
+				D291E7631413C80900CB08A8 /* Settings Tab */,
+				D291E7621413C7FD00CB08A8 /* Notifications Tab */,
 				D23F949C141309E80032E317 /* Explore Tab */,
 				D23F9496141308960032E317 /* Jot Detail */,
 				D23F93FE1412D5E60032E317 /* Stream Tab */,
