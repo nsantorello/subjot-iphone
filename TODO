@@ -2,6 +2,7 @@ iPhone Roadmap:
 
 * Signing in
 * Settings button that lets you log out and populates appropriate username
+* User/credential storage
 => 0.2
 
 * User detail API call
