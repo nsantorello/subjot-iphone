@@ -5,7 +5,7 @@ iPhone:
 * User detail view
 * In stream view, a side swipe that lets you unfollow a user completely and unfollow them on a subject
 * Ability to write a jot, tag it in a subject, and then post it
-* 
+* Include tracking so that we can look at usage statistics in the app; e.g. how many people click on notifications in the notifications tab, track redundant tasks, etc 
 --------------
 iPhone/iPad universal client
 --------------
