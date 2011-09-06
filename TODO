@@ -1,7 +1,6 @@
 iPhone Roadmap:
 
 * User detail API call
-* User detail view linkable from jot detail view and selecting comments
 * Jot detail view lets you comment
 * Some way to delete your own comments? (if you select your own comment, it asks you if you want to delete it instead of bringing you to that person's profile)
 * Lets you jot from the top right nav bar button with your subjects

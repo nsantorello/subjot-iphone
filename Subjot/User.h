@@ -18,7 +18,7 @@
 @property (copy) NSString* username;
 @property (copy) NSString* profilePicUrl;
 @property (retain) NSArray* subjects;
-@property (retain) NSArray* latestJots;
+@property (copy) NSNumber* totalJots;
 @property (copy) NSString* bio;
 @property (copy) NSString* token;
 

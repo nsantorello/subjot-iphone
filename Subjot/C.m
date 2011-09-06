@@ -31,6 +31,12 @@
     return [C apiCallUrl:APIUrl_Auth];
 }
 
++ (NSString*)userDetailUrl:(NSNumber*)userId
+{
+    // TODO: (ns): eventually add user ID to URL.  Make URL string in Constants.m a formatted string with %@'s that you can insert into NSString stringWithFormat
+    return [C apiCallUrl:APIUrl_User_Detail];
+}
+
 + (NSString*)homeStreamUrl
 {
     return [C apiCallUrl:APIUrl_Streams_Home];

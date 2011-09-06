@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "User.h"
 
 @interface UserDetailController : UIViewController {
     
 }
+
+@property (retain) User* user;
 
 @end

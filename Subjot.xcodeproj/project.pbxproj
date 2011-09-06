@@ -87,7 +87,7 @@
 		D291E7881413E31300CB08A8 /* notifications in Resources */ = {isa = PBXBuildFile; fileRef = D291E7831413E31300CB08A8 /* notifications */; };
 		D291E7891413E31300CB08A8 /* post_comment in Resources */ = {isa = PBXBuildFile; fileRef = D291E7841413E31300CB08A8 /* post_comment */; };
 		D291E78A1413E31300CB08A8 /* post_jot in Resources */ = {isa = PBXBuildFile; fileRef = D291E7851413E31300CB08A8 /* post_jot */; };
-		D291E78B1413E31300CB08A8 /* user in Resources */ = {isa = PBXBuildFile; fileRef = D291E7861413E31300CB08A8 /* user */; };
+		D291E78B1413E31300CB08A8 /* user_detail in Resources */ = {isa = PBXBuildFile; fileRef = D291E7861413E31300CB08A8 /* user_detail */; };
 		D291E78F1413F6ED00CB08A8 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E78E1413F6ED00CB08A8 /* Comment.m */; };
 		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
 		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
@@ -228,7 +228,7 @@
 		D291E7831413E31300CB08A8 /* notifications */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = notifications; path = demo_api/notifications; sourceTree = "<group>"; };
 		D291E7841413E31300CB08A8 /* post_comment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = post_comment; path = demo_api/post_comment; sourceTree = "<group>"; };
 		D291E7851413E31300CB08A8 /* post_jot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = post_jot; path = demo_api/post_jot; sourceTree = "<group>"; };
-		D291E7861413E31300CB08A8 /* user */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = user; path = demo_api/user; sourceTree = "<group>"; };
+		D291E7861413E31300CB08A8 /* user_detail */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = user_detail; path = demo_api/user_detail; sourceTree = "<group>"; };
 		D291E78D1413F6ED00CB08A8 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
 		D291E78E1413F6ED00CB08A8 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -352,7 +352,7 @@
 				D291E7831413E31300CB08A8 /* notifications */,
 				D291E7841413E31300CB08A8 /* post_comment */,
 				D291E7851413E31300CB08A8 /* post_jot */,
-				D291E7861413E31300CB08A8 /* user */,
+				D291E7861413E31300CB08A8 /* user_detail */,
 				D23F93DC1412C1A30032E317 /* failed */,
 				D23F93DA1412C1960032E317 /* home */,
 			);
@@ -753,7 +753,7 @@
 				D291E7881413E31300CB08A8 /* notifications in Resources */,
 				D291E7891413E31300CB08A8 /* post_comment in Resources */,
 				D291E78A1413E31300CB08A8 /* post_jot in Resources */,
-				D291E78B1413E31300CB08A8 /* user in Resources */,
+				D291E78B1413E31300CB08A8 /* user_detail in Resources */,
 				D27B1956141543A500E7D70B /* FrontLogin.xib in Resources */,
 				D27B19CD14154D4D00E7D70B /* auth_user in Resources */,
 				D25ADF591415A416007ED823 /* UserDetail.xib in Resources */,

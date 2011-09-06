@@ -79,14 +79,14 @@
 - (void)pushUserDetailController:(User*)user
 {
     UserDetailController* userDetailController = [[UserDetailController alloc] init];
-    //userDetailController.user = user;
+    userDetailController.user = user;
     [self.navigationController pushViewController:userDetailController animated:YES];
     [userDetailController release];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self pushUserDetailController:nil];
+    [self pushUserDetailController:jot.author];
     [super touchesBegan:touches withEvent:event];
 }
 
@@ -216,7 +216,8 @@
         }
         else
         {
-            [self pushUserDetailController:nil];
+            User* user = ((Comment*)[jot.comments objectAtIndex:indexPath.row]).author;
+            [self pushUserDetailController:user];
         }
     }
 }

@@ -10,6 +10,8 @@ extern NSString* const SubjotAPIUrl;
 
 extern NSString* const APIUrl_Auth;
 
+extern NSString* const APIUrl_User_Detail;
+
 extern NSString* const APIUrl_Streams_Home;
 extern NSString* const APIUrl_Streams_Subjects;
 extern NSString* const APIUrl_Streams_Explore;

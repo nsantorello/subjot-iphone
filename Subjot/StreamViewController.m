@@ -112,6 +112,7 @@
     
     JotDetailController* jotDetailController = [[JotDetailController alloc] init];
     jotDetailController.jot = [jots objectAtIndex:indexPath.row];
+    jotDetailController.hidesBottomBarWhenPushed = YES;
     [hostingController.navigationController pushViewController:jotDetailController animated:YES];
     [jotDetailController release];
 }

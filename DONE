@@ -1,6 +1,9 @@
 iPhone:
 
+0.3 changes: (in progress)
+* User detail view linkable from jot detail view and selecting comments
+
+0.2 changes:
 * Signing in w/ API integration
 * Settings shows authed user's username
 * Saving session between app quit
-=> 0.2

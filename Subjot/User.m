@@ -11,7 +11,7 @@
 
 @implementation User
 
-@synthesize userId, name, username, profilePicUrl, subjects, latestJots, bio, token, rawData;
+@synthesize userId, name, username, profilePicUrl, subjects, bio, totalJots, token, rawData;
 
 + (User*)fromDictionary:(NSDictionary *)dict
 {
@@ -20,9 +20,9 @@
     user.profilePicUrl = [dict valueForKey:@"profile_pic_url"];
     user.userId = [NSNumber numberWithInt:[[dict valueForKey:@"id"] intValue]];
     user.username = [dict valueForKey:@"username"];
-    //user.subjects = ...
-    //user.latestJots = ...
-    //user.bio = ...
+    user.subjects = [dict valueForKey:@"subjects"];
+    user.totalJots = [dict valueForKey:@"total_jots"];
+    user.bio = [dict valueForKey:@"bio"];
     user.token = [dict valueForKey:@"token"];
     user.rawData = dict;
     return user;
@@ -30,9 +30,9 @@
 
 - (void)dealloc
 {
-    userId = nil;
+    userId = totalJots = nil;
     name = username = profilePicUrl = bio = token = nil;
-    subjects = latestJots = nil;
+    subjects = nil;
     [super dealloc];
 }
 
