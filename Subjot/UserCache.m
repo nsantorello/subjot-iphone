@@ -32,6 +32,11 @@
 
 + (User*)getUserFromDict:(NSDictionary*)dict
 {
+    if (!dict)
+    {
+        return nil;
+    }
+    
     UserCache* users = [UserCache sharedInstance];
     User* user = [users->userCache objectForKey:[dict valueForKey:@"id"]];
     if (!user)

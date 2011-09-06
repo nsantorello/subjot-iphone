@@ -22,6 +22,8 @@
 @property (copy) NSString* bio;
 @property (copy) NSString* token;
 
+@property (retain) NSDictionary* rawData;
+
 + (User*)fromDictionary:(NSDictionary*)dict;
 
 @end

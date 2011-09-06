@@ -7,7 +7,9 @@
 //
 
 #import "Credentials.h"
+#import "UserCache.h"
 
+#define kAuthedUser @"Credentials.authedUser"
 
 @implementation Credentials
 
@@ -19,6 +21,8 @@
     static Credentials *instance;
     dispatch_once(&once, ^{
         instance = [[Credentials alloc] init];
+        NSDictionary* authedUserRawData = [[NSUserDefaults standardUserDefaults] objectForKey:kAuthedUser];
+        instance.authedUser = [UserCache getUserFromDict:authedUserRawData];
     });
     
     return instance;
@@ -33,12 +37,16 @@
 {
     Credentials* cred = [Credentials sharedInstance];
     cred.authedUser = user;
+    [[NSUserDefaults standardUserDefaults] setObject:user.rawData forKey:kAuthedUser];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 + (void)logout
 {
     Credentials* cred = [Credentials sharedInstance];
     cred.authedUser = nil;
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:kAuthedUser];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)dealloc

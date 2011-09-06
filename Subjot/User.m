@@ -11,7 +11,7 @@
 
 @implementation User
 
-@synthesize userId, name, username, profilePicUrl, subjects, latestJots, bio, token;
+@synthesize userId, name, username, profilePicUrl, subjects, latestJots, bio, token, rawData;
 
 + (User*)fromDictionary:(NSDictionary *)dict
 {
@@ -24,6 +24,7 @@
     //user.latestJots = ...
     //user.bio = ...
     user.token = [dict valueForKey:@"token"];
+    user.rawData = dict;
     return user;
 }
 

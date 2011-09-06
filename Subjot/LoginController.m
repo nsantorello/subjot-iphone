@@ -39,10 +39,20 @@
 
 #pragma mark - View lifecycle
 
+- (void) loginSucceeded 
+{
+    [self.navigationController pushViewController:authedContentController animated:YES];
+    usernameField.text = passwordField.text = @"";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    if ([Credentials authedUser])
+    {
+        [self loginSucceeded];
+    }
 }
 
 - (void)viewDidUnload
@@ -55,8 +65,7 @@
 - (void)requestFinished:(ResponseBase*)response
 {
     // Auth request succeeded
-    [self.navigationController pushViewController:authedContentController animated:YES];
-    usernameField.text = passwordField.text = @"";
+    [self loginSucceeded];
 }
 
 - (void)requestFailed:(NSString*)error
