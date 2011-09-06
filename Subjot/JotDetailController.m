@@ -8,6 +8,7 @@
 
 #import "JotDetailController.h"
 #import "ImageCache.h"
+#import "UserDetailController.h"
 
 @implementation JotDetailController
 
@@ -191,11 +192,21 @@
     UITableViewCell* selected = [tableView cellForRowAtIndexPath:indexPath];
     [selected setSelected:NO animated:YES];
     
-    if (indexPath.section == 1 && indexPath.row >= [jot.comments count])
+    if (indexPath.section == 1)
     {
-        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Add comment" message:@"Will be implemented soon.  :)" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Aww, well get on it!", nil];
-        [alert show];
-        [alert release];
+        if (indexPath.row >= [jot.comments count])
+        {
+            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Add comment" message:@"Will be implemented soon.  :)" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Aww, well get on it!", nil];
+            [alert show];
+            [alert release];
+        }
+        else
+        {
+            UserDetailController* userDetailController = [[UserDetailController alloc] init];
+            //userDetailController.user = ((Comment*)[jot.comments objectAtIndex:indexPath.row]).author;
+            [self.navigationController pushViewController:userDetailController animated:YES];
+            [userDetailController release];
+        }
     }
 }
 

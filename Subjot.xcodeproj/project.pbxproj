@@ -58,6 +58,8 @@
 		D23F949B141308C50032E317 /* JotDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F9499141308C50032E317 /* JotDetailController.xib */; };
 		D23F94A014130A1E0032E317 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23F949E14130A1E0032E317 /* ExploreViewController.m */; };
 		D23F94A114130A1E0032E317 /* ExploreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F949F14130A1E0032E317 /* ExploreView.xib */; };
+		D25ADF581415A416007ED823 /* UserDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25ADF561415A416007ED823 /* UserDetailController.m */; };
+		D25ADF591415A416007ED823 /* UserDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25ADF571415A416007ED823 /* UserDetail.xib */; };
 		D27B194C1415150800E7D70B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27B194B1415150800E7D70B /* MessageUI.framework */; };
 		D27B19501415412E00E7D70B /* Credentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B194F1415412E00E7D70B /* Credentials.m */; };
 		D27B1955141543A500E7D70B /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B1953141543A500E7D70B /* LoginController.m */; };
@@ -184,6 +186,9 @@
 		D23F949D14130A1E0032E317 /* ExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
 		D23F949E14130A1E0032E317 /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
 		D23F949F14130A1E0032E317 /* ExploreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExploreView.xib; sourceTree = "<group>"; };
+		D25ADF551415A416007ED823 /* UserDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailController.h; sourceTree = "<group>"; };
+		D25ADF561415A416007ED823 /* UserDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailController.m; sourceTree = "<group>"; };
+		D25ADF571415A416007ED823 /* UserDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetail.xib; sourceTree = "<group>"; };
 		D27B194B1415150800E7D70B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D27B194E1415412E00E7D70B /* Credentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
 		D27B194F1415412E00E7D70B /* Credentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Credentials.m; sourceTree = "<group>"; };
@@ -499,6 +504,16 @@
 			name = "Explore Tab";
 			sourceTree = "<group>";
 		};
+		D25ADF541415A3FF007ED823 /* User Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D25ADF551415A416007ED823 /* UserDetailController.h */,
+				D25ADF561415A416007ED823 /* UserDetailController.m */,
+				D25ADF571415A416007ED823 /* UserDetail.xib */,
+			);
+			name = "User Detail";
+			sourceTree = "<group>";
+		};
 		D27B192E1414648A00E7D70B /* Compose Jot */ = {
 			isa = PBXGroup;
 			children = (
@@ -625,6 +640,7 @@
 		D2F56F48140EBBFC00F72DF0 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				D25ADF541415A3FF007ED823 /* User Detail */,
 				D27B19511415438800E7D70B /* Front Login */,
 				D27B192E1414648A00E7D70B /* Compose Jot */,
 				D291E7631413C80900CB08A8 /* Settings Tab */,
@@ -734,6 +750,7 @@
 				D291E78B1413E31300CB08A8 /* user in Resources */,
 				D27B1956141543A500E7D70B /* FrontLogin.xib in Resources */,
 				D27B19CD14154D4D00E7D70B /* auth_user in Resources */,
+				D25ADF591415A416007ED823 /* UserDetail.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,6 +810,7 @@
 				D27B1955141543A500E7D70B /* LoginController.m in Sources */,
 				D27B19D01415520F00E7D70B /* AuthUserRequest.m in Sources */,
 				D27B19D31415526400E7D70B /* AuthUserResponse.m in Sources */,
+				D25ADF581415A416007ED823 /* UserDetailController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
