@@ -1,9 +1,5 @@
 iPhone Roadmap:
 
-* Saving session between app quit
-* Need to recreate tab bar controller when logging in so that all state gets cleared after logging out
-=> 0.2
-
 * User detail API call
 * User detail view linkable from jot detail view and selecting comments
 * Jot detail view lets you comment

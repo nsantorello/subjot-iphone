@@ -2,6 +2,5 @@ iPhone:
 
 * Signing in w/ API integration
 * Settings shows authed user's username
-//* Saving session between app quit
-//* Need to recreate tab bar controller when logging in so that all state gets cleared after logging out
+* Saving session between app quit
 => 0.2
