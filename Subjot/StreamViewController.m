@@ -77,6 +77,13 @@
     return cell;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    if ([self numberOfSectionsInTableView:tableView] == (section+1)){
+        return [[UIView new] autorelease];
+    }
+    return nil;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [jots count];

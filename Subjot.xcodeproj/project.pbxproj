@@ -60,6 +60,8 @@
 		D23F94A114130A1E0032E317 /* ExploreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23F949F14130A1E0032E317 /* ExploreView.xib */; };
 		D25ADF581415A416007ED823 /* UserDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25ADF561415A416007ED823 /* UserDetailController.m */; };
 		D25ADF591415A416007ED823 /* UserDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25ADF571415A416007ED823 /* UserDetail.xib */; };
+		D25ADFCE1415B08A007ED823 /* disclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = D25ADFCC1415B08A007ED823 /* disclosure.png */; };
+		D25ADFCF1415B08A007ED823 /* disclosure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D25ADFCD1415B08A007ED823 /* disclosure@2x.png */; };
 		D27B194C1415150800E7D70B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27B194B1415150800E7D70B /* MessageUI.framework */; };
 		D27B19501415412E00E7D70B /* Credentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B194F1415412E00E7D70B /* Credentials.m */; };
 		D27B1955141543A500E7D70B /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B1953141543A500E7D70B /* LoginController.m */; };
@@ -189,6 +191,8 @@
 		D25ADF551415A416007ED823 /* UserDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailController.h; sourceTree = "<group>"; };
 		D25ADF561415A416007ED823 /* UserDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailController.m; sourceTree = "<group>"; };
 		D25ADF571415A416007ED823 /* UserDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetail.xib; sourceTree = "<group>"; };
+		D25ADFCC1415B08A007ED823 /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disclosure.png; path = Subjot/images/disclosure.png; sourceTree = "<group>"; };
+		D25ADFCD1415B08A007ED823 /* disclosure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "disclosure@2x.png"; path = "Subjot/images/disclosure@2x.png"; sourceTree = "<group>"; };
 		D27B194B1415150800E7D70B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D27B194E1415412E00E7D70B /* Credentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
 		D27B194F1415412E00E7D70B /* Credentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Credentials.m; sourceTree = "<group>"; };
@@ -425,6 +429,8 @@
 		D23F93DE1412CC320032E317 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D25ADFCC1415B08A007ED823 /* disclosure.png */,
+				D25ADFCD1415B08A007ED823 /* disclosure@2x.png */,
 				D291E77D1413D5B900CB08A8 /* Notifications */,
 				D23F9490141301D80032E317 /* Demo API */,
 				D23F948F141301CE0032E317 /* Tab Bar Icons */,
@@ -751,6 +757,8 @@
 				D27B1956141543A500E7D70B /* FrontLogin.xib in Resources */,
 				D27B19CD14154D4D00E7D70B /* auth_user in Resources */,
 				D25ADF591415A416007ED823 /* UserDetail.xib in Resources */,
+				D25ADFCE1415B08A007ED823 /* disclosure.png in Resources */,
+				D25ADFCF1415B08A007ED823 /* disclosure@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -882,7 +890,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Noah Santorello";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -890,7 +898,7 @@
 				INFOPLIST_FILE = "Subjot/Subjot-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "62CE9781-C1EC-4A0E-949E-2FAD8AB60F27";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -899,14 +907,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Noah Santorello";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Subjot/Subjot-Prefix.pch";
 				INFOPLIST_FILE = "Subjot/Subjot-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "62CE9781-C1EC-4A0E-949E-2FAD8AB60F27";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

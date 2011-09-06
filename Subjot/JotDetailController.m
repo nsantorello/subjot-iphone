@@ -76,6 +76,20 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)pushUserDetailController:(User*)user
+{
+    UserDetailController* userDetailController = [[UserDetailController alloc] init];
+    //userDetailController.user = user;
+    [self.navigationController pushViewController:userDetailController animated:YES];
+    [userDetailController release];
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self pushUserDetailController:nil];
+    [super touchesBegan:touches withEvent:event];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {    
     static NSString *jdtCellIdentifier = @"JotDetailTableCell";
@@ -177,7 +191,7 @@
             else
             {
                 // Static size for Add a Comment button
-                return 35;
+                return 45;
             }
         }
             break;
@@ -202,10 +216,7 @@
         }
         else
         {
-            UserDetailController* userDetailController = [[UserDetailController alloc] init];
-            //userDetailController.user = ((Comment*)[jot.comments objectAtIndex:indexPath.row]).author;
-            [self.navigationController pushViewController:userDetailController animated:YES];
-            [userDetailController release];
+            [self pushUserDetailController:nil];
         }
     }
 }
