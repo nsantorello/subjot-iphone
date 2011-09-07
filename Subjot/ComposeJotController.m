@@ -1,17 +1,15 @@
 //
-//  HomeStreamController.m
+//  ComposeJotController.m
 //  Subjot
 //
-//  Created by Noah Santorello on 9/3/11.
+//  Created by Noah Santorello on 9/5/11.
 //  Copyright 2011 Noah Santorello. All rights reserved.
 //
 
-#import "HomeStreamController.h"
-#import "StreamRequest.h"
-#import "JotCache.h"
 #import "ComposeJotController.h"
 
-@implementation HomeStreamController
+
+@implementation ComposeJotController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,19 +39,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-
-    
-    [StreamRequest homeRequestWithDelegate:nil];
-    streamViewController.jots = [NSArray arrayWithObjects:[JotCache getJotById:[NSNumber numberWithInt:1]], [JotCache getJotById:[NSNumber numberWithInt:2]], [JotCache getJotById:[NSNumber numberWithInt:3]], [JotCache getJotById:[NSNumber numberWithInt:4]], [JotCache getJotById:[NSNumber numberWithInt:5]], [JotCache getJotById:[NSNumber numberWithInt:6]], nil];
-    self.title = @"Latest";
-}
-
-- (IBAction)composeJotClicked
-{
-    ComposeJotController* composeJotController = [[ComposeJotController alloc] init];
-    self.modalViewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    [self.navigationController.modalViewController presentModalViewController:composeJotController animated:YES];
-    [composeJotController release];
 }
 
 - (void)viewDidUnload

@@ -20,11 +20,6 @@
     
     // Deserialize jot data from API result into jot objects.
     user = [UserCache getUserFromDict:[response valueForKey:@"user"]];
-    
-    if (user)
-    {
-        [Credentials loginAs:user];
-    }
 }
 
 - (void)dealloc

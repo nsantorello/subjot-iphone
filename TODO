@@ -19,6 +19,7 @@ iPhone Roadmap:
 => 0.6
 
 * Able to edit your own profile
+* Can jot images and videos from phone's gallery
 => 0.7
 
 * Caching and cache scheduling in settings--options for how long to cache jots/home many jots/how far back and to cache images, jots, comments, and user info (option for only if on WiFi for images) -- now we can read in the subway!  :)
@@ -30,6 +31,7 @@ iPhone Roadmap:
 => 0.9
 
 * Graphical polish
+* Hunt down memory leaks
 => 1.0
 
 Tentative:

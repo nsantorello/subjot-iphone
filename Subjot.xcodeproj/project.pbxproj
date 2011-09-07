@@ -62,6 +62,8 @@
 		D25ADF591415A416007ED823 /* UserDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25ADF571415A416007ED823 /* UserDetail.xib */; };
 		D25ADFCE1415B08A007ED823 /* disclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = D25ADFCC1415B08A007ED823 /* disclosure.png */; };
 		D25ADFCF1415B08A007ED823 /* disclosure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D25ADFCD1415B08A007ED823 /* disclosure@2x.png */; };
+		D25ADFD31415BE91007ED823 /* ComposeJotController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25ADFD11415BE91007ED823 /* ComposeJotController.m */; };
+		D25ADFD41415BE91007ED823 /* ComposeJot.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25ADFD21415BE91007ED823 /* ComposeJot.xib */; };
 		D27B194C1415150800E7D70B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27B194B1415150800E7D70B /* MessageUI.framework */; };
 		D27B19501415412E00E7D70B /* Credentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B194F1415412E00E7D70B /* Credentials.m */; };
 		D27B1955141543A500E7D70B /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27B1953141543A500E7D70B /* LoginController.m */; };
@@ -193,6 +195,9 @@
 		D25ADF571415A416007ED823 /* UserDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetail.xib; sourceTree = "<group>"; };
 		D25ADFCC1415B08A007ED823 /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disclosure.png; path = Subjot/images/disclosure.png; sourceTree = "<group>"; };
 		D25ADFCD1415B08A007ED823 /* disclosure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "disclosure@2x.png"; path = "Subjot/images/disclosure@2x.png"; sourceTree = "<group>"; };
+		D25ADFD01415BE91007ED823 /* ComposeJotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeJotController.h; sourceTree = "<group>"; };
+		D25ADFD11415BE91007ED823 /* ComposeJotController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeJotController.m; sourceTree = "<group>"; };
+		D25ADFD21415BE91007ED823 /* ComposeJot.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeJot.xib; sourceTree = "<group>"; };
 		D27B194B1415150800E7D70B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D27B194E1415412E00E7D70B /* Credentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Credentials.h; sourceTree = "<group>"; };
 		D27B194F1415412E00E7D70B /* Credentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Credentials.m; sourceTree = "<group>"; };
@@ -277,6 +282,7 @@
 		D23F935114114CCE0032E317 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D23F934F14114CBF0032E317 /* Login */,
 				D291E78C1413F6D500CB08A8 /* Objects */,
 				D23F939C1412A1C80032E317 /* Cache */,
 			);
@@ -523,6 +529,9 @@
 		D27B192E1414648A00E7D70B /* Compose Jot */ = {
 			isa = PBXGroup;
 			children = (
+				D25ADFD01415BE91007ED823 /* ComposeJotController.h */,
+				D25ADFD11415BE91007ED823 /* ComposeJotController.m */,
+				D25ADFD21415BE91007ED823 /* ComposeJot.xib */,
 			);
 			name = "Compose Jot";
 			sourceTree = "<group>";
@@ -622,7 +631,6 @@
 				D23F93721412844D0032E317 /* Libraries */,
 				D23F935214114CED0032E317 /* API */,
 				D23F935114114CCE0032E317 /* Data */,
-				D23F934F14114CBF0032E317 /* Login */,
 				D2F56F45140EBBFC00F72DF0 /* SubjotAppDelegate.h */,
 				D2F56F46140EBBFC00F72DF0 /* SubjotAppDelegate.m */,
 				D2F56F48140EBBFC00F72DF0 /* iPhone */,
@@ -759,6 +767,7 @@
 				D25ADF591415A416007ED823 /* UserDetail.xib in Resources */,
 				D25ADFCE1415B08A007ED823 /* disclosure.png in Resources */,
 				D25ADFCF1415B08A007ED823 /* disclosure@2x.png in Resources */,
+				D25ADFD41415BE91007ED823 /* ComposeJot.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,6 +828,7 @@
 				D27B19D01415520F00E7D70B /* AuthUserRequest.m in Sources */,
 				D27B19D31415526400E7D70B /* AuthUserResponse.m in Sources */,
 				D25ADF581415A416007ED823 /* UserDetailController.m in Sources */,
+				D25ADFD31415BE91007ED823 /* ComposeJotController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -67,7 +67,7 @@
                 "author_id" : 1,
                 "text" : "The number of jots I have is OVER NINE THOUSAND!",
                 "published" : "Jan 1, 1970",
-                "num_comments" : 7,
+                "comments" : [],
                 "subject" : "my life is cool"
             },
             {
@@ -75,7 +75,7 @@
                 "author_id" : 2,
                 "text" : "Shu once wore a furry green pimp jacket.  Like a boss.",
                 "published" : "Jan 1, 1970",
-                "num_comments" : 7,
+                "comments" : [],
                 "subject" : "life of shu song"
             }
         ],

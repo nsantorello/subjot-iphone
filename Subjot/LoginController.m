@@ -65,6 +65,11 @@
 - (void)requestFinished:(ResponseBase*)response
 {
     // Auth request succeeded
+    AuthUserResponse* auth = (AuthUserResponse*)response;
+    if (auth.user)
+    {
+        [Credentials loginAs:auth.user];
+    }
     [self loginSucceeded];
 }
 
