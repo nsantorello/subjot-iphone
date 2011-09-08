@@ -3,7 +3,7 @@ iPhone Roadmap:
 * User detail API call
 * Jot detail view lets you comment
 * Some way to delete your own comments? (if you select your own comment, it asks you if you want to delete it instead of bringing you to that person's profile)
-* Lets you jot from the top right nav bar button with your subjects
+* Lets you jot from the top right nav bar button with your subjects and select if you want to send to Twitter or FB
 => 0.3
 
 * Explore API calls
@@ -27,7 +27,7 @@ iPhone Roadmap:
 * Twitter-like visual notification to let you know that you have new notifications
 => 0.8
 
-* Sharing jots to Twitter and FB (FML)
+* Authing with Twitter/FB using a web view so auth is stored on server and not phone.
 => 0.9
 
 * Graphical polish
