@@ -17,6 +17,7 @@ iPhone Roadmap:
 
 * Notifications that take you to appropriate jot/comment
 => 0.6
+=> Testflight alpha testing - source 20 candidates who want to try out iOS alpha app
 
 * Able to edit your own profile
 * Can jot images and videos from phone's gallery
@@ -29,10 +30,12 @@ iPhone Roadmap:
 
 * Authing with Twitter/FB using a web view so auth is stored on server and not phone.
 => 0.9
+=> Testflight beta testing - source 50 candidates who want to try out iOS beta app
 
 * Graphical polish
 * Hunt down memory leaks
 => 1.0
+=> Push to app store
 
 Tentative:
 * Include tracking so that we can look at usage statistics in the app; e.g. how many people click on notifications in the notifications tab, track redundant tasks, etc 
