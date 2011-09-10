@@ -7,7 +7,7 @@
 //
 
 #import "ExploreViewController.h"
-
+#import "HomeStreamController.h"
 
 @implementation ExploreViewController
 
@@ -24,8 +24,6 @@
 
 - (void)dealloc
 {
-    subjects = nil;
-    featured = nil;
     [super dealloc];
 }
 
@@ -52,7 +50,9 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    
+    self.subjects = nil;
+    self.featured = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -190,10 +190,10 @@
     UITableViewCell* selected = [tableView cellForRowAtIndexPath:indexPath];
     [selected setSelected:NO animated:YES];
     
-    ExploreViewController* exploreViewController = [[ExploreViewController alloc] init];
-    exploreViewController.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:exploreViewController animated:YES];
-    [exploreViewController release];
+    HomeStreamController* homeStreamController = [[HomeStreamController alloc] init];
+    homeStreamController.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:homeStreamController animated:YES];
+    [homeStreamController release];
 }
 
 @end

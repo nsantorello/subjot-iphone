@@ -9,8 +9,17 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ComposeJotController : UIViewController {
-    
+@interface ComposeJotController : UIViewController<UIActionSheetDelegate, UIPickerViewDelegate, UIPickerViewDataSource> {
+    int selectedSubjectPickerRow;
 }
+
+@property (nonatomic, retain) IBOutlet UITextView* jotText;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem* addBtn;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem* subjectBtn;
+
+- (IBAction)composeCanceled;
+- (IBAction)jotCompleted;
+- (IBAction)chooseSubjectClicked;
+- (IBAction)addButtonClicked;
 
 @end

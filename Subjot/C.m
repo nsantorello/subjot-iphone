@@ -49,7 +49,11 @@
 
 + (NSString*)subjectStreamUrl:(NSString*)subject;
 {
+#ifdef LIVE_API
     return [C appendTo:[C apiCallUrl:APIUrl_Streams_Subjects] theString:subject];
+#else
+    return [C apiCallUrl:APIUrl_Streams_Subjects];
+#endif
 }
 
 + (NSString*)exploreStreamUrl:(NSString*)topic;

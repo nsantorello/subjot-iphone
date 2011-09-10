@@ -85,7 +85,7 @@
 		D291E77C1413CF4A00CB08A8 /* ButtonTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D291E77A1413CF4900CB08A8 /* ButtonTableCell.xib */; };
 		D291E7801413D5C400CB08A8 /* no-notifications.png in Resources */ = {isa = PBXBuildFile; fileRef = D291E77E1413D5C400CB08A8 /* no-notifications.png */; };
 		D291E7811413D5C400CB08A8 /* no-notifications@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D291E77F1413D5C400CB08A8 /* no-notifications@2x.png */; };
-		D291E7871413E31300CB08A8 /* explore in Resources */ = {isa = PBXBuildFile; fileRef = D291E7821413E31300CB08A8 /* explore */; };
+		D291E7871413E31300CB08A8 /* subjects in Resources */ = {isa = PBXBuildFile; fileRef = D291E7821413E31300CB08A8 /* subjects */; };
 		D291E7881413E31300CB08A8 /* notifications in Resources */ = {isa = PBXBuildFile; fileRef = D291E7831413E31300CB08A8 /* notifications */; };
 		D291E7891413E31300CB08A8 /* post_comment in Resources */ = {isa = PBXBuildFile; fileRef = D291E7841413E31300CB08A8 /* post_comment */; };
 		D291E78A1413E31300CB08A8 /* post_jot in Resources */ = {isa = PBXBuildFile; fileRef = D291E7851413E31300CB08A8 /* post_jot */; };
@@ -94,6 +94,11 @@
 		D2CFABD3141BFE7400DECDB8 /* UserDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFABD2141BFE7400DECDB8 /* UserDetailRequest.m */; };
 		D2CFABD7141BFE9C00DECDB8 /* UserDetailResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFABD6141BFE9C00DECDB8 /* UserDetailResponse.m */; };
 		D2CFABDA141C015800DECDB8 /* DetailedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFABD9141C015800DECDB8 /* DetailedUser.m */; };
+		D2CFABDD141C0F5200DECDB8 /* CreateJotRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFABDC141C0F5200DECDB8 /* CreateJotRequest.m */; };
+		D2CFABE0141C0F6500DECDB8 /* CreateJotResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFABDF141C0F6500DECDB8 /* CreateJotResponse.m */; };
+		D2CFABE3141C105400DECDB8 /* DevHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFABE2141C105400DECDB8 /* DevHelper.m */; };
+		D2CFAC62141C158B00DECDB8 /* ComposeComment.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CFAC61141C158B00DECDB8 /* ComposeComment.xib */; };
+		D2CFAC65141C165700DECDB8 /* ComposeCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFAC64141C165700DECDB8 /* ComposeCommentController.m */; };
 		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
 		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
 		D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */; };
@@ -232,7 +237,7 @@
 		D291E77A1413CF4900CB08A8 /* ButtonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableCell.xib; sourceTree = "<group>"; };
 		D291E77E1413D5C400CB08A8 /* no-notifications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no-notifications.png"; path = "Subjot/images/no-notifications.png"; sourceTree = "<group>"; };
 		D291E77F1413D5C400CB08A8 /* no-notifications@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no-notifications@2x.png"; path = "Subjot/images/no-notifications@2x.png"; sourceTree = "<group>"; };
-		D291E7821413E31300CB08A8 /* explore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = explore; path = demo_api/explore; sourceTree = "<group>"; };
+		D291E7821413E31300CB08A8 /* subjects */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = subjects; path = demo_api/subjects; sourceTree = "<group>"; };
 		D291E7831413E31300CB08A8 /* notifications */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = notifications; path = demo_api/notifications; sourceTree = "<group>"; };
 		D291E7841413E31300CB08A8 /* post_comment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = post_comment; path = demo_api/post_comment; sourceTree = "<group>"; };
 		D291E7851413E31300CB08A8 /* post_jot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = post_jot; path = demo_api/post_jot; sourceTree = "<group>"; };
@@ -245,6 +250,15 @@
 		D2CFABD6141BFE9C00DECDB8 /* UserDetailResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailResponse.m; sourceTree = "<group>"; };
 		D2CFABD8141C015800DECDB8 /* DetailedUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedUser.h; sourceTree = "<group>"; };
 		D2CFABD9141C015800DECDB8 /* DetailedUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedUser.m; sourceTree = "<group>"; };
+		D2CFABDB141C0F5100DECDB8 /* CreateJotRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateJotRequest.h; sourceTree = "<group>"; };
+		D2CFABDC141C0F5200DECDB8 /* CreateJotRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateJotRequest.m; sourceTree = "<group>"; };
+		D2CFABDE141C0F6500DECDB8 /* CreateJotResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateJotResponse.h; sourceTree = "<group>"; };
+		D2CFABDF141C0F6500DECDB8 /* CreateJotResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateJotResponse.m; sourceTree = "<group>"; };
+		D2CFABE1141C105400DECDB8 /* DevHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevHelper.h; sourceTree = "<group>"; };
+		D2CFABE2141C105400DECDB8 /* DevHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevHelper.m; sourceTree = "<group>"; };
+		D2CFAC61141C158B00DECDB8 /* ComposeComment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeComment.xib; sourceTree = "<group>"; };
+		D2CFAC63141C165700DECDB8 /* ComposeCommentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeCommentController.h; sourceTree = "<group>"; };
+		D2CFAC64141C165700DECDB8 /* ComposeCommentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentController.m; sourceTree = "<group>"; };
 		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F56F36140EBBFC00F72DF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F56F38140EBBFC00F72DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -321,6 +335,8 @@
 				D27B19CF1415520F00E7D70B /* AuthUserRequest.m */,
 				D2CFABD1141BFE7400DECDB8 /* UserDetailRequest.h */,
 				D2CFABD2141BFE7400DECDB8 /* UserDetailRequest.m */,
+				D2CFABDB141C0F5100DECDB8 /* CreateJotRequest.h */,
+				D2CFABDC141C0F5200DECDB8 /* CreateJotRequest.m */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -336,6 +352,8 @@
 				D27B19D21415526400E7D70B /* AuthUserResponse.m */,
 				D2CFABD5141BFE9C00DECDB8 /* UserDetailResponse.h */,
 				D2CFABD6141BFE9C00DECDB8 /* UserDetailResponse.m */,
+				D2CFABDE141C0F6500DECDB8 /* CreateJotResponse.h */,
+				D2CFABDF141C0F6500DECDB8 /* CreateJotResponse.m */,
 			);
 			name = Responses;
 			sourceTree = "<group>";
@@ -346,6 +364,8 @@
 				D23F93CF1412B0610032E317 /* Networking */,
 				D23F93CE1412B0530032E317 /* Custom Categories */,
 				D23F93A61412A9F80032E317 /* JSON */,
+				D2CFABE1141C105400DECDB8 /* DevHelper.h */,
+				D2CFABE2141C105400DECDB8 /* DevHelper.m */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -367,7 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				D27B19CC14154D4D00E7D70B /* auth_user */,
-				D291E7821413E31300CB08A8 /* explore */,
+				D291E7821413E31300CB08A8 /* subjects */,
 				D291E7831413E31300CB08A8 /* notifications */,
 				D291E7841413E31300CB08A8 /* post_comment */,
 				D291E7851413E31300CB08A8 /* post_jot */,
@@ -515,6 +535,9 @@
 				D291E75D1413C1D600CB08A8 /* CommentTableCell.h */,
 				D291E75E1413C1D600CB08A8 /* CommentTableCell.m */,
 				D291E75F1413C1D600CB08A8 /* CommentTableCell.xib */,
+				D2CFAC63141C165700DECDB8 /* ComposeCommentController.h */,
+				D2CFAC64141C165700DECDB8 /* ComposeCommentController.m */,
+				D2CFAC61141C158B00DECDB8 /* ComposeComment.xib */,
 			);
 			name = "Jot Detail";
 			sourceTree = "<group>";
@@ -772,7 +795,7 @@
 				D291E77C1413CF4A00CB08A8 /* ButtonTableCell.xib in Resources */,
 				D291E7801413D5C400CB08A8 /* no-notifications.png in Resources */,
 				D291E7811413D5C400CB08A8 /* no-notifications@2x.png in Resources */,
-				D291E7871413E31300CB08A8 /* explore in Resources */,
+				D291E7871413E31300CB08A8 /* subjects in Resources */,
 				D291E7881413E31300CB08A8 /* notifications in Resources */,
 				D291E7891413E31300CB08A8 /* post_comment in Resources */,
 				D291E78A1413E31300CB08A8 /* post_jot in Resources */,
@@ -783,6 +806,7 @@
 				D25ADFCE1415B08A007ED823 /* disclosure.png in Resources */,
 				D25ADFCF1415B08A007ED823 /* disclosure@2x.png in Resources */,
 				D25ADFD41415BE91007ED823 /* ComposeJot.xib in Resources */,
+				D2CFAC62141C158B00DECDB8 /* ComposeComment.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -847,6 +871,10 @@
 				D2CFABD3141BFE7400DECDB8 /* UserDetailRequest.m in Sources */,
 				D2CFABD7141BFE9C00DECDB8 /* UserDetailResponse.m in Sources */,
 				D2CFABDA141C015800DECDB8 /* DetailedUser.m in Sources */,
+				D2CFABDD141C0F5200DECDB8 /* CreateJotRequest.m in Sources */,
+				D2CFABE0141C0F6500DECDB8 /* CreateJotResponse.m in Sources */,
+				D2CFABE3141C105400DECDB8 /* DevHelper.m in Sources */,
+				D2CFAC65141C165700DECDB8 /* ComposeCommentController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

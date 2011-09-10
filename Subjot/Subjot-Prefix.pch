@@ -15,5 +15,6 @@
     #import <Foundation/Foundation.h>
     #import "C.h"
     #import "SBJson.h"
+    #import "DevHelper.h"
 #endif
 

@@ -9,6 +9,7 @@
 #import "JotDetailController.h"
 #import "ImageCache.h"
 #import "UserDetailController.h"
+#import "ComposeCommentController.h"
 
 @implementation JotDetailController
 
@@ -213,9 +214,9 @@
     {
         if (indexPath.row >= [jot.comments count])
         {
-            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Add comment" message:@"Will be implemented soon.  :)" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Aww, well get on it!", nil];
-            [alert show];
-            [alert release];
+            ComposeCommentController* composeCommentController = [[ComposeCommentController alloc] init];
+            [self presentModalViewController:composeCommentController animated:YES];
+            [composeCommentController release];
         }
         else
         {

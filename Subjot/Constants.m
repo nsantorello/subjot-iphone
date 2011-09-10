@@ -29,7 +29,7 @@ NSString* const APIUrl_User_Detail = @"user_detail";
 
 NSString* const APIUrl_Streams_Home = @"home";
 NSString* const APIUrl_Streams_Subjects = @"subjects";
-NSString* const APIUrl_Streams_Explore = @"explore";
+NSString* const APIUrl_Streams_Explore = @"home";
 NSString* const APIUrl_Streams_All = @"all";
 
 #endif

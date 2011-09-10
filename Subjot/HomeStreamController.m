@@ -52,7 +52,7 @@
 {
     ComposeJotController* composeJotController = [[ComposeJotController alloc] init];
     self.modalViewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    [self.navigationController.modalViewController presentModalViewController:composeJotController animated:YES];
+    [self presentModalViewController:composeJotController animated:YES];
     [composeJotController release];
 }
 
