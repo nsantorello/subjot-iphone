@@ -91,6 +91,8 @@
 		D291E78A1413E31300CB08A8 /* post_jot in Resources */ = {isa = PBXBuildFile; fileRef = D291E7851413E31300CB08A8 /* post_jot */; };
 		D291E78B1413E31300CB08A8 /* user_detail in Resources */ = {isa = PBXBuildFile; fileRef = D291E7861413E31300CB08A8 /* user_detail */; };
 		D291E78F1413F6ED00CB08A8 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E78E1413F6ED00CB08A8 /* Comment.m */; };
+		D2CFABD3141BFE7400DECDB8 /* UserDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFABD2141BFE7400DECDB8 /* UserDetailRequest.m */; };
+		D2CFABD7141BFE9C00DECDB8 /* UserDetailResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFABD6141BFE9C00DECDB8 /* UserDetailResponse.m */; };
 		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
 		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
 		D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */; };
@@ -236,6 +238,10 @@
 		D291E7861413E31300CB08A8 /* user_detail */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = user_detail; path = demo_api/user_detail; sourceTree = "<group>"; };
 		D291E78D1413F6ED00CB08A8 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
 		D291E78E1413F6ED00CB08A8 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		D2CFABD1141BFE7400DECDB8 /* UserDetailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailRequest.h; sourceTree = "<group>"; };
+		D2CFABD2141BFE7400DECDB8 /* UserDetailRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailRequest.m; sourceTree = "<group>"; };
+		D2CFABD5141BFE9C00DECDB8 /* UserDetailResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailResponse.h; sourceTree = "<group>"; };
+		D2CFABD6141BFE9C00DECDB8 /* UserDetailResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailResponse.m; sourceTree = "<group>"; };
 		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F56F36140EBBFC00F72DF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F56F38140EBBFC00F72DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -310,6 +316,8 @@
 				D23F938214128A780032E317 /* StreamRequest.m */,
 				D27B19CE1415520F00E7D70B /* AuthUserRequest.h */,
 				D27B19CF1415520F00E7D70B /* AuthUserRequest.m */,
+				D2CFABD1141BFE7400DECDB8 /* UserDetailRequest.h */,
+				D2CFABD2141BFE7400DECDB8 /* UserDetailRequest.m */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -323,6 +331,8 @@
 				D23F938F1412970C0032E317 /* StreamResponse.m */,
 				D27B19D11415526400E7D70B /* AuthUserResponse.h */,
 				D27B19D21415526400E7D70B /* AuthUserResponse.m */,
+				D2CFABD5141BFE9C00DECDB8 /* UserDetailResponse.h */,
+				D2CFABD6141BFE9C00DECDB8 /* UserDetailResponse.m */,
 			);
 			name = Responses;
 			sourceTree = "<group>";
@@ -829,6 +839,8 @@
 				D27B19D31415526400E7D70B /* AuthUserResponse.m in Sources */,
 				D25ADF581415A416007ED823 /* UserDetailController.m in Sources */,
 				D25ADFD31415BE91007ED823 /* ComposeJotController.m in Sources */,
+				D2CFABD3141BFE7400DECDB8 /* UserDetailRequest.m in Sources */,
+				D2CFABD7141BFE9C00DECDB8 /* UserDetailResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

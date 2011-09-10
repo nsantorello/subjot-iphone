@@ -15,7 +15,7 @@
 
 + (NSString*)subjotAPIUrl;
 + (NSString*)authUserUrl:(NSString*)username password:(NSString*)password;
-+ (NSString*)userDetailUrl:(NSNumber*)userId;
++ (NSString*)userDetailUrl:(NSArray*)ids;
 + (NSString*)homeStreamUrl;
 + (NSString*)allStreamUrl;
 + (NSString*)subjectStreamUrl:(NSString*)subject;

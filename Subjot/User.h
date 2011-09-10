@@ -20,7 +20,6 @@
 @property (retain) NSArray* subjects;
 @property (copy) NSNumber* totalJots;
 @property (copy) NSString* bio;
-@property (copy) NSString* token;
 
 @property (retain) NSDictionary* rawData;
 
