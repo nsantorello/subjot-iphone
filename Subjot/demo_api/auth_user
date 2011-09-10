@@ -6,6 +6,9 @@
             "name" : "Noah Santorello",
             "username" : "Noah",
             "profile_pic_url" : "https://si0.twimg.com/profile_images/1140014149/41766_423118_4294_n_bigger.jpg",
-            "token" : "owx30r9jn340xb34yrb34nbkjnlkjbfdoihf2ehfudijksf"
+            "token" : "owx30r9jn340xb34yrb34nbkjnlkjbfdoihf2ehfudijksf",
+            "subjects" : ["life", "music", "nyc", "crossfit", "paleo", "space"],
+            "bio" : "Space is the new frontier.  One day I will live on Mars.",
+            "total_jots" : 74
         }
 }

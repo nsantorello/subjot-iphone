@@ -5,33 +5,65 @@
         [
             {
                 "id" : 1,
-                "author_id" : 1,
+                "author" : 
+                {
+                    "id" : 3,
+                    "name" : "Chris Carella",
+                    "username" : "ccarella",
+                    "profile_pic_url" : "http://s3.amazonaws.com/subjot-profile-images-production/medium/2/icon.jpg"
+                },
                 "text" : "Hi there!  I think the iOS app is SOOOO awesome! ",
                 "published" : "Jan 1, 1970",
                 "comments" : [
                     {
                         "id" : 1,
-                        "author_id" : 2,
+                        "author" : {
+                            "id" : 2,
+                            "name" : "Andrew Gross",
+                            "username" : "andrew",
+                            "profile_pic_url" : "https://si0.twimg.com/profile_images/1376251886/netcat_bigger.jpg"
+                        },
                         "text" : "I agree, but my Android app will kick your app's butt!",
                         "published" : "Jan 1, 1970"
                     }, {
                         "id" : 2,
-                        "author_id" : 2,
+                        "author" : {
+                            "id" : 2,
+                            "name" : "Andrew Gross",
+                            "username" : "andrew",
+                            "profile_pic_url" : "https://si0.twimg.com/profile_images/1376251886/netcat_bigger.jpg"
+                        },
                         "text" : "Btw, Shu likes strippers.",
                         "published" : "Jan 1, 1970"
                     }, {
                         "id" : 3,
-                        "author_id" : 1,
+                        "author" : {
+                            "id" : 1,
+                            "name" : "Noah Santorello",
+                            "username" : "Noah",
+                            "profile_pic_url" : "https://si0.twimg.com/profile_images/1140014149/41766_423118_4294_n_bigger.jpg"
+                         },
                         "text" : "Shu likes sharks with lulzers!",
                         "published" : "Jan 1, 1970"
                     }, {
                         "id" : 4,
-                        "author_id" : 3,
+                        "author" : 
+                        {
+                            "id" : 3,
+                            "name" : "Chris Carella",
+                            "username" : "ccarella",
+                            "profile_pic_url" : "http://s3.amazonaws.com/subjot-profile-images-production/medium/2/icon.jpg"
+                        },
                         "text" : "I just wanted to make a really long comment to see how the overflow and all that jazz works.  If this is a really long formatted comment, then it looks like the formatting works!  Oh and BTW, I love Subjot because, duh, me and my wife created it!",
                         "published" : "Jan 1, 1970"
                     }, {
                         "id" : 5,
-                        "author_id" : 2,
+                        "author" : {
+                            "id" : 2,
+                            "name" : "Andrew Gross",
+                            "username" : "andrew",
+                            "profile_pic_url" : "https://si0.twimg.com/profile_images/1376251886/netcat_bigger.jpg"
+                        },
                         "text" : "Commenting cause it's cool.  And also because Noah needs to test some schtuff.",
                         "published" : "Jan 1, 1970"
                     }
@@ -40,7 +72,12 @@
             }, 
             {
                 "id" : 2,
-                "author_id" : 2,
+                "author" : {
+                    "id" : 2,
+                    "name" : "Andrew Gross",
+                    "username" : "andrew",
+                    "profile_pic_url" : "https://si0.twimg.com/profile_images/1376251886/netcat_bigger.jpg"
+                },
                 "text" : "I am building the Android app for tablets and Android phones as you read this!  I cannot wait to show the world my l33t hax0r Android skills!  Woohoo, this will be fun!",
                 "published" : "Jan 1, 1970",
                 "comments" : [],
@@ -48,7 +85,13 @@
             }, 
             {
                 "id" : 3,
-                "author_id" : 3,
+                "author" : 
+                {
+                    "id" : 3,
+                    "name" : "Chris Carella",
+                    "username" : "ccarella",
+                    "profile_pic_url" : "http://s3.amazonaws.com/subjot-profile-images-production/medium/2/icon.jpg"
+                },
                 "text" : "This is yet another jot!",
                 "published" : "Jan 1, 1970",
                 "comments" : [],
@@ -56,7 +99,12 @@
             }, 
             {
                 "id" : 4,
-                "author_id" : 1,
+                "author" : {
+                    "id" : 1,
+                    "name" : "Noah Santorello",
+                    "username" : "Noah",
+                    "profile_pic_url" : "https://si0.twimg.com/profile_images/1140014149/41766_423118_4294_n_bigger.jpg"
+                 },
                 "text" : "I am super cool because I do super cool stuff.",
                 "published" : "Jan 1, 1970",
                 "comments" : [],
@@ -64,7 +112,12 @@
             },
             {
                 "id" : 5,
-                "author_id" : 1,
+                "author" : {
+                    "id" : 1,
+                    "name" : "Noah Santorello",
+                    "username" : "Noah",
+                    "profile_pic_url" : "https://si0.twimg.com/profile_images/1140014149/41766_423118_4294_n_bigger.jpg"
+                 },
                 "text" : "The number of jots I have is OVER NINE THOUSAND!",
                 "published" : "Jan 1, 1970",
                 "comments" : [],
@@ -72,29 +125,16 @@
             },
             {
                 "id" : 6,
-                "author_id" : 2,
+                "author" : {
+                    "id" : 2,
+                    "name" : "Andrew Gross",
+                    "username" : "andrew",
+                    "profile_pic_url" : "https://si0.twimg.com/profile_images/1376251886/netcat_bigger.jpg"
+                },
                 "text" : "Shu once wore a furry green pimp jacket.  Like a boss.",
                 "published" : "Jan 1, 1970",
                 "comments" : [],
                 "subject" : "life of shu song"
             }
-        ],
-    "user_refs" : [
-        {
-            "id" : 1,
-            "name" : "Noah Santorello",
-            "username" : "Noah",
-            "profile_pic_url" : "https://si0.twimg.com/profile_images/1140014149/41766_423118_4294_n_bigger.jpg"
-        }, {
-            "id" : 2,
-            "name" : "Andrew Gross",
-            "username" : "andrew",
-            "profile_pic_url" : "https://si0.twimg.com/profile_images/1376251886/netcat_bigger.jpg"
-        }, {
-            "id" : 3,
-            "name" : "Chris Carella",
-            "username" : "ccarella",
-            "profile_pic_url" : "http://s3.amazonaws.com/subjot-profile-images-production/medium/2/icon.jpg"
-        }
-    ]
+        ]
 }

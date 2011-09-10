@@ -1,14 +1,31 @@
 {
     "success" : true,
     "version" : 1.0,
-    "user" : {
+    "users" : [
+        {
             "id" : 1,
             "name" : "Noah Santorello",
             "username" : "Noah",
             "profile_pic_url" : "https://si0.twimg.com/profile_images/1140014149/41766_423118_4294_n_bigger.jpg",
-            "token" : "owx30r9jn340xb34yrb34nbkjnlkjbfdoihf2ehfudijksf",
             "subjects" : ["life", "music", "nyc", "crossfit", "paleo", "space"],
             "bio" : "Space is the new frontier.  One day I will live on Mars.",
             "total_jots" : 74
+        }, {
+            "id" : 2,
+            "name" : "Andrew Gross",
+            "username" : "andrew",
+            "profile_pic_url" : "https://si0.twimg.com/profile_images/1376251886/netcat_bigger.jpg",
+            "subjects" : ["life", "music", "nyc", "infosec", "gaming", "awesomeness"],
+            "bio" : "I like computer security and awesomeness.",
+            "total_jots" : 208
+        }, {
+            "id" : 3,
+            "name" : "Chris Carella",
+            "username" : "ccarella",
+            "profile_pic_url" : "http://s3.amazonaws.com/subjot-profile-images-production/medium/2/icon.jpg",
+            "subjects" : ["life", "music", "nyc", "street art", "song of the day", "quote of the day", ],
+            "bio" : "I am the co-founder of Subjot!  One day I will be 'MySpace Tom' famous.",
+            "total_jots" : 2374
         }
+    ]
 }

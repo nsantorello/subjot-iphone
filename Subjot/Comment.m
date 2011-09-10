@@ -17,7 +17,7 @@
 {
     Comment* comment = [[[Comment alloc] init] autorelease];
     comment.commentId = [dict valueForKey:@"id"];
-    comment.author = [UserCache getUserById:[dict valueForKey:@"author_id"]];
+    comment.author = [UserCache getUserFromDict:[dict valueForKey:@"author"]];
     comment.text = [dict valueForKey:@"text"];
     comment.published = [dict valueForKey:@"published"];
     comment.jot = j;

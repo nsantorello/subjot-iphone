@@ -12,6 +12,9 @@
 
 @implementation JotDetailController
 
+#define kJotSection 0
+#define kCommentSection 1
+
 @synthesize jot, name, username, subject, pic, writingAbout, jotDetailTableCell, commentTableCell;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -97,18 +100,18 @@
     static NSString *addCellIdentifier = @"AddCellIdentifier";
     
     // All this crap just creates the right type of table cell
-    NSString* identifier = indexPath.section == 0 ? jdtCellIdentifier : ctCellIdentifier;
-    identifier = (indexPath.section != 0 && indexPath.row >= [jot.comments count]) ? addCellIdentifier : identifier;
+    NSString* identifier = indexPath.section == kJotSection ? jdtCellIdentifier : ctCellIdentifier;
+    identifier = (indexPath.section != kJotSection && indexPath.row >= [jot.comments count]) ? addCellIdentifier : identifier;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
-        if (indexPath.section != 0 && indexPath.row >= [jot.comments count])
+        if (indexPath.section != kJotSection && indexPath.row >= [jot.comments count])
         {
            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier] autorelease];
         }
         else
         {
             [[NSBundle mainBundle] loadNibNamed:identifier owner: self options: nil];
-            if (indexPath.section == 0)
+            if (indexPath.section == kJotSection)
             {
                 cell = jotDetailTableCell;
                 jotDetailTableCell = nil;
@@ -124,13 +127,13 @@
     // Configure the cell...
     switch (indexPath.section)
     {
-        case 0:
+        case kJotSection:
         {
             JotDetailTableCell* jd = (JotDetailTableCell*)cell;
             [jd setJot:jot];
         }
             break;
-        case 1:
+        case kCommentSection:
         {
             if (indexPath.row < [jot.comments count])
             {
@@ -153,7 +156,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return section == 0 ? 1 : ([jot.comments count] + 1);
+    return section == kJotSection ? 1 : ([jot.comments count] + 1);
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -163,7 +166,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return section == 0 ? nil : ([jot.comments count] == 0 ? @"No Comments" : @"Comments");
+    return section == kJotSection ? nil : ([jot.comments count] == 0 ? @"No Comments" : @"Comments");
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
@@ -176,9 +179,9 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.section) {
-        case 0:
+        case kJotSection:
             return 24 + [jot detailTextHeight];
-        case 1:
+        case kCommentSection:
         {
             if (indexPath.row < [jot.comments count])
             {
@@ -206,7 +209,7 @@
     UITableViewCell* selected = [tableView cellForRowAtIndexPath:indexPath];
     [selected setSelected:NO animated:YES];
     
-    if (indexPath.section == 1)
+    if (indexPath.section == kCommentSection)
     {
         if (indexPath.row >= [jot.comments count])
         {

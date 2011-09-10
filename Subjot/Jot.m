@@ -17,7 +17,7 @@
 {
     Jot* jot = [[[Jot alloc] init] autorelease];
     jot.jotId = [dict valueForKey:@"id"];
-    jot.author = [UserCache getUserById:[dict valueForKey:@"author_id"]];
+    jot.author = [UserCache getUserFromDict:[dict valueForKey:@"author"]];
     jot.text = [dict valueForKey:@"text"];
     jot.published = [dict valueForKey:@"published"];
     jot.comments = [[Comment commentArrayFromDictionary:[dict valueForKey:@"comments"] forJot:jot] retain];
