@@ -17,6 +17,6 @@
 
 - (id)initWithDelegate:(id)del;
 - (void)beginRequestWithURL:(NSURL*)url andDelegate:(id)del;
-- (void)beginRequestWithURL:(NSURL*)url andDelegate:(id)del andPostData:(NSString*)postData;
+- (void)beginRequestWithURL:(NSURL*)url andDelegate:(id)del andPostData:(NSDictionary*)postData;
 
 @end

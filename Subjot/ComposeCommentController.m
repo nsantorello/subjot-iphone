@@ -7,13 +7,13 @@
 //
 
 #import "ComposeCommentController.h"
-
+#import "CreateCommentRequest.h"
 
 @implementation ComposeCommentController
 
 #define kDeleteButtonIndex 0
 
-@synthesize commentText;
+@synthesize commentText, jot, composeCommentDelegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -60,6 +60,7 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     self.commentText = nil;
+    self.jot = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -77,7 +78,7 @@
 {
     cancelSheet = [[UIActionSheet alloc] 
                                   initWithTitle:nil
-                                  delegate:self cancelButtonTitle:@"Continue composing" destructiveButtonTitle:@"Delete comment" otherButtonTitles:nil];
+                                  delegate:self cancelButtonTitle:@"Continue editing" destructiveButtonTitle:@"Delete comment" otherButtonTitles:nil];
     [cancelSheet showInView:self.view];
 }
 
@@ -95,6 +96,7 @@
 
 - (IBAction)commentPosted
 {
+    [CreateCommentRequest requestWithDelegate:composeCommentDelegate forJot:jot andComment:commentText.text];
     [self dismissView];
 }
 

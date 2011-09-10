@@ -16,3 +16,5 @@ extern NSString* const APIUrl_Streams_Home;
 extern NSString* const APIUrl_Streams_Subjects;
 extern NSString* const APIUrl_Streams_Explore;
 extern NSString* const APIUrl_Streams_All;
+
+extern NSString* const APIUrl_Create_Comment;

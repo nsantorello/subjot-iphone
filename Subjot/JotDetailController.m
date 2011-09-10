@@ -215,6 +215,8 @@
         if (indexPath.row >= [jot.comments count])
         {
             ComposeCommentController* composeCommentController = [[ComposeCommentController alloc] init];
+            composeCommentController.jot = jot;
+            composeCommentController.composeCommentDelegate = self;
             [self presentModalViewController:composeCommentController animated:YES];
             [composeCommentController release];
         }

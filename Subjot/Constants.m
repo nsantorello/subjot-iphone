@@ -19,6 +19,8 @@ NSString* const APIUrl_Streams_Subjects = @"streams/subjects/";
 NSString* const APIUrl_Streams_Explore = @"streams/explore/";
 NSString* const APIUrl_Streams_All = @"streams/all";
 
+NSString* const APIUrl_Create_Comment = @"what goes here?";
+
 #else
 
 NSString* const SubjotAPIUrl = @"";
@@ -31,5 +33,7 @@ NSString* const APIUrl_Streams_Home = @"home";
 NSString* const APIUrl_Streams_Subjects = @"subjects";
 NSString* const APIUrl_Streams_Explore = @"home";
 NSString* const APIUrl_Streams_All = @"all";
+
+NSString* const APIUrl_Create_Comment = @"post_comment";
 
 #endif

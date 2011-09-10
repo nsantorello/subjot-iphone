@@ -99,6 +99,8 @@
 		D2CFABE3141C105400DECDB8 /* DevHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFABE2141C105400DECDB8 /* DevHelper.m */; };
 		D2CFAC62141C158B00DECDB8 /* ComposeComment.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CFAC61141C158B00DECDB8 /* ComposeComment.xib */; };
 		D2CFAC65141C165700DECDB8 /* ComposeCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFAC64141C165700DECDB8 /* ComposeCommentController.m */; };
+		D2CFAC68141C18C500DECDB8 /* CreateCommentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFAC67141C18C500DECDB8 /* CreateCommentRequest.m */; };
+		D2CFAC6B141C18D900DECDB8 /* CreateCommentResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFAC6A141C18D800DECDB8 /* CreateCommentResponse.m */; };
 		D2F56F37140EBBFC00F72DF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F36140EBBFC00F72DF0 /* UIKit.framework */; };
 		D2F56F39140EBBFC00F72DF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F38140EBBFC00F72DF0 /* Foundation.framework */; };
 		D2F56F3B140EBBFC00F72DF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F56F3A140EBBFC00F72DF0 /* CoreGraphics.framework */; };
@@ -259,6 +261,10 @@
 		D2CFAC61141C158B00DECDB8 /* ComposeComment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeComment.xib; sourceTree = "<group>"; };
 		D2CFAC63141C165700DECDB8 /* ComposeCommentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeCommentController.h; sourceTree = "<group>"; };
 		D2CFAC64141C165700DECDB8 /* ComposeCommentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentController.m; sourceTree = "<group>"; };
+		D2CFAC66141C18C400DECDB8 /* CreateCommentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateCommentRequest.h; sourceTree = "<group>"; };
+		D2CFAC67141C18C500DECDB8 /* CreateCommentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateCommentRequest.m; sourceTree = "<group>"; };
+		D2CFAC69141C18D800DECDB8 /* CreateCommentResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateCommentResponse.h; sourceTree = "<group>"; };
+		D2CFAC6A141C18D800DECDB8 /* CreateCommentResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateCommentResponse.m; sourceTree = "<group>"; };
 		D2F56F32140EBBFC00F72DF0 /* Subjot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subjot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F56F36140EBBFC00F72DF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2F56F38140EBBFC00F72DF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -337,6 +343,8 @@
 				D2CFABD2141BFE7400DECDB8 /* UserDetailRequest.m */,
 				D2CFABDB141C0F5100DECDB8 /* CreateJotRequest.h */,
 				D2CFABDC141C0F5200DECDB8 /* CreateJotRequest.m */,
+				D2CFAC66141C18C400DECDB8 /* CreateCommentRequest.h */,
+				D2CFAC67141C18C500DECDB8 /* CreateCommentRequest.m */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -354,6 +362,8 @@
 				D2CFABD6141BFE9C00DECDB8 /* UserDetailResponse.m */,
 				D2CFABDE141C0F6500DECDB8 /* CreateJotResponse.h */,
 				D2CFABDF141C0F6500DECDB8 /* CreateJotResponse.m */,
+				D2CFAC69141C18D800DECDB8 /* CreateCommentResponse.h */,
+				D2CFAC6A141C18D800DECDB8 /* CreateCommentResponse.m */,
 			);
 			name = Responses;
 			sourceTree = "<group>";
@@ -875,6 +885,8 @@
 				D2CFABE0141C0F6500DECDB8 /* CreateJotResponse.m in Sources */,
 				D2CFABE3141C105400DECDB8 /* DevHelper.m in Sources */,
 				D2CFAC65141C165700DECDB8 /* ComposeCommentController.m in Sources */,
+				D2CFAC68141C18C500DECDB8 /* CreateCommentRequest.m in Sources */,
+				D2CFAC6B141C18D900DECDB8 /* CreateCommentResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

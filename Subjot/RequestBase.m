@@ -9,6 +9,7 @@
 #import "RequestBase.h"
 #import "ResponseBase.h"
 #import "GTMHTTPFetcher.h"
+#import "NSArray+Extensions.h"
 
 @implementation RequestBase
 
@@ -68,14 +69,22 @@
 	}
 }
 
-- (void)beginRequestWithURL:(NSURL*)url andDelegate:(id)del andPostData:(NSString*)postData
++ (NSString*)postDataFromDict:(NSDictionary*)dict
+{
+    return (NSString*)[[dict allKeys] reduce:@"" fn:^id(id acc, id obj) {
+        NSString* key = (NSString*)obj;
+        return [NSString stringWithFormat:@"%@=%@&%@", key, [dict valueForKey:key], acc];
+    }];
+}
+
+- (void)beginRequestWithURL:(NSURL*)url andDelegate:(id)del andPostData:(NSDictionary*)postData
 {
 #ifdef LIVE_API
 	NSURLRequest *request = [NSURLRequest requestWithURL:url];
 	GTMHTTPFetcher *fetcher = [GTMHTTPFetcher fetcherWithRequest:request];
 	if (postData)
 	{
-		[fetcher setPostData:[postData dataUsingEncoding:NSUTF8StringEncoding]];
+		[fetcher setPostData:[[RequestBase postDataFromDict:postData] dataUsingEncoding:NSUTF8StringEncoding]];
 	}
 	
 	[fetcher beginFetchWithDelegate:self didFinishSelector:@selector(fetcher:finishedWithData:error:)];
@@ -83,6 +92,7 @@
     NSError* error = nil;
     NSString* path = [[NSBundle mainBundle] pathForResource:[url lastPathComponent] ofType:@""];
     NSData* fileContents = [NSData dataWithContentsOfFile:path options:NSDataReadingUncached error:&error];
+    NSString* postDataCheck = [RequestBase postDataFromDict:postData];
     if (error)
     {
         [self requestFailed:[error localizedDescription]];

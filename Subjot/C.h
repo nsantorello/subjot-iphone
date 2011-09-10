@@ -20,5 +20,6 @@
 + (NSString*)allStreamUrl;
 + (NSString*)subjectStreamUrl:(NSString*)subject;
 + (NSString*)exploreStreamUrl:(NSString*)topic;
++ (NSString*)createCommentUrl;
 
 @end

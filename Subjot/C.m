@@ -61,4 +61,9 @@
     return [C appendTo:[C apiCallUrl:APIUrl_Streams_Explore] theString:topic];
 }
 
++ (NSString*)createCommentUrl
+{
+    return [C apiCallUrl:APIUrl_Create_Comment];
+}
+
 @end

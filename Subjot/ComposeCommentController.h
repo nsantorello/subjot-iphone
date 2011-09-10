@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Jot.h"
 
 @interface ComposeCommentController : UIViewController<UIActionSheetDelegate> {
     UIActionSheet* cancelSheet;
 }
 
 @property (nonatomic, retain) IBOutlet UITextView* commentText;
+@property (retain) Jot* jot;
+@property (assign) id composeCommentDelegate;
 
 - (IBAction)composeCanceled;
 - (IBAction)commentPosted;
