@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UserCache.h"
 #import "ResponseBase.h"
-#import "User.h"
 
 @interface UserDetailResponse : ResponseBase {
     

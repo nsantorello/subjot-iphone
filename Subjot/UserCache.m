@@ -25,7 +25,16 @@
 
 - (User*)createUserFromDict:(NSDictionary*)dict
 {
-    User* user = [User fromDictionary:dict];
+    User* user = nil;
+    if ([DetailedUser dictIsDetailedUser:dict])
+    {
+        user = [DetailedUser fromDictionary:dict];
+    }
+    else
+    {
+        user = [User fromDictionary:dict];
+    }
+     
     [userCache setValue:user forKey:[user.userId stringValue]];
     return user;
 }
@@ -39,7 +48,8 @@
     
     UserCache* users = [UserCache sharedInstance];
     User* user = [users->userCache objectForKey:[dict valueForKey:@"id"]];
-    if (!user)
+    if (!user // user doesn't exist at all
+        || (![user isDetailed] && [DetailedUser dictIsDetailedUser:dict])) // existing user is a User and the dict represents a DetailedUser
     {
         user = [users createUserFromDict:dict];
     }

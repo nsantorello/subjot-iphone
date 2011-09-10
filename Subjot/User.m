@@ -13,18 +13,25 @@
 
 @synthesize userId, name, username, profilePicUrl, subjects, bio, totalJots, rawData;
 
+- (void)populateFromDict:(NSDictionary*)dict
+{
+    name = [dict valueForKey:@"name"];
+    profilePicUrl = [dict valueForKey:@"profile_pic_url"];
+    userId = [NSNumber numberWithInt:[[dict valueForKey:@"id"] intValue]];
+    username = [dict valueForKey:@"username"];
+    rawData = dict;
+}
+
 + (User*)fromDictionary:(NSDictionary *)dict
 {
     User* user = [[[User alloc] init] autorelease];
-    user.name = [dict valueForKey:@"name"];
-    user.profilePicUrl = [dict valueForKey:@"profile_pic_url"];
-    user.userId = [NSNumber numberWithInt:[[dict valueForKey:@"id"] intValue]];
-    user.username = [dict valueForKey:@"username"];
-    user.subjects = [dict valueForKey:@"subjects"];
-    user.totalJots = [dict valueForKey:@"total_jots"];
-    user.bio = [dict valueForKey:@"bio"];
-    user.rawData = dict;
+    [user populateFromDict:dict];
     return user;
+}
+
+- (BOOL)isDetailed
+{
+    return FALSE;
 }
 
 - (void)dealloc

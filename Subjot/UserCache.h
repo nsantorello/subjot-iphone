@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "User.h"
+#import "DetailedUser.h"
 
 @interface UserCache : NSObject {
     NSMutableDictionary* userCache;
