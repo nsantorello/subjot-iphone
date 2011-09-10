@@ -14,6 +14,6 @@
     
 }
 
-@property (retain) User* users;
+@property (retain) NSArray* users;
 
 @end

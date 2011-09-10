@@ -17,9 +17,6 @@
 @property (copy) NSString* name;
 @property (copy) NSString* username;
 @property (copy) NSString* profilePicUrl;
-@property (retain) NSArray* subjects;
-@property (copy) NSNumber* totalJots;
-@property (copy) NSString* bio;
 
 @property (retain) NSDictionary* rawData;
 

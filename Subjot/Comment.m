@@ -35,11 +35,11 @@
 
 - (void)dealloc
 {
-    jot = nil;
-    author = nil;
-    published = nil;
-    text = nil;
-    commentId = nil;
+    self.jot = nil;
+    self.author = nil;
+    self.published = nil;
+    self.text = nil;
+    self.commentId = nil;
     [super dealloc];
 }
 

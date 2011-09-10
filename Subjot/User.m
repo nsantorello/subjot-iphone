@@ -11,15 +11,15 @@
 
 @implementation User
 
-@synthesize userId, name, username, profilePicUrl, subjects, bio, totalJots, rawData;
+@synthesize userId, name, username, profilePicUrl, rawData;
 
 - (void)populateFromDict:(NSDictionary*)dict
 {
-    name = [dict valueForKey:@"name"];
-    profilePicUrl = [dict valueForKey:@"profile_pic_url"];
-    userId = [NSNumber numberWithInt:[[dict valueForKey:@"id"] intValue]];
-    username = [dict valueForKey:@"username"];
-    rawData = dict;
+    self.name = [dict valueForKey:@"name"];
+    self.profilePicUrl = [dict valueForKey:@"profile_pic_url"];
+    self.userId = [NSNumber numberWithInt:[[dict valueForKey:@"id"] intValue]];
+    self.username = [dict valueForKey:@"username"];
+    self.rawData = dict;
 }
 
 + (User*)fromDictionary:(NSDictionary *)dict
@@ -36,15 +36,14 @@
 
 - (void)dealloc
 {
-    userId = totalJots = nil;
-    name = username = profilePicUrl = bio = nil;
-    subjects = nil;
+    self.userId = nil;
+    self.name = self.username = self.profilePicUrl = nil;
     [super dealloc];
 }
 
 - (NSString*)description
 {
-    return [NSString stringWithFormat:@"ID: %@. Name: %@. Username: %@. Profile Pic Url: %@.", userId, name, username, profilePicUrl];
+    return [NSString stringWithFormat:@"User - ID: %@. Name: %@. Username: %@. Profile Pic Url: %@.", self.userId, self.name, self.username, self.profilePicUrl];
 }
 
 @end

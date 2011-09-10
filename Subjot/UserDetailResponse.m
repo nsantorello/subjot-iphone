@@ -7,7 +7,7 @@
 //
 
 #import "UserDetailResponse.h"
-
+#import "NSArray+Extensions.h"
 
 @implementation UserDetailResponse
 

@@ -11,6 +11,7 @@
 #import "Jot.h"
 #import "JotCache.h"
 #import "UserCache.h"
+#import "UserDetailRequest.h"
 
 @implementation StreamResponse
 
@@ -30,6 +31,12 @@
     jots = [jotData map:^id(id obj) {
         return [JotCache getJotFromDict:obj];
     }];
+    
+    // Get detailed user objects for each user in the response.
+    NSArray* userIds = [users map:^id(id obj) {
+        return ((User*)obj).userId;
+    }];
+    [UserDetailRequest userDetailRequestWithDelegate:nil andUserIds:userIds];
 }
 
 - (void)dealloc

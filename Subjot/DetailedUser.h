@@ -16,7 +16,7 @@
 @property (copy) NSNumber* totalJots;
 @property (copy) NSString* bio;
 
-+ (User*)fromDictionary:(NSDictionary*)dict;
++ (DetailedUser*)fromDictionary:(NSDictionary*)dict;
 + (BOOL)dictIsDetailedUser:(NSDictionary*)dict;
 
 - (BOOL)isDetailed;

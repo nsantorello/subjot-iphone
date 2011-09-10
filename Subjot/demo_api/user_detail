@@ -23,7 +23,7 @@
             "name" : "Chris Carella",
             "username" : "ccarella",
             "profile_pic_url" : "http://s3.amazonaws.com/subjot-profile-images-production/medium/2/icon.jpg",
-            "subjects" : ["life", "music", "nyc", "street art", "song of the day", "quote of the day", ],
+            "subjects" : ["life", "music", "nyc", "street art", "song of the day", "quote of the day" ],
             "bio" : "I am the co-founder of Subjot!  One day I will be 'MySpace Tom' famous.",
             "total_jots" : 2374
         }

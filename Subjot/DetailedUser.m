@@ -24,9 +24,9 @@
 {
     [super populateFromDict:dict];
     
-    subjects = [dict valueForKey:@"subjects"];
-    totalJots = [dict valueForKey:@"total_jots"];
-    bio = [dict valueForKey:kBioField];
+    self.subjects = [dict valueForKey:@"subjects"];
+    self.totalJots = [dict valueForKey:@"total_jots"];
+    self.bio = [dict valueForKey:kBioField];
 }
 
 + (DetailedUser*)fromDictionary:(NSDictionary *)dict
@@ -43,10 +43,15 @@
 
 - (void)dealloc
 {
-    totalJots = nil;
-    bio = nil;
-    subjects = nil;
+    self.totalJots = nil;
+    self.bio = nil;
+    self.subjects = nil;
     [super dealloc];
+}
+
+- (NSString*)description
+{
+    return [NSString stringWithFormat:@"Detailed User - ID: %@. Name: %@. Username: %@. Profile Pic Url: %@. Bio: %@", self.userId, self.name, self.username, self.profilePicUrl, self.bio];
 }
 
 @end
