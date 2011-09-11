@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "Jot.h"
 
-@interface ComposeCommentController : UIViewController<UIActionSheetDelegate> {
+@interface ComposeCommentController : UIViewController<UIActionSheetDelegate, UITextViewDelegate> {
     UIActionSheet* cancelSheet;
 }
 
 @property (nonatomic, retain) IBOutlet UITextView* commentText;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem* postCommentBtn;
 @property (retain) Jot* jot;
 @property (assign) id composeCommentDelegate;
 

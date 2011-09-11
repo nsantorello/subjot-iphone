@@ -40,18 +40,17 @@
 				<string key="IBProxiedObjectIdentifier">IBFirstResponder</string>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 			</object>
-			<object class="IBUIView" id="237032552">
+			<object class="IBUIView" id="297640623">
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUITextView" id="944769682">
-						<reference key="NSNextResponder" ref="237032552"/>
+					<object class="IBUITextView" id="1067086024">
+						<reference key="NSNextResponder" ref="297640623"/>
 						<int key="NSvFlags">274</int>
 						<string key="NSFrame">{{0, 44}, {320, 200}}</string>
-						<reference key="NSSuperview" ref="237032552"/>
+						<reference key="NSSuperview" ref="297640623"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -65,30 +64,31 @@
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
 					</object>
-					<object class="IBUINavigationBar" id="135100996">
-						<reference key="NSNextResponder" ref="237032552"/>
+					<object class="IBUINavigationBar" id="822052461">
+						<reference key="NSNextResponder" ref="297640623"/>
 						<int key="NSvFlags">290</int>
 						<string key="NSFrameSize">{320, 44}</string>
-						<reference key="NSSuperview" ref="237032552"/>
+						<reference key="NSSuperview" ref="297640623"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="944769682"/>
+						<reference key="NSNextKeyView" ref="1067086024"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSArray" key="IBUIItems">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUINavigationItem" id="260140265">
-								<reference key="IBUINavigationBar" ref="135100996"/>
+							<object class="IBUINavigationItem" id="935533809">
+								<reference key="IBUINavigationBar" ref="822052461"/>
 								<string key="IBUITitle">Add Comment</string>
-								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="87307620">
+								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="33740718">
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">1</int>
-									<reference key="IBUINavigationItem" ref="260140265"/>
+									<reference key="IBUINavigationItem" ref="935533809"/>
 									<int key="IBUISystemItemIdentifier">1</int>
 								</object>
-								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="683142960">
+								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="421628097">
+									<bool key="IBUIEnabled">NO</bool>
 									<string key="IBUITitle">Post!</string>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">2</int>
-									<reference key="IBUINavigationItem" ref="260140265"/>
+									<reference key="IBUINavigationItem" ref="935533809"/>
 								</object>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
@@ -98,7 +98,7 @@
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="135100996"/>
+				<reference key="NSNextKeyView" ref="822052461"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">10</int>
 					<object class="NSImage" key="NSImage">
@@ -4506,7 +4506,7 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">commentText</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="944769682"/>
+						<reference key="destination" ref="1067086024"/>
 					</object>
 					<int key="connectionID">10</int>
 				</object>
@@ -4514,14 +4514,14 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">view</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="237032552"/>
+						<reference key="destination" ref="297640623"/>
 					</object>
 					<int key="connectionID">11</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">commentPosted</string>
-						<reference key="source" ref="683142960"/>
+						<reference key="source" ref="421628097"/>
 						<reference key="destination" ref="841351856"/>
 					</object>
 					<int key="connectionID">12</int>
@@ -4529,10 +4529,26 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">composeCanceled</string>
-						<reference key="source" ref="87307620"/>
+						<reference key="source" ref="33740718"/>
 						<reference key="destination" ref="841351856"/>
 					</object>
 					<int key="connectionID">13</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">postCommentBtn</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="421628097"/>
+					</object>
+					<int key="connectionID">14</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="1067086024"/>
+						<reference key="destination" ref="841351856"/>
+					</object>
+					<int key="connectionID">15</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -4557,48 +4573,48 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">2</int>
-						<reference key="object" ref="237032552"/>
+						<reference key="object" ref="297640623"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="944769682"/>
-							<reference ref="135100996"/>
+							<reference ref="1067086024"/>
+							<reference ref="822052461"/>
 						</object>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">View</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">5</int>
-						<reference key="object" ref="944769682"/>
-						<reference key="parent" ref="237032552"/>
+						<reference key="object" ref="1067086024"/>
+						<reference key="parent" ref="297640623"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">6</int>
-						<reference key="object" ref="135100996"/>
+						<reference key="object" ref="822052461"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="260140265"/>
+							<reference ref="935533809"/>
 						</object>
-						<reference key="parent" ref="237032552"/>
+						<reference key="parent" ref="297640623"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">7</int>
-						<reference key="object" ref="260140265"/>
+						<reference key="object" ref="935533809"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="683142960"/>
-							<reference ref="87307620"/>
+							<reference ref="421628097"/>
+							<reference ref="33740718"/>
 						</object>
-						<reference key="parent" ref="135100996"/>
+						<reference key="parent" ref="822052461"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">8</int>
-						<reference key="object" ref="683142960"/>
-						<reference key="parent" ref="260140265"/>
+						<reference key="object" ref="421628097"/>
+						<reference key="parent" ref="935533809"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
-						<reference key="object" ref="87307620"/>
-						<reference key="parent" ref="260140265"/>
+						<reference key="object" ref="33740718"/>
+						<reference key="parent" ref="935533809"/>
 					</object>
 				</object>
 			</object>
@@ -4641,7 +4657,7 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">13</int>
+			<int key="maxID">15</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4682,14 +4698,35 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">commentText</string>
-						<string key="NS.object.0">UITextView</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>commentText</string>
+							<string>postCommentBtn</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>UITextView</string>
+							<string>UIBarButtonItem</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">commentText</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">commentText</string>
-							<string key="candidateClassName">UITextView</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>commentText</string>
+							<string>postCommentBtn</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBToOneOutletInfo">
+								<string key="name">commentText</string>
+								<string key="candidateClassName">UITextView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">postCommentBtn</string>
+								<string key="candidateClassName">UIBarButtonItem</string>
+							</object>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">

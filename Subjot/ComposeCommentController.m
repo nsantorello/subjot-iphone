@@ -12,8 +12,9 @@
 @implementation ComposeCommentController
 
 #define kDeleteButtonIndex 0
+#define kMinCommentCharLength 3
 
-@synthesize commentText, jot, composeCommentDelegate;
+@synthesize commentText, jot, composeCommentDelegate, postCommentBtn;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -61,6 +62,7 @@
     // Release any retained subviews of the main view.
     self.commentText = nil;
     self.jot = nil;
+    self.postCommentBtn = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -72,6 +74,11 @@
 - (void)dismissView
 {
     [self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)textViewDidChange:(UITextView *)textView
+{
+    postCommentBtn.enabled = [textView.text length] >= kMinCommentCharLength;
 }
 
 - (IBAction)composeCanceled
