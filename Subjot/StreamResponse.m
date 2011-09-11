@@ -36,7 +36,7 @@
     NSArray* userIds = [users map:^id(id obj) {
         return ((User*)obj).userId;
     }];
-    [UserDetailRequest userDetailRequestWithDelegate:nil andUserIds:userIds];
+    //[UserDetailRequest userDetailRequestWithDelegate:nil andUserIds:userIds];
 }
 
 - (void)dealloc

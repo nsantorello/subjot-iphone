@@ -15,9 +15,8 @@
 
 - (void)setData:(NSDictionary*)response
 {
+    succeeded = TRUE;
     responseData = [response retain];
-    succeeded = [[response valueForKey:@"success"] boolValue];
-    apiVersion = [response valueForKey:@"version"];
     errorString = [response valueForKey:@"error_string"];
 }
 

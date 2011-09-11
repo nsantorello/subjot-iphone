@@ -10,7 +10,7 @@
 #import "AuthUserRequest.h"
 
 @interface LoginController : UIViewController<UITextFieldDelegate, SubjotResponseDelegate> {
-    
+
 }
 
 @property (nonatomic, retain) IBOutlet UITabBarController* authedContentController;

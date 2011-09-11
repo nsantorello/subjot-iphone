@@ -25,7 +25,8 @@
 
 - (UIImage*)downloadImage:(NSString*)url
 {
-    NSData* imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
+    NSURL* loc = [NSURL URLWithString:[url stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
+    NSData* imageData = [[NSData alloc] initWithContentsOfURL:loc];
     UIImage* img = [UIImage imageWithData:imageData];
     if (img)
     {

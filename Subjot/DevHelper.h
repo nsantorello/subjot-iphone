@@ -16,3 +16,10 @@
 + (void)showNotImplAlert;
 
 @end
+
+@interface NSDate (DateDiff)
+
+- (NSString *)dateDiff;
++ (NSDate*)fromJsonString:(NSString*)str;
+
+@end

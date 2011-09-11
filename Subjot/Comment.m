@@ -17,9 +17,9 @@
 {
     Comment* comment = [[[Comment alloc] init] autorelease];
     comment.commentId = [dict valueForKey:@"id"];
-    comment.author = [UserCache getUserFromDict:[dict valueForKey:@"author"]];
-    comment.text = [dict valueForKey:@"text"];
-    comment.published = [dict valueForKey:@"published"];
+    comment.author = [UserCache getUserFromDict:[dict valueForKey:@"user"]];
+    comment.text = [dict valueForKey:@"content"];
+    comment.published = [NSDate fromJsonString:[dict valueForKey:@"created_at"]];
     comment.jot = j;
     return comment;
 }

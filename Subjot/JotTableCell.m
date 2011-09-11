@@ -35,8 +35,8 @@
     username.text = j.author.username;
     jotText.text = j.text;
     comments.text = [NSString stringWithFormat:@"%i comments", [j.comments count]];
-    subject.text = j.subject;
-    published.text = [j.published description];
+    subject.text = j.subject.name;
+    published.text = [j.published dateDiff];
     
     CGFloat jotTextHeight = [j streamTextHeight];
     CGRect newFrame = comments.frame;

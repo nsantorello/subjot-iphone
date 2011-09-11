@@ -91,6 +91,8 @@
 		D291E78A1413E31300CB08A8 /* post_jot in Resources */ = {isa = PBXBuildFile; fileRef = D291E7851413E31300CB08A8 /* post_jot */; };
 		D291E78B1413E31300CB08A8 /* user_detail in Resources */ = {isa = PBXBuildFile; fileRef = D291E7861413E31300CB08A8 /* user_detail */; };
 		D291E78F1413F6ED00CB08A8 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = D291E78E1413F6ED00CB08A8 /* Comment.m */; };
+		D2A669A8141D3F9C00367DD4 /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A669A7141D3F9C00367DD4 /* Subject.m */; };
+		D2A669AC141D400800367DD4 /* SubjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A669AB141D400800367DD4 /* SubjectCache.m */; };
 		D2CFABD3141BFE7400DECDB8 /* UserDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFABD2141BFE7400DECDB8 /* UserDetailRequest.m */; };
 		D2CFABD7141BFE9C00DECDB8 /* UserDetailResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFABD6141BFE9C00DECDB8 /* UserDetailResponse.m */; };
 		D2CFABDA141C015800DECDB8 /* DetailedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFABD9141C015800DECDB8 /* DetailedUser.m */; };
@@ -246,6 +248,10 @@
 		D291E7861413E31300CB08A8 /* user_detail */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = user_detail; path = demo_api/user_detail; sourceTree = "<group>"; };
 		D291E78D1413F6ED00CB08A8 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
 		D291E78E1413F6ED00CB08A8 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		D2A669A6141D3F9C00367DD4 /* Subject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
+		D2A669A7141D3F9C00367DD4 /* Subject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
+		D2A669AA141D400800367DD4 /* SubjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectCache.h; sourceTree = "<group>"; };
+		D2A669AB141D400800367DD4 /* SubjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectCache.m; sourceTree = "<group>"; };
 		D2CFABD1141BFE7400DECDB8 /* UserDetailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailRequest.h; sourceTree = "<group>"; };
 		D2CFABD2141BFE7400DECDB8 /* UserDetailRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailRequest.m; sourceTree = "<group>"; };
 		D2CFABD5141BFE9C00DECDB8 /* UserDetailResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailResponse.h; sourceTree = "<group>"; };
@@ -417,6 +423,8 @@
 				D23F93A11412A1E90032E317 /* JotCache.m */,
 				D23F94931413023A0032E317 /* ImageCache.h */,
 				D23F94941413023A0032E317 /* ImageCache.m */,
+				D2A669AA141D400800367DD4 /* SubjectCache.h */,
+				D2A669AB141D400800367DD4 /* SubjectCache.m */,
 			);
 			name = Cache;
 			sourceTree = "<group>";
@@ -638,6 +646,8 @@
 				D291E78E1413F6ED00CB08A8 /* Comment.m */,
 				D2CFABD8141C015800DECDB8 /* DetailedUser.h */,
 				D2CFABD9141C015800DECDB8 /* DetailedUser.m */,
+				D2A669A6141D3F9C00367DD4 /* Subject.h */,
+				D2A669A7141D3F9C00367DD4 /* Subject.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -887,6 +897,8 @@
 				D2CFAC65141C165700DECDB8 /* ComposeCommentController.m in Sources */,
 				D2CFAC68141C18C500DECDB8 /* CreateCommentRequest.m in Sources */,
 				D2CFAC6B141C18D900DECDB8 /* CreateCommentResponse.m in Sources */,
+				D2A669A8141D3F9C00367DD4 /* Subject.m in Sources */,
+				D2A669AC141D400800367DD4 /* SubjectCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

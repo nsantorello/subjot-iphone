@@ -9,6 +9,23 @@
 #import "LoginController.h"
 #import "Credentials.h"
 
+@implementation NSURLRequest (NSURLRequestWithIgnoreSSL)
+
++ (BOOL)allowsAnyHTTPSCertificateForHost:(NSString*)host
+{
+    return YES;
+}
+
+@end
+
+@implementation NSMutableURLRequest (NSMutableURLRequestWithIgnoreSSL)
+
++ (BOOL)allowsAnyHTTPSCertificateForHost:(NSString*)host
+{
+    return YES;
+}
+
+@end
 @implementation LoginController
 
 @synthesize authedContentController, usernameField, passwordField;

@@ -43,9 +43,14 @@
     // Do any additional setup after loading the view from its nib.
 
     
-    [StreamRequest homeRequestWithDelegate:nil];
-    streamViewController.jots = [NSArray arrayWithObjects:[JotCache getJotById:[NSNumber numberWithInt:1]], [JotCache getJotById:[NSNumber numberWithInt:2]], [JotCache getJotById:[NSNumber numberWithInt:3]], [JotCache getJotById:[NSNumber numberWithInt:4]], [JotCache getJotById:[NSNumber numberWithInt:5]], [JotCache getJotById:[NSNumber numberWithInt:6]], nil];
+    [StreamRequest homeRequestWithDelegate:self];
     self.title = @"Latest";
+}
+
+- (void)requestFinished:(ResponseBase*)response
+{
+    StreamResponse* stream = (StreamResponse*)response;
+    streamViewController.jots = stream.jots;
 }
 
 - (IBAction)composeJotClicked

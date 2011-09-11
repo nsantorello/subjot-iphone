@@ -8,13 +8,13 @@
 
 #ifdef LIVE_API
 
-NSString* const SubjotAPIUrl = @"https://api.subjot.com/";
+NSString* const SubjotAPIUrl = @"https://api.dev.subjot.com/v1/";
 
 NSString* const APIUrl_Auth = @"auth";
 
 NSString* const APIUrl_User_Detail = @"user/";
 
-NSString* const APIUrl_Streams_Home = @"streams/home";
+NSString* const APIUrl_Streams_Home = @"feed.json";
 NSString* const APIUrl_Streams_Subjects = @"streams/subjects/";
 NSString* const APIUrl_Streams_Explore = @"streams/explore/";
 NSString* const APIUrl_Streams_All = @"streams/all";

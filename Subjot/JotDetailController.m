@@ -57,7 +57,7 @@
     if (jot)
     {
         name.text = jot.author.name;
-        subject.text = jot.subject;
+        subject.text = jot.subject.name;
         pic.image = [ImageCache getImageByUrl:jot.author.profilePicUrl];
         CGFloat nameWidth = [jot.author.name sizeWithFont:[UIFont fontWithName:@"Helvetica-Bold" size:14.0] 
                                         constrainedToSize:CGSizeMake(250, 500) lineBreakMode:UILineBreakModeWordWrap].width;

@@ -16,7 +16,7 @@
 - (void)populateFromDict:(NSDictionary*)dict
 {
     self.name = [dict valueForKey:@"name"];
-    self.profilePicUrl = [dict valueForKey:@"profile_pic_url"];
+    self.profilePicUrl = [dict valueForKey:@"avatar_url"];
     self.userId = [NSNumber numberWithInt:[[dict valueForKey:@"id"] intValue]];
     self.username = [dict valueForKey:@"username"];
     self.rawData = dict;

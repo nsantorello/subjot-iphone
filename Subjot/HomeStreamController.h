@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "StreamViewController.h"
+#import "ResponseBase.h"
 
-@interface HomeStreamController : UIViewController {
+@interface HomeStreamController : UIViewController<SubjotResponseDelegate> {
     IBOutlet StreamViewController* streamViewController;
 }
 

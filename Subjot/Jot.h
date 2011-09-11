@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UserCache.h"
+#import "SubjectCache.h"
 
 @interface Jot : NSObject {
     
@@ -18,7 +19,7 @@
 @property (copy) NSString* text;
 @property (copy) NSDate* published;
 @property (retain) NSArray* comments;
-@property (copy) NSString* subject;
+@property (retain) Subject* subject;
 
 + (Jot*)fromDictionary:(NSDictionary*)dict;
 - (CGFloat)streamTextHeight;

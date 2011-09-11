@@ -17,11 +17,11 @@
 {
     Jot* jot = [[[Jot alloc] init] autorelease];
     jot.jotId = [dict valueForKey:@"id"];
-    jot.author = [UserCache getUserFromDict:[dict valueForKey:@"author"]];
-    jot.text = [dict valueForKey:@"text"];
-    jot.published = [dict valueForKey:@"published"];
+    jot.author = [UserCache getUserFromDict:[dict valueForKey:@"user"]];
+    jot.text = [dict valueForKey:@"content"];
+    jot.published = [NSDate fromJsonString:[dict valueForKey:@"created_at"]];
     jot.comments = [[Comment commentArrayFromDictionary:[dict valueForKey:@"comments"] forJot:jot] retain];
-    jot.subject = [dict valueForKey:@"subject"];
+    jot.subject = [SubjectCache getSubjectFromDict:[dict valueForKey:@"subject"]];
     return jot;
 }
 
@@ -30,7 +30,8 @@
     self.jotId = nil;
     self.comments = nil;
     self.author = nil;
-    self.text = self.subject = nil;
+    self.text = nil;
+    self.subject = nil;
     self.published = nil;
     [super dealloc];
 }
